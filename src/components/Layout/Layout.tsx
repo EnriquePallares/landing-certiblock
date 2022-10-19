@@ -9,7 +9,7 @@ const Layout: React.FC<LayoutInterface> = () => {
     <div className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#04113D] to-[#051755]">
       <div className="text-white h-screen ">
         <Navbar />
-        <div className="mx-8">
+        <div className="container mx-auto">
           <Outlet />
         </div>
       </div>
