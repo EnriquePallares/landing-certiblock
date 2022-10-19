@@ -1,43 +1,54 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "../ui/Button";
 export interface NavbarInterface {}
 
-const menuItems = [{}];
+const menuItems = [
+  {
+    text: "Quiénes somos",
+  },
+  {
+    text: "Servicios",
+  },
+  {
+    text: "Blog",
+  },
+];
 
 const Navbar: React.FC<NavbarInterface> = () => {
   return (
-    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
-      <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="#" className="flex items-center">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="mr-3 h-6 sm:h-9"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
-          </span>
-        </a>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a
-                href="#"
-                className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                aria-current="page"
-              >
-                Home
-              </a>
-            </li>
-          </ul>
-        </div>
-        <button
-          type="button"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span className="sr-only">Open main menu</span>
-        </button>
+    <nav className="p-5 md:flex justify-center space-x-10">
+      <a className="self-center" href="#">
+        <img src="asdasd" alt="asdasd" />
+      </a>
+      <div className="inline-flex rounded-full shadow-sm bg-primary space-x-4 self-center border-[1px] border-secondary px-2">
+        {menuItems.map((item, index) => (
+          <Link
+            key={index}
+            className="py-2 first:after:content-['|'] even:after:content-['|']"
+            to={"#"}
+          >
+            <span className="px-4">{item.text}</span>
+          </Link>
+        ))}
       </div>
+      <Button text="Log in" type="primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+          />
+        </svg>
+      </Button>
+      <Button text="Descargas" type="secondary" />
     </nav>
   );
 };
