@@ -3,7 +3,7 @@ export interface ButtonInterface {
   text: string;
   type: string;
   children?: ReactNode;
-  className: string;
+  className?: string;
 }
 
 const styleType = new Map();

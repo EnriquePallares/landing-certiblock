@@ -1,38 +1,82 @@
-import React from "react";
+import { faStackpath } from "@fortawesome/free-brands-svg-icons";
+import {
+  faBars,
+  faBoxesStacked,
+  faClose,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/Button";
 export interface NavbarInterface {}
 
-const menuItems = [
-  {
-    text: "Quiénes somos",
-  },
-  {
-    text: "Servicios",
-  },
-  {
-    text: "Blog",
-  },
-];
-
 const Navbar: React.FC<NavbarInterface> = () => {
+  const [menu, setMenu] = useState(false);
+
+  const handdleMenu = (e: any) => {
+    setMenu(!menu);
+  };
+
+  const menuItems = [
+    {
+      text: "Quiénes somos",
+      display: true,
+    },
+    {
+      text: "Servicios",
+      display: true,
+    },
+    {
+      text: "Blog",
+      display: true,
+    },
+    {
+      text: "Log in",
+      display: menu,
+    },
+    {
+      text: "Descargas",
+      display: menu,
+    },
+  ];
+
   return (
-    <nav className="p-5 md:flex justify-center space-x-10">
-      <a className="self-center" href="#">
-        <img src="asdasd" alt="asdasd" />
-      </a>
-      <div className="inline-flex rounded-full shadow-sm bg-primary space-x-4 self-center border-[1px] border-secondary px-2">
-        {menuItems.map((item, index) => (
-          <Link
-            key={index}
-            className="py-2 first:after:content-['|'] even:after:content-['|']"
-            to={"#"}
-          >
-            <span className="px-4">{item.text}</span>
-          </Link>
-        ))}
+    <nav
+      className={`md:p-5 md:flex md:justify-center md:items-center md:space-x-10 w-full left-0 md:bg-transparent p-8 transition-all ease-in duration-100 ${
+        menu && "bg-white text-primary z-20"
+      }`}
+    >
+      <div className="flex flew-row justify-between">
+        <a className="self-center" href="#">
+          <img src="logo" alt="logo" />
+        </a>
+        <FontAwesomeIcon
+          className="md:hidden block"
+          role={"button"}
+          icon={!menu ? faBars : faClose}
+          fontSize="24"
+          onClick={handdleMenu}
+        />
       </div>
-      <Button text="Log in" type="primary">
+      <div
+        className={`bg-white absolute ${
+          menu ? "left-[0px]" : "left-[-800px]"
+        } md:static transition-all ease-in duration-150 md:opacity-100 flex flex-col md:flex-row md:items-center z-10 md:z-auto text-primary md:text-white md:rounded-full md:bg-primary md:space-x-4 md:self-center md:border-[1px] md:border-secondary md:px-2 top-[80px] h-screen md:h-auto w-3/4 md:w-auto space-y-4 md:space-y-0`}
+      >
+        {menuItems.map(
+          (item, index) =>
+            !!item.display && (
+              <Link
+                key={index}
+                className="md:py-2 md:first:after:content-['|'] md:even:after:content-['|']"
+                to={"#"}
+              >
+                <span className="px-4">{item.text}</span>
+              </Link>
+            )
+        )}
+      </div>
+      <Button className="hidden md:inline" text="Log in" type="primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -48,7 +92,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
           />
         </svg>
       </Button>
-      <Button text="Descargas" type="secondary" />
+      <Button text="Descargas" type="secondary" className="hidden md:inline" />
     </nav>
   );
 };

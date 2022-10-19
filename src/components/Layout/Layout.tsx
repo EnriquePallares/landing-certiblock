@@ -6,7 +6,7 @@ export interface LayoutInterface {}
 
 const Layout: React.FC<LayoutInterface> = () => {
   return (
-    <div className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#04113D] to-[#051755]">
+    <div className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#04113D] to-[#051755] w-screen overflow-hidden">
       <div className="text-white h-screen ">
         <Navbar />
         <div className="container mx-auto">
