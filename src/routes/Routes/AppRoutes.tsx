@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout";
+import { Layout } from "@/components";
 import { Home } from "@/pages/Home";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
