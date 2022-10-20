@@ -1,6 +1,7 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { LastPost } from './LastPost';
 export interface BlogSectionInterface {}
 
 const posts = [
@@ -56,10 +57,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
 
           <div className="last-post">
             <h4 className="text-2xl mb-12">Último post</h4>
-
-						<div className="post">
-
-						</div>
+						<LastPost />
           </div>
         </div>
       </div>
