@@ -3,7 +3,10 @@ import {
   faInstagram,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
-import { faChurch, faHospital, faSchool, faUniversity } from "@fortawesome/free-solid-svg-icons";
+import UniversidadesImage from "/src/assets/images/university.svg";
+import IglesiasImage from "/src/assets/images/churchs.svg";
+import HospitalesImage from "/src/assets/images/hospitals.svg";
+import ColegiosImage from "/src/assets/images/schools.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 export interface FooterInterface {}
@@ -14,10 +17,10 @@ const column3 = ["Content", "Blog", "Podcast", "Newsletter"];
 const inconsRow = [faFacebook, faInstagram, faTiktok];
 
 const endRow = [
-  { text: "universidades", icon: faUniversity },
-  { text: "Hospitales", icon: faHospital },
-  { text: "Colegios", icon: faSchool },
-  { text: "Iglesias", icon: faChurch },
+  { text: "Universidades", icon: UniversidadesImage },
+  { text: "Hospitales", icon: HospitalesImage },
+  { text: "Colegios", icon: ColegiosImage },
+  { text: "Iglesias", icon: IglesiasImage },
 ];
 
 const Footer: React.FC<FooterInterface> = () => {
@@ -56,7 +59,7 @@ const Footer: React.FC<FooterInterface> = () => {
         <div className="flex w-full justify-around items-start pb-10">
           {endRow.map((item, index) => (
             <div key={index} className="flex flex-col text-center space-y-4">
-              <FontAwesomeIcon icon={item.icon} fontSize="70" />
+              <img src={item.icon} alt={item.text} />
               <span>{item.text}</span>
             </div>
           ))}
