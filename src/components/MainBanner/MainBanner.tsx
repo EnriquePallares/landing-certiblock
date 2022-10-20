@@ -4,7 +4,7 @@ export interface MainBannerInterface {}
 
 const MainBanner: React.FC<MainBannerInterface> = () => {
   return (
-    <section className="main-banner relative text-white">
+    <section className="main-banner relative bg-dark-blue-0 extend-bg-color">
       <img src="/src/assets/images/bg-mainBanner.png" alt="Main banner" />
       <p className="text-4xl md:text-8xl font-black absolute vertical-alignment-abs">
         Por qué tener <br />a <span className="strokes-font">Certiblock</span>
