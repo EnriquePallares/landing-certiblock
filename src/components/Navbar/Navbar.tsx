@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import logo from '@/assets/images/logo-certiblock.svg';
 import { Link } from 'react-router-dom';
 import { Button } from '../ui/Button';
+import logo from '@/assets/images/logo-certiblock.svg';
 export interface NavbarInterface {}
 
 const Navbar: React.FC<NavbarInterface> = () => {

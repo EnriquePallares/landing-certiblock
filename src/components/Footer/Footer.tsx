@@ -3,10 +3,10 @@ import {
   faInstagram,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
-import UniversidadesImage from "/src/assets/images/university.svg";
-import IglesiasImage from "/src/assets/images/churchs.svg";
-import HospitalesImage from "/src/assets/images/hospitals.svg";
-import ColegiosImage from "/src/assets/images/schools.svg";
+import UniversidadesImage from "@/assets/images/university.svg";
+import IglesiasImage from "@/assets/images/churchs.svg";
+import HospitalesImage from "@/assets/images/hospitals.svg";
+import ColegiosImage from "@/assets/images/schools.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 export interface FooterInterface {}
