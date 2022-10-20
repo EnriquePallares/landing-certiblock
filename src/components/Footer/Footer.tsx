@@ -22,7 +22,7 @@ const endRow = [
 
 const Footer: React.FC<FooterInterface> = () => {
   return (
-    <footer className="bg-dark-blue text-white rounded-t-3xl">
+    <footer className="bg-dark-blue-3 text-white rounded-t-[4.5rem]">
       <div className="container mx-auto">
         <div className="flex w-full justify-around items-start p-20">
           <div className="flex flex-col space-y-3 columns-4 w-2/5">
