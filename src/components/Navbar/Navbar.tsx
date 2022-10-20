@@ -36,11 +36,9 @@ const Navbar: React.FC<NavbarInterface> = () => {
   ];
 
   return (
-    <header className="container mx-auto absolute top-0 left-0 right-0 z-50">
+    <header className="container mx-auto absolute top-0 left-[-25px] right-0 z-50">
       <nav
-        className={`md:p-5 md:flex md:justify-center md:items-center md:space-x-10 w-full left-0 md:bg-transparent p-8 transition-all ease-in duration-100 ${
-          menu && 'bg-white text-primary z-20'
-        }`}
+        className={`md:p-5 md:flex md:justify-center md:items-center md:space-x-10 w-full left-0 md:bg-transparent p-8 transition-all ease-in duration-100`}
       >
         <div className="flex flew-row justify-between">
           <a className="self-center" href="#">
