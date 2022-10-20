@@ -1,4 +1,5 @@
 import React from 'react';
+import infoImage from '@//assets/images/banner-info-image.png';
 export interface InfoBannerInterface {}
 
 const InfoBanner: React.FC<InfoBannerInterface> = () => {
@@ -22,11 +23,7 @@ const InfoBanner: React.FC<InfoBannerInterface> = () => {
           </div>
 
           <div className="image-section">
-            <img
-              src="/src/assets/images/banner-info-image.png"
-              alt="Banner info"
-              className="rounded-3xl"
-            />
+            <img src={infoImage} alt="Banner info" className="rounded-3xl" />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { LastPost } from './LastPost';
+import LastPost from './LastPost/LastPost';
 export interface BlogSectionInterface {}
 
 const posts = [
@@ -33,7 +33,10 @@ const posts = [
 
 const BlogSection: React.FC<BlogSectionInterface> = () => {
   return (
-    <section id="blog-section" className="relative bg-dark-blue-1 rounded-t-[4.5rem] extend-bg-color">
+    <section
+      id="blog-section"
+      className="relative bg-dark-blue-1 rounded-t-[4.5rem] extend-bg-color"
+    >
       <div className="container mx-auto p-20">
         <div className="grid grid-cols-2 gap-20 font-medium">
           <div className="list-posts">
@@ -57,7 +60,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
 
           <div className="last-post">
             <h4 className="text-2xl mb-12">Último post</h4>
-						<LastPost />
+            <LastPost />
           </div>
         </div>
       </div>

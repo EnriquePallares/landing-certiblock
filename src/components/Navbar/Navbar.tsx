@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../ui/Button';
+import logo from '@/assets/images/logo-certiblock.svg';
 export interface NavbarInterface {}
 
 const Navbar: React.FC<NavbarInterface> = () => {
@@ -42,11 +43,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
       >
         <div className="flex flew-row justify-between">
           <a className="self-center" href="#">
-            <img
-              src="/src/assets/images/logo-certiblock.svg"
-              alt="logo"
-              className="w-1/2"
-            />
+            <img src={logo} alt="logo" className="w-1/2" />
           </a>
           <FontAwesomeIcon
             className="md:hidden block"

@@ -1,12 +1,11 @@
 import React from 'react';
-
 import post1 from '@/assets/images/post-image.png';
 
 export interface LastPostInterface {}
 
 const LastPost: React.FC<LastPostInterface> = () => {
   return (
-    <div className="container m-auto bg-white h-80 rounded-3xl p-8">
+    <div className="container m-auto bg-white rounded-3xl p-8">
       <div className="rounded-3xl">
         <div className="flex flex-row justify-between items-center">
           <span className="text-primary flex items-center">
@@ -19,7 +18,7 @@ const LastPost: React.FC<LastPostInterface> = () => {
             <span>Seguir</span>
           </button>
         </div>
-        <div className="p-4">
+        <div className="py-4">
           <img src={post1} alt="post" className="object-cover rounded-md" />
         </div>
         <div className="text-left text-primary">
