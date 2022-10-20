@@ -1,9 +1,9 @@
 {
   "name": "certiblock",
-  "private": true,
+  "private": false,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "http://EnriquePallares.github.io/landing-certiblock",
+  "homepage": "http://enriquepallares.github.io/landing-certiblock",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

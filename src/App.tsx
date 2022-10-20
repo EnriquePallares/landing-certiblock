@@ -9,7 +9,7 @@ library.add()
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/landing-certiblock">
       <AppRoutes />
     </BrowserRouter>
   );
