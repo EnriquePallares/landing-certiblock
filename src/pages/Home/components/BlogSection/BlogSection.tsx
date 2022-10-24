@@ -1,6 +1,10 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Accordion } from 'flowbite-react';
+import { AccordionPanel } from 'flowbite-react/lib/esm/components/Accordion/AccordionPanel';
+import { AccordionTitle } from 'flowbite-react/lib/esm/components/Accordion/AccordionTitle';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LastPost from './LastPost/LastPost';
 export interface BlogSectionInterface {}
 
@@ -45,17 +49,17 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
               sobre Web 3.0
             </h4>
 
-            <div className="list">
+            <Accordion alwaysOpen={true} className="bg-primary">
               {posts.map((post, index) => (
-                <div
-                  key={index}
-                  className="flex justify-between items-center rounded-xl bg-white text-primary p-4 my-4"
-                >
-                  {post.title}
-                  <FontAwesomeIcon icon={faPlus} />
-                </div>
+                <Accordion.Panel key={index}>
+                  <Accordion.Title>{post.title}</Accordion.Title>
+                  <Accordion.Content>
+                    <p className="my-4">{post.content}</p>
+                    <Link to={post.link}>Ver más</Link>
+                  </Accordion.Content>
+                </Accordion.Panel>
               ))}
-            </div>
+            </Accordion>
           </div>
 
           <div className="last-post">
