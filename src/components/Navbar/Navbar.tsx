@@ -56,7 +56,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
         <div
           className={`bg-white absolute ${
             menu ? 'left-[0px]' : 'left-[-800px]'
-          } md:static transition-all ease-in duration-150 md:opacity-100 flex flex-col md:flex-row md:items-center z-10 md:z-auto text-primary md:text-white md:rounded-full md:bg-primary md:space-x-4 md:self-center md:border-[1px] md:border-secondary md:px-2 top-[80px] h-screen md:h-auto w-3/4 md:w-auto space-y-4 md:space-y-0`}
+          } md:static transition-all ease-in duration-150 md:opacity-100 flex flex-col md:flex-row md:items-center z-10 md:z-auto text-black md:rounded-full md:bg-primary md:space-x-4 md:self-center md:px-2 top-[80px] h-screen md:h-auto w-3/4 md:w-auto space-y-4 md:space-y-0`}
         >
           {menuItems.map(
             (item, index) =>
@@ -71,7 +71,10 @@ const Navbar: React.FC<NavbarInterface> = () => {
               )
           )}
         </div>
-        <Button className="hidden md:inline" text="Log in" type="primary">
+        <Button
+          className="hidden md:inline bg-primary text-black border-none font-normal"
+          text="Log in"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -88,9 +91,9 @@ const Navbar: React.FC<NavbarInterface> = () => {
           </svg>
         </Button>
         <Button
-          text="Descargas"
+          text="Reclama tu activo"
+          className="hidden md:inline font-normal"
           type="secondary"
-          className="hidden md:inline"
         />
       </nav>
     </header>
