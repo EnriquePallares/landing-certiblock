@@ -10,9 +10,10 @@ const AppRoutes: React.FC<AppRoutesInterface> = () => {
     <Routes>
       <Route element={<Layout/>} >
         <Route path="/" element={<Home/>} />
+      </Route>
+      <Route element={<Layout imagelessFooter={true}/>} >
         <Route path="/login" element={<Login/>} />
       </Route>
-      <Route path="/login" element={<></>} />
     </Routes>
   );
 };

@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import AppRoutes from "./routes/Routes/AppRoutes";
 import './assets/css/app.css'
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -9,9 +9,9 @@ library.add()
 
 function App() {
   return (
-    <BrowserRouter basename="/landing-certiblock">
+    <HashRouter>
       <AppRoutes />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

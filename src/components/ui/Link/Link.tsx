@@ -1,10 +1,11 @@
 import React, { ReactNode } from 'react';
-export interface ButtonInterface {
+import { Link } from 'react-router-dom';
+export interface LinkInterface {
   text: string;
   type?: string;
   children?: ReactNode;
   className?: string;
-  onClick?: FunctionConstructor
+  to: string;
 }
 
 const styleType = new Map();
@@ -14,9 +15,10 @@ styleType.set('secondary', 'bg-secondary border-secondary text-white');
 styleType.set('dark', 'bg-dark-gray border-secondary text-white text-primary');
 styleType.set('ligth', 'bg-white text-primary');
 
-const Button: React.FC<ButtonInterface> = props => {
+const CustomLink: React.FC<LinkInterface> = props => {
   return (
-    <button
+    <Link
+      to={props.to}
       className={`py-2 px-4 rounded-full text-base ${
         props.className
       } ${styleType.get(props.type || 'primary')}`}
@@ -25,8 +27,8 @@ const Button: React.FC<ButtonInterface> = props => {
         <span>{props.text}</span>
         {props.children}
       </div>
-    </button>
+    </Link>
   );
 };
 
-export default Button;
+export default CustomLink;
