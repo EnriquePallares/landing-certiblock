@@ -22,7 +22,7 @@ const InfoBanner: React.FC<InfoBannerInterface> = () => {
               Certificamos <br /> desde el origen
             </h4>
 
-            <p className="paragraph text-dark-blue-0 text-2xl leading-none font-light">
+            <p className="paragraph text-2xl leading-none font-light">
               <span className="font-semibold">Certiblock</span> Lorem ipsum
               dolor sit amet, consectetur adipiscing quis nostrud exercitation
               ullamco laboris nisi

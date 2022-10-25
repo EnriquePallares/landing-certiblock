@@ -7,6 +7,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { SectorWorks } from '../SectorWorks';
+import floatIcon from '@/assets/images/float-footer-icon.svg';
 export interface FooterInterface {}
 
 const column2 = ['Compañía', 'Acerca de nosotros', 'Comunidad', 'Partners'];
@@ -16,7 +17,7 @@ const inconsRow = [faFacebook, faInstagram, faTiktok];
 
 const Footer: React.FC<FooterInterface> = () => {
   return (
-    <footer className="bg-blue-green text-white rounded-t-[4.5rem] py-20">
+    <footer className="relative bg-blue-green text-white rounded-t-[4.5rem] py-20">
       <div className="container mx-auto">
         <div className="flex w-full justify-between items-start">
           <div className="flex flex-col space-y-3 columns-4 w-2/5">
@@ -66,6 +67,12 @@ const Footer: React.FC<FooterInterface> = () => {
           <SectorWorks />
         </div>
       </div>
+
+      <img
+        src={floatIcon}
+        alt="Float icon"
+        className="absolute -left-32 -bottom-40"
+      />
     </footer>
   );
 };
