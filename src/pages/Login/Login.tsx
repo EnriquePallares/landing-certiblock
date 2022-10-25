@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import bannerBackground from '@/assets/images/bg-mainBanner.png';
+import bannerBackground from '@/assets/images/bg-login.png';
 import { Button } from '@/components';
 export interface LoginInterface {}
 

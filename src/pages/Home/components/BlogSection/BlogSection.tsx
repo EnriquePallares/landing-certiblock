@@ -77,14 +77,18 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
                   </Accordion.Title>
                   <Accordion.Content className="bg-white text-current">
                     <p className="my-4 font-light">{post.content}</p>
-                    <Link className='underline' to={post.link}>Ver más <FontAwesomeIcon icon={faArrowRight} /></Link>
+                    <Link className="underline" to={post.link}>
+                      Ver más <FontAwesomeIcon icon={faArrowRight} />
+                    </Link>
                   </Accordion.Content>
                 </Accordion.Panel>
               ))}
             </Accordion>
           </div>
 
-          <div className="last-post relative col-span-3 bg-[url('src/assets/images/post-image.png')] bg-center bg-no-repeat bg-cover rounded-r-xl bg-image-opacity z-10">
+          <div
+            className={`last-post relative col-span-3 bg-[url('@/assets/images/post-image.png')] bg-center bg-no-repeat bg-cover rounded-r-xl bg-image-opacity z-10`}
+          >
             <div className="w-1/2 ml-auto my-5 mr-20">
               <h4 className="text-2xl mb-8">Última publicación</h4>
               <LastPost />
