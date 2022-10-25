@@ -53,7 +53,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
               Aprende con nosotros <br />
               sobre Web 3.0
             </h4>
-            <h4 className="text-xl">
+            <h4 className="text-xl text-dark-blue-0">
               Inscríbete a nuestro <br />
               news letter
             </h4>
@@ -72,12 +72,12 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
             <Accordion className="text-dark-blue-4">
               {posts.map((post, index) => (
                 <Accordion.Panel key={index}>
-                  <Accordion.Title className="bg-white hover:bg-primary text-current">
+                  <Accordion.Title className="bg-white hover:bg-primary text-current text-2xl">
                     {post.title}
                   </Accordion.Title>
                   <Accordion.Content className="bg-white text-current">
-                    <p className="my-4">{post.content}</p>
-                    <Link to={post.link}>Ver más</Link>
+                    <p className="my-4 font-light">{post.content}</p>
+                    <Link className='underline' to={post.link}>Ver más <FontAwesomeIcon icon={faArrowRight} /></Link>
                   </Accordion.Content>
                 </Accordion.Panel>
               ))}
