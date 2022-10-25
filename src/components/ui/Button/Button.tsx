@@ -8,8 +8,9 @@ export interface ButtonInterface {
 
 const styleType = new Map();
 
-styleType.set('primary', 'bg-primary border-secondary text-white');
+styleType.set('primary', 'bg-primary border-secondary text-dark-gray');
 styleType.set('secondary', 'bg-secondary border-secondary text-white');
+styleType.set('dark', 'bg-dark-gray border-secondary text-white text-primary');
 styleType.set('ligth', 'bg-white text-primary');
 
 const Button: React.FC<ButtonInterface> = props => {
@@ -17,7 +18,7 @@ const Button: React.FC<ButtonInterface> = props => {
     <button
       className={`py-2 px-4 rounded-full text-base ${
         props.className
-      } ${styleType.get(props.type)}`}
+      } ${styleType.get(props.type || 'primary')}`}
     >
       <div className="flex space-x-1">
         <span>{props.text}</span>

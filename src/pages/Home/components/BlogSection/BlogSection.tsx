@@ -38,7 +38,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
   return (
     <section
       id="blog-section"
-      className="relative bg-dark-gray rounded-t-[4.5rem] extend-bg-color"
+      className="relative bg-light-gray rounded-t-[4.5rem] extend-bg-color"
     >
       <div className="container mx-auto relative p-20">
         <img
