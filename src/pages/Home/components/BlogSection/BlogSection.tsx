@@ -40,7 +40,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
       id="blog-section"
       className="relative bg-light-gray rounded-t-[4.5rem] extend-bg-color"
     >
-      <div className="container mx-auto relative p-20">
+      <div className="container mx-auto relative py-20">
         <img
           src={floatIcon}
           alt="Float icon"
@@ -85,7 +85,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
           </div>
 
           <div className="last-post relative col-span-3 bg-[url('src/assets/images/post-image.png')] bg-center bg-no-repeat bg-cover rounded-r-xl bg-image-opacity z-10">
-            <div className="w-1/2 ml-auto my-10 mr-20">
+            <div className="w-1/2 ml-auto my-5 mr-20">
               <h4 className="text-2xl mb-8">Última publicación</h4>
               <LastPost />
             </div>

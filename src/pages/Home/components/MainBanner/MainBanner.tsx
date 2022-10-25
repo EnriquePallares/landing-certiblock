@@ -7,9 +7,13 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
   return (
     <section className="main-banner relative bg-dark-blue-0 extend-bg-color">
       <img src={bannerBackground} alt="Main banner" />
-      <p className="text-4xl md:text-8xl text-secondary font-black absolute vertical-alignment-abs">
-        Por qué tener <br />a <span className="text-white">Certiblock</span>
-        <Button text="SABER MÁS" type="primary" className="px-16 py-4 ml-10 text-black font-normal">
+      <div className="text-4xl md:text-8xl text-secondary font-black absolute vertical-alignment-abs">
+        Por qué tener a <span className="text-white">Certiblock</span>
+        <Button
+          text="SABER MÁS"
+          type="primary"
+          className="px-16 py-5 ml-10 font-normal self-end"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -25,7 +29,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
             />
           </svg>
         </Button>
-      </p>
+      </div>
     </section>
   );
 };
