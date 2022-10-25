@@ -1,8 +1,6 @@
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Accordion } from 'flowbite-react';
-import { AccordionPanel } from 'flowbite-react/lib/esm/components/Accordion/AccordionPanel';
-import { AccordionTitle } from 'flowbite-react/lib/esm/components/Accordion/AccordionTitle';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LastPost from './LastPost/LastPost';
@@ -39,15 +37,30 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
   return (
     <section
       id="blog-section"
-      className="relative bg-dark-blue-1 rounded-t-[4.5rem] extend-bg-color"
+      className="relative bg-light-gray rounded-t-[4.5rem] extend-bg-color"
     >
       <div className="container mx-auto p-20">
-        <div className="grid grid-cols-2 gap-20 font-medium">
+        <div className="grid grid-cols-2 gap-5 font-medium">
           <div className="list-posts">
-            <h4 className="text-2xl mb-12">
+            <h4 className="text-2xl my-4">
               Aprende con nosotros <br />
               sobre Web 3.0
             </h4>
+            <h4 className="text-xl">
+              Inscríbete a nuestro <br />
+              news letter
+            </h4>
+            <div className="flex flex-row space-x-4 my-6">
+              <input
+                type="email"
+                placeholder="Email"
+                className="appearance-none bg-gray-200 text-gray-700 rounded-[22px] px-4 py-4 leading-tight focus:outline-none focus:bg-white font-light w-2/3 border-none"
+              />
+              <button className="bg-primary px-4 text-dark-blue-0 font-light rounded-[22px] space-x-5  py-3">
+                <span>Enviar</span>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </button>
+            </div>
 
             <Accordion alwaysOpen={true} className="bg-primary">
               {posts.map((post, index) => (

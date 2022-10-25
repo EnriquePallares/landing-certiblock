@@ -10,6 +10,9 @@ module.exports = {
         'dark-blue-1': '#2C3E7B',
         'dark-blue-2': '#1A2C6C',
         'dark-blue-3': '#01162B',
+        'dark-gray': '#1C1F21',
+        'light-gray': '#999899',
+        'blue-green': '#0A3B4A'
       },
       fontFamily: {
         sans: ['Gotham, sans-serif'],
