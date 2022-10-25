@@ -4,6 +4,7 @@ import { Accordion } from 'flowbite-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LastPost from './LastPost/LastPost';
+import floatIcon from '@/assets/images/float-blog-icon.svg';
 export interface BlogSectionInterface {}
 
 const posts = [
@@ -37,12 +38,18 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
   return (
     <section
       id="blog-section"
-      className="relative bg-light-gray rounded-t-[4.5rem] extend-bg-color"
+      className="relative bg-dark-gray rounded-t-[4.5rem] extend-bg-color"
     >
-      <div className="container mx-auto p-20">
-        <div className="grid grid-cols-2 gap-5 font-medium">
-          <div className="list-posts">
-            <h4 className="text-2xl my-4">
+      <div className="container mx-auto relative p-20">
+        <img
+          src={floatIcon}
+          alt="Float icon"
+          className="absolute left-0 -top-12"
+        />
+
+        <div className="grid grid-cols-5 gap-4 font-medium">
+          <div className="list-posts col-span-2">
+            <h4 className="text-2xl mb-8">
               Aprende con nosotros <br />
               sobre Web 3.0
             </h4>
@@ -62,11 +69,13 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
               </button>
             </div>
 
-            <Accordion alwaysOpen={true} className="bg-primary">
+            <Accordion className="text-dark-blue-4">
               {posts.map((post, index) => (
                 <Accordion.Panel key={index}>
-                  <Accordion.Title>{post.title}</Accordion.Title>
-                  <Accordion.Content>
+                  <Accordion.Title className="bg-white hover:bg-primary text-current">
+                    {post.title}
+                  </Accordion.Title>
+                  <Accordion.Content className="bg-white text-current">
                     <p className="my-4">{post.content}</p>
                     <Link to={post.link}>Ver más</Link>
                   </Accordion.Content>
@@ -75,9 +84,11 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
             </Accordion>
           </div>
 
-          <div className="last-post">
-            <h4 className="text-2xl mb-12">Último post</h4>
-            <LastPost />
+          <div className="last-post relative col-span-3 bg-[url('src/assets/images/post-image.png')] bg-center bg-no-repeat bg-cover rounded-r-xl bg-image-opacity z-10">
+            <div className="w-1/2 ml-auto my-10 mr-20">
+              <h4 className="text-2xl mb-8">Última publicación</h4>
+              <LastPost />
+            </div>
           </div>
         </div>
       </div>

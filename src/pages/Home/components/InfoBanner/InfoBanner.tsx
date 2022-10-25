@@ -1,5 +1,6 @@
 import React from 'react';
 import infoImage from '@//assets/images/banner-info-image.png';
+import floatIcon from '@/assets/images/float-bannerInfo-icon.svg';
 export interface InfoBannerInterface {}
 
 const InfoBanner: React.FC<InfoBannerInterface> = () => {
@@ -8,12 +9,17 @@ const InfoBanner: React.FC<InfoBannerInterface> = () => {
       id="info-banner"
       className="relative bg-primary rounded-t-[4.5rem] extend-bg-color"
     >
-      <div className="container mx-auto py-20">
-        <div className="grid grid-cols-2 gap-10 font-medium">
-          <div className="text-section bg-white rounded-[25px] container py-20 px-10">
-            <h4 className="text-5xl mb-12 text-dark-blue-0">
-              Certificamos <br />
-              desde el origen
+      <div className="container mx-auto relative p-20">
+        <img
+          src={floatIcon}
+          alt="Float icon"
+          className="absolute right-0 -top-14"
+        />
+
+        <div className="grid grid-cols-2 gap-20 font-medium">
+          <div className="bg-white text-dark-blue-4 rounded-3xl py-12 px-6 text-section">
+            <h4 className="text-4xl mb-8">
+              Certificamos <br /> desde el origen
             </h4>
 
             <p className="paragraph text-dark-blue-0 text-2xl leading-none font-light">

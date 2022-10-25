@@ -15,7 +15,7 @@ styleType.set('ligth', 'bg-white text-primary');
 const Button: React.FC<ButtonInterface> = props => {
   return (
     <button
-      className={`font-medium py-2 px-4 rounded-full border text-base ${
+      className={`py-2 px-4 rounded-full text-base ${
         props.className
       } ${styleType.get(props.type)}`}
     >

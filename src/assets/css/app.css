@@ -15,11 +15,19 @@
 }
 
 .extend-bg-color::after {
-  position: absolute;
+  @apply absolute;
+  @apply bg-inherit;
+  @apply inset-x-0;
+  @apply h-24;
   content: "";
-  left: 0;
-  right: 0;
-  height: 100px;
-  background-color: inherit;
+  z-index: -1;
+}
+
+.bg-image-opacity::after {
+  @apply absolute;
+  @apply inset-0;
+  @apply rounded-r-xl;
+  background-color: rgba(153, 152, 153, 0.5);
+  content: "";
   z-index: -1;
 }
