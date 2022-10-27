@@ -7,7 +7,7 @@ export interface LayoutInterface {
   imagelessFooter?: boolean;
 }
 
-const Layout: React.FC<LayoutInterface> = (props) => {
+const Layout = (props: LayoutInterface) => {
   return (
     <div className="text-white">
       <Navbar />
