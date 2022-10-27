@@ -6,7 +6,7 @@ export interface MainBannerInterface {}
 const MainBanner: React.FC<MainBannerInterface> = () => {
   return (
     <section className="main-banner relative bg-dark-blue-0 extend-bg-color">
-      <img src={bannerBackground} alt="Main banner" />
+      <img src={bannerBackground} alt="Main banner" className='aspect-video' />
       <div className="text-4xl md:text-8xl text-secondary font-black absolute vertical-alignment-abs">
         Por qué tener a <span className="text-white">Certiblock</span>
         <Button

@@ -40,7 +40,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
       id="blog-section"
       className="relative bg-light-gray rounded-t-[4.5rem] extend-bg-color"
     >
-      <div className="container mx-auto relative py-20">
+      <div className="container mx-auto relative py-20 px-3">
         <img
           src={floatIcon}
           alt="Float icon"

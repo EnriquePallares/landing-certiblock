@@ -16,8 +16,8 @@ const inconsRow = [faFacebook, faInstagram, faTiktok];
 
 const FooterImageless: React.FC<FooterInterface> = () => {
   return (
-    <footer className="bg-blue-green text-white rounded-t-[4.5rem] p-20">
-      <div className="container mx-auto">
+    <footer className="bg-blue-green text-white rounded-t-[4.5rem]">
+      <div className="container mx-auto py-20 px-3">
         <div className="flex w-full justify-between items-start">
           <div className="flex flex-col space-y-3 columns-4 w-2/5">
             <label className="font-light text-5xl" htmlFor="">

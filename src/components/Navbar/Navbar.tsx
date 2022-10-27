@@ -18,6 +18,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
     {
       text: 'Quiénes somos',
       display: true,
+      link: '/about-us',
     },
     {
       text: 'Servicios',
@@ -39,7 +40,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
   ];
 
   return (
-    <header className="container mx-auto absolute top-0 left-[-25px] right-0 z-50">
+    <header className="container mx-auto absolute top-0 left-[-25px] right-0 z-50 px-3">
       <nav
         className={`md:p-5 md:flex md:justify-center md:items-center md:space-x-10 w-full left-0 md:bg-transparent p-8 transition-all ease-in duration-100`}
       >

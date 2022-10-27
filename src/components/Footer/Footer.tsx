@@ -17,8 +17,8 @@ const inconsRow = [faFacebook, faInstagram, faTiktok];
 
 const Footer: React.FC<FooterInterface> = () => {
   return (
-    <footer className="relative overflow-hidden bg-blue-green text-white rounded-t-[4.5rem] py-20">
-      <div className="container mx-auto">
+    <footer className="relative overflow-hidden bg-blue-green text-white rounded-t-[4.5rem] z-10">
+      <div className="container mx-auto py-20 px-3">
         <div className="flex w-full justify-between items-start">
           <div className="flex flex-col space-y-3 columns-4 w-2/5">
             <label className="font-light text-5xl" htmlFor="">
@@ -71,7 +71,7 @@ const Footer: React.FC<FooterInterface> = () => {
       <img
         src={floatIcon}
         alt="Float icon"
-        className="absolute -left-32 -bottom-40"
+        className="absolute -left-32 -bottom-40 -z-10"
       />
     </footer>
   );
