@@ -8,8 +8,8 @@ const Login: React.FC<LoginInterface> = () => {
   const password = useRef();
 
   return (
-    <section className="main-banner relative bg-dark-blue-0 extend-bg-color">
-      <img src={bannerBackground} alt="Main banner" />
+    <section id='login-page' className="main-banner relative bg-dark-blue-0 extend-bg-color">
+      <img src={bannerBackground} alt="Main banner" className='aspect-video' />
       <div className="absolute vertical-alignment-abs w-2/5">
         <h3 className="text-6xl text-primary text-center font-bold my-8">
           Inicio de sesión

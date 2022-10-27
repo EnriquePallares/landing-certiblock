@@ -1,5 +1,5 @@
 import bannerBackground from '@/assets/images/bg-login.png';
-import { Button, Link } from '@/components';
+import { Button } from '@/components';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 export interface RegisterInterface {}
@@ -14,8 +14,11 @@ const Register = (props: RegisterInterface) => {
   const isNaturalPerson = (): boolean => typePerson == 'person';
 
   return (
-    <section className="main-banner relative bg-dark-blue-0 extend-bg-color">
-      <img src={bannerBackground} alt="Main banner" />
+    <section
+      id="register-page"
+      className="main-banner relative bg-dark-blue-0 extend-bg-color"
+    >
+      <img src={bannerBackground} alt="Main banner" className="aspect-video" />
       <div className="absolute vertical-alignment-abs w-2/5 py-14 px-4">
         <h3 className="text-6xl text-primary text-center font-bold my-8">
           Registro
@@ -26,12 +29,16 @@ const Register = (props: RegisterInterface) => {
             <Button
               type={isNaturalPerson() ? 'dark' : 'ligth-text-black'}
               text="PERSONA"
-			  className={`w-full text-2xl font-light ${isNaturalPerson() && 'border border-primary'}`}
+              className={`w-full text-2xl font-light ${
+                isNaturalPerson() && 'border border-primary'
+              }`}
               onClick={() => handdleTypePerson('person')}
-			  ></Button>
+            ></Button>
             <Button
               type={!isNaturalPerson() ? 'dark' : 'ligth-text-black'}
-			  className={`w-full text-2xl font-light ${!isNaturalPerson() && 'border border-primary'}`}
+              className={`w-full text-2xl font-light ${
+                !isNaturalPerson() && 'border border-primary'
+              }`}
               text="EMPRESA"
               onClick={() => handdleTypePerson('company')}
             ></Button>

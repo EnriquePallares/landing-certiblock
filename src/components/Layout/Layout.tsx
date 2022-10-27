@@ -9,7 +9,7 @@ export interface LayoutInterface {
 
 const Layout = (props: LayoutInterface) => {
   return (
-    <div className="text-white">
+    <div className="layout text-white">
       <Navbar />
       <Outlet />
       {
