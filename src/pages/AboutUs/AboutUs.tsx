@@ -1,6 +1,9 @@
 import MainBannerReusable from '@/components/MainBannerReusable/MainBannerReusable';
 import React, { FunctionComponent, ReactNode } from 'react';
 import bannerBackground from '@/assets/images/bg-aboutUs.png';
+import CompaniesWithWeWork from './components/CompaniesWithWeWork/CompaniesWithWeWork';
+import RegisterYourCompany from './components/RegisterYourCompany/RegisterYourCompany';
+import OurTeam from './components/OurTeam/OurTeam';
 export interface AboutUsInterface {}
 
 const AboutUs: React.FC<AboutUsInterface> = () => {
@@ -21,6 +24,14 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
     </svg>
   );
 
+  const paragraph: ReactNode = (
+    <p>
+      Somos una empresa colombiana que se dedica a la certificación de archivos
+      y documentos, tanto digitales como físicos, mediante validación basada en{' '}
+      <span className="underline">Blockchain</span>
+    </p>
+  );
+
   return (
     <section id="about-us-page">
       <MainBannerReusable
@@ -29,7 +40,7 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
         highlightedWord="Somos"
         classTitle="text-white text-center"
         classHighWord="text-primary strokes-font"
-        paragraph="Somos una empresa colombiana que se dedica a la certificación de archivos y documentos, tanto digitales como físicos, mediante validación basada en Blockchain"
+        paragraph={paragraph}
         link={{
           text: 'SABER MÁS',
           to: '#',
@@ -37,6 +48,9 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
           children: arrowLink,
         }}
       />
+      <CompaniesWithWeWork />
+      <RegisterYourCompany />
+      <OurTeam />
     </section>
   );
 };

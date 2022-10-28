@@ -15,8 +15,6 @@ const AppRoutes = (props: AppRoutesInterface) => {
       <Route element={<Layout imagelessFooter={true} />}>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-      </Route>
-      <Route element={<Layout />}>
         <Route path="/about-us" element={<AboutUs />} />
       </Route>
     </Routes>
