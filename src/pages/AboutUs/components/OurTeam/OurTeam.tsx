@@ -1,15 +1,29 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React, { createRef } from 'react';
+import Slider, { Settings } from 'react-slick';
 import member1 from '@/assets/images/member-1.png';
 import member2 from '@/assets/images/member-2.png';
 import member3 from '@/assets/images/member-3.png';
 import member4 from '@/assets/images/member-4.png';
 import CustomLink from '@/components/ui/Link/Link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowLeftLong,
+  faArrowRight,
+  faArrowRightLong,
+} from '@fortawesome/free-solid-svg-icons';
+import floatIcon from '@/assets/images/float-icon-our-team.svg';
 export interface OurTeamInterface {}
 
 const OurTeam: React.FC<OurTeamInterface> = () => {
+  const customSlider = createRef<Slider>();
+
+  const next = () => {
+    customSlider?.current?.slickNext();
+  };
+  const previous = () => {
+    customSlider?.current?.slickPrev();
+  };
+
   const members = [
     {
       name: 'Rick Sanchez',
@@ -41,7 +55,8 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
     },
   ];
 
-  const sliderSettings = {
+  const sliderSettings: Settings = {
+    arrows: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -52,12 +67,18 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
       id="our-team"
       className="bg-primary rounded-t-[4.5rem] extend-bg-color"
     >
-      <div className="container mx-auto py-20 px-4">
+      <div className="container mx-auto relative py-20 px-4">
         <h3 className="text-4xl font-medium text-dark-gray mb-8">
           Conoce nuestro equipo
         </h3>
 
-        <Slider {...sliderSettings}>
+        <img
+          src={floatIcon}
+          alt="Float icon"
+          className="absolute -left-5 bottom-60"
+        />
+
+        <Slider {...sliderSettings} ref={customSlider}>
           {members.map((member: any, index: number) => (
             <div key={index}>
               <div className="bg-white text-dark-blue-4 rounded-3xl p-8 mx-3">
@@ -92,6 +113,22 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
             </div>
           ))}
         </Slider>
+        <div className="flex justify-end m-3 gap-2">
+          <FontAwesomeIcon
+            role="button"
+            icon={faArrowLeftLong}
+            size="lg"
+            className="bg-white text-black rounded-full p-4"
+            onClick={previous}
+          />
+          <FontAwesomeIcon
+            role="button"
+            icon={faArrowRightLong}
+            size="lg"
+            className="bg-white text-black rounded-full p-4"
+            onClick={next}
+          />
+        </div>
       </div>
     </section>
   );

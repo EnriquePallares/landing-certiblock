@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from 'react-slick';
+import Slider, { Settings } from 'react-slick';
 export interface CompaniesWithWeWorkInterface {}
 
 const CompaniesWithWeWork: React.FC<CompaniesWithWeWorkInterface> = () => {
@@ -10,7 +10,7 @@ const CompaniesWithWeWork: React.FC<CompaniesWithWeWorkInterface> = () => {
     'Hospital General de Springfield',
     'Notaría 15',
   ];
-  const sliderSettings = {
+  const sliderSettings: Settings = {
     autoplay: true,
     arrows: false,
     infinite: true,
