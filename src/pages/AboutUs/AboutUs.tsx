@@ -4,6 +4,7 @@ import bannerBackground from '@/assets/images/bg-aboutUs.png';
 import CompaniesWithWeWork from './components/CompaniesWithWeWork/CompaniesWithWeWork';
 import RegisterYourCompany from './components/RegisterYourCompany/RegisterYourCompany';
 import OurTeam from './components/OurTeam/OurTeam';
+import TheValues from './components/TheValues/TheValues';
 export interface AboutUsInterface {}
 
 const AboutUs: React.FC<AboutUsInterface> = () => {
@@ -51,6 +52,7 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
       <CompaniesWithWeWork />
       <RegisterYourCompany />
       <OurTeam />
+      <TheValues />
     </section>
   );
 };
