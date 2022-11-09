@@ -6,9 +6,9 @@ const RegisterYourCompany: React.FC<RegisterYourCompanyInterface> = () => {
   return (
     <section
       id="register-your-company"
-      className="bg-blue-green rounded-t-[4.5rem] extend-bg-color"
+      className="bg-blue-green rounded-t-3xl md:rounded-t-[4.5rem] extend-bg-color"
     >
-      <div className="container mx-auto py-20 px-4 text-white">
+      <div className="container mx-auto py-14 md:py-20 px-4 text-white">
         <h3 className="text-4xl font-medium mb-4">Registra tu empresa</h3>
         <p className="text-xl font-light mb-8">
           Si te interesa certificar documentos desde el origen y generar

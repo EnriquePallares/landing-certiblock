@@ -60,14 +60,23 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <section
       id="our-team"
-      className="bg-primary rounded-t-[4.5rem] extend-bg-color"
+      className="bg-primary rounded-t-3xl md:rounded-t-[4.5rem] extend-bg-color"
     >
-      <div className="container mx-auto relative py-20 px-4">
+      <div className="container mx-auto relative py-14 md:py-20 px-4">
         <h3 className="text-4xl font-medium text-dark-gray mb-8">
           Conoce nuestro equipo
         </h3>
@@ -75,13 +84,13 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
         <img
           src={floatIcon}
           alt="Float icon"
-          className="absolute -left-5 bottom-60"
+          className="hidden md:block absolute -left-5 bottom-60"
         />
 
         <Slider {...sliderSettings} ref={customSlider}>
           {members.map((member: any, index: number) => (
             <div key={index}>
-              <div className="bg-white text-dark-blue-4 rounded-3xl p-8 mx-3">
+              <div className="bg-white text-dark-blue-4 rounded-3xl p-8 md:mx-3">
                 <div className="rounded-3xl">
                   <div className="flex flex-row justify-between items-center">
                     <span className="flex items-center">

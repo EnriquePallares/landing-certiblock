@@ -1,6 +1,7 @@
 import MainBannerReusable from '@/components/MainBannerReusable/MainBannerReusable';
-import React, { FunctionComponent, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import bannerBackground from '@/assets/images/bg-aboutUs.png';
+import bannerBackgroundMobile from '@/assets/images/bg-aboutUs-mobile.png';
 import CompaniesWithWeWork from './components/CompaniesWithWeWork/CompaniesWithWeWork';
 import RegisterYourCompany from './components/RegisterYourCompany/RegisterYourCompany';
 import OurTeam from './components/OurTeam/OurTeam';
@@ -37,6 +38,7 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
     <section id="about-us-page">
       <MainBannerReusable
         bannerBackground={bannerBackground}
+        bannerBackgroundMobile={bannerBackgroundMobile}
         title="Quiénes"
         highlightedWord="Somos"
         classTitle="text-white text-center"
