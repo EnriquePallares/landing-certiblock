@@ -12,7 +12,7 @@ const ContactForm = (props: ContactFormInterface) => {
   return (
     <section
       id="info-banner"
-      className="relative bg-light-gray rounded-t-[4.5rem] extend-bg-color"
+      className="md:relative bg-light-gray rounded-t-[4.5rem] extend-bg-color hidden"
     >
       <div className="container mx-auto py-20 px-3">
         <div className="grid grid-cols-4 gap-4">

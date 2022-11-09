@@ -24,7 +24,7 @@ const Button: React.FC<ButtonInterface> = props => {
         props.type || 'primary'
       )} ${props.className}`}
     >
-      <div className="flex space-x-1 justify-center">
+      <div className="flex space-x-1 justify-center items-center">
         <span>{props.text}</span>
         {props.children}
       </div>

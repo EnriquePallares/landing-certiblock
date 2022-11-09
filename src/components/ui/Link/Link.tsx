@@ -23,7 +23,7 @@ const CustomLink: React.FC<LinkInterface> = props => {
         props.className
       } ${styleType.get(props.type || 'primary')}`}
     >
-      <div className="flex space-x-1 items-center">
+      <div className="flex space-x-1 items-center justify-center">
         <span>{props.text}</span>
         {props.children}
       </div>
