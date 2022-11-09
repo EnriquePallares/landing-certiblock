@@ -17,63 +17,69 @@ const inconsRow = [faFacebook, faInstagram, faTiktok];
 
 const Footer: React.FC<FooterInterface> = () => {
   return (
-    <footer className="relative overflow-hidden bg-blue-green text-white rounded-t-[4.5rem] z-10">
-      <div className="container mx-auto py-20 px-3">
-        <div className="flex w-full justify-between items-start">
-          <div className="flex flex-col space-y-3 columns-4 w-2/5">
-            <label className="font-light text-5xl" htmlFor="">
-              Suscríbete
-            </label>
-            <div className="flex flex-row space-x-4 my-6">
-              <input
-                type="email"
-                placeholder="Email"
-                className="appearance-none bg-gray-200 text-gray-700 rounded-xl px-4 py-4 leading-tight focus:outline-none focus:bg-white font-light w-2/3 border-none"
-              />
-              <button className="bg-primary px-4 text-dark-blue-0 font-light rounded-xl space-x-5  py-3">
-                <span>Enviar</span>
-                <FontAwesomeIcon icon={faArrowRight} />
-              </button>
+    <>
+      <div className="relative bg-primary md:bg-blue-green text-white rounded-t-[4.5rem] extend-bg-color z-10">
+        <div className="container mx-auto py-20 px-3">
+          <div className="flex w-full justify-between items-start flex-wrap space-y-4">
+            <div className="flex flex-col space-y-3 w-full md:w-2/5 ">
+              <label
+                className="font-light md:text-5xl text-blue-green md:text-white"
+                htmlFor=""
+              >
+                Suscríbete
+              </label>
+              <div className="flex flex-row space-x-4 my-6">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="appearance-none bg-gray-200 text-gray-700 rounded-xl md:px-4 md:py-4 leading-tight focus:outline-none focus:bg-white font-light w-2/3 border-none"
+                />
+                <button className="bg-primary px-4 text-dark-blue-0 font-light rounded-xl space-x-5  py-3">
+                  <span>Enviar</span>
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </button>
+              </div>
+            </div>
+            <div className="text-blue-green md:text-white">
+              <ul className="space-y-2">
+                {column2.map((item, index) => (
+                  <li key={index} className="">
+                    <span className="px-4">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="text-blue-green md:text-white">
+              <ul className="space-y-2">
+                {column3.map((item, index) => (
+                  <li key={index} className="">
+                    <span className="px-4">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="hidden md:flex md:flex-col space-y-4">
+              {inconsRow.map((item, index) => (
+                <FontAwesomeIcon key={index} icon={item} fontSize="26" />
+              ))}
             </div>
           </div>
-          <div>
-            <ul className="space-y-2">
-              {column2.map((item, index) => (
-                <li key={index} className="">
-                  <span className="px-4">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <ul className="space-y-2">
-              {column3.map((item, index) => (
-                <li key={index} className="">
-                  <span className="px-4">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex flex-col space-y-4">
-            {inconsRow.map((item, index) => (
-              <FontAwesomeIcon key={index} icon={item} fontSize="26" />
-            ))}
-          </div>
         </div>
-        <div className="container mx-auto mt-14">
-          <h2 className="text-5xl my-6 font-medium">
+      </div>
+      <div className="relative bg-blue-green text-white rounded-t-[4.5rem] z-10 overflow-hidden">
+        <div className="container mx-auto py-14">
+          <h2 className="hidden md:inline-block md:text-5xl my-6 font-medium">
             Sectores con <br /> los que trabajamos
           </h2>
           <SectorWorks />
         </div>
+        <img
+          src={floatIcon}
+          alt="Float icon"
+          className="hidden md:inline-block md:absolute -left-32 -bottom-40 -z-10"
+        />
       </div>
-
-      <img
-        src={floatIcon}
-        alt="Float icon"
-        className="absolute -left-32 -bottom-40 -z-10"
-      />
-    </footer>
+    </>
   );
 };
 

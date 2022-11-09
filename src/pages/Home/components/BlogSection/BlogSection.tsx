@@ -44,11 +44,11 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
         <img
           src={floatIcon}
           alt="Float icon"
-          className="absolute left-0 -top-12"
+          className="md:inline-block hidden absolute left-0 -top-12"
         />
 
-        <div className="grid grid-cols-5 gap-4 font-medium">
-          <div className="list-posts col-span-2">
+        <div className="grid md:grid-cols-5 grid-cols-1 gap-4 font-medium">
+          <div className="hidden md:grid list-posts col-span-2">
             <h4 className="text-2xl mb-8">
               Aprende con nosotros <br />
               sobre Web 3.0
@@ -87,10 +87,10 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
           </div>
 
           <div
-            className={`last-post relative col-span-3 bg-[url('@/assets/images/post-image.png')] bg-center bg-no-repeat bg-cover rounded-r-xl bg-image-opacity z-10`}
+            className={`last-post relative col-span-3 md:bg-[url('@/assets/images/post-image.png')] bg-center bg-no-repeat bg-cover rounded-r-xl bg-image-opacity z-10`}
           >
-            <div className="w-1/2 ml-auto my-5 mr-20">
-              <h4 className="text-2xl mb-8">Última publicación</h4>
+            <div className="md:w-1/2 ml-auto md:my-5 md:mr-20">
+              <h4 className="text-2xl mb-8">Último post</h4>
               <LastPost />
             </div>
           </div>

@@ -7,17 +7,17 @@ const InfoBanner: React.FC<InfoBannerInterface> = () => {
   return (
     <section
       id="info-banner"
-      className="relative bg-primary rounded-t-[4.5rem] extend-bg-color"
+      className="relative md:bg-primary rounded-t-[4.5rem] bg-light-gray extend-bg-color"
     >
-      <div className="container mx-auto relative py-20 px-3">
+      <div className="container mx-auto relative md:py-20 px-3">
         <img
           src={floatIcon}
           alt="Float icon"
-          className="absolute right-0 -top-14"
+          className="hidden md:inline-block absolute right-0 -top-14"
         />
 
-        <div className="grid grid-cols-2 gap-10 font-medium">
-          <div className="bg-white text-dark-blue-4 rounded-3xl py-12 px-6 text-section">
+        <div className="grid md:grid-cols-2 gap-10 font-medium">
+          <div className="md:bg-white md:text-dark-blue-4 text-white rounded-3xl py-12 px-6 text-section">
             <h4 className="text-4xl mb-8">
               Certificamos <br /> desde el origen
             </h4>
