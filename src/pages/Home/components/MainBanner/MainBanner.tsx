@@ -43,15 +43,17 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-auto md:aspect-video w-full"
+          className="aspect-auto md:aspect-video"
         />
       </picture>
-      <div className="text-4xl md:text-8xl md:text-secondary font-black absolute vertical-alignment-abs">
-        Por qué tener a <span className="text-white">Certiblock</span>
+      <div className="flex flex-wrap w-full md:justify-center text-4xl px-8 md:text-8xl md:text-secondary font-black absolute vertical-alignment-abs">
+        <h3 className="w-full md:w-6/12 flex-[0_0_auto]">
+          Por qué tener a <span className="text-white">Certiblock</span>
+        </h3>
         <Button
           text="SABER MÁS"
           type="primary"
-          className="md:px-16 md:py-5 font-normal self-end hidden md:flex"
+          className="md:px-16 md:py-5 font-normal w-auto flex-[0_0_auto] self-end mb-2 hidden md:inline-block"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +73,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
         <Button
           text="SABER MÁS"
           type="ligth-text-black"
-          className="md:px-16 md:py-5 md:ml-10 font-normal self-end md:hidden"
+          className="md:px-16 md:py-5 md:ml-10 font-normal mt-6 md:hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

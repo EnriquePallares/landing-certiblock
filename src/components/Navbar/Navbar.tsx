@@ -40,10 +40,8 @@ const Navbar: React.FC<NavbarInterface> = () => {
   ];
 
   return (
-    <header className="container mx-auto absolute top-0 left-[-25px] right-0 z-50 px-3">
-      <nav
-        className={`md:p-5 md:flex md:justify-center md:items-center md:space-x-10 w-full left-0 md:bg-transparent p-8 transition-all ease-in duration-100`}
-      >
+    <header className="container mx-auto absolute top-0 right-0 left-0 z-50 px-8">
+      <nav className="md:flex md:justify-center md:items-center md:space-x-10 w-full left-0 md:bg-transparent py-8 transition-all ease-in duration-100">
         <div className="flex flew-row justify-between">
           <a className="self-center" href="/">
             <img src={logo} alt="logo" className="w-1/2" />
