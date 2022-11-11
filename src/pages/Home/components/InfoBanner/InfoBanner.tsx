@@ -7,13 +7,13 @@ const InfoBanner: React.FC<InfoBannerInterface> = () => {
   return (
     <section
       id="info-banner"
-      className="relative md:bg-primary rounded-t-[4.5rem] bg-light-gray extend-bg-color"
+      className="relative md:bg-primary bg-light-gray rounded-t-3xl md:rounded-t-[4.5rem] extend-bg-color"
     >
-      <div className="container mx-auto relative md:py-20 px-3">
+      <div className="container mx-auto relative px-4 md:px-14 py-14 md:py-20">
         <img
           src={floatIcon}
           alt="Float icon"
-          className="hidden md:inline-block absolute right-0 -top-14"
+          className="hidden md:inline-block absolute right-14 -top-14"
         />
 
         <div className="grid md:grid-cols-2 gap-10 font-medium">
