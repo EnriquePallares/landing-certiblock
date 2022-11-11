@@ -1,9 +1,8 @@
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 .strokes-font {
   -webkit-text-fill-color: transparent;
@@ -22,7 +21,7 @@
   @apply bg-inherit;
   @apply inset-x-0;
   @apply h-24;
-  content: "";
+  content: '';
   z-index: -1;
 }
 
@@ -31,6 +30,6 @@
   @apply inset-0;
   @apply rounded-r-xl;
   background-color: rgba(153, 152, 153, 0.5);
-  content: "";
+  content: '';
   z-index: -1;
 }

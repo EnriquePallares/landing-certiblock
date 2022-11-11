@@ -8,10 +8,10 @@ export interface HomeInterface {}
 
 const Home: React.FC<HomeInterface> = () => {
   return (
-    <section id='home-page'>
+    <section id="home-page">
       <MainBanner />
       <ContactForm />
-      <SectorWorksMain/>
+      <SectorWorksMain />
       <BlogSection />
       <InfoBanner />
     </section>

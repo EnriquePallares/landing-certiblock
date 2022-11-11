@@ -12,9 +12,7 @@ const Layout = (props: LayoutInterface) => {
     <div className="layout text-white">
       <Navbar />
       <Outlet />
-      {
-        !props.imagelessFooter ? <Footer /> : <FooterImageless/>
-      }
+      {!props.imagelessFooter ? <Footer /> : <FooterImageless />}
     </div>
   );
 };

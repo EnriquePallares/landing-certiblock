@@ -23,7 +23,7 @@ const MainBannerReusable = ({
   classHighWord,
 }: MainBannerReusableInterface) => {
   return (
-    <section className="main-banner relative bg-dark-blue-0 extend-bg-color">
+    <section className="main-banner extend-bg-color relative bg-dark-blue-0">
       <picture>
         <source media="(min-width: 768px)" srcSet={bannerBackground} />
         <img
@@ -33,10 +33,10 @@ const MainBannerReusable = ({
         />
       </picture>
       <div
-        className={`w-full md:w-auto text-4xl md:text-8xl py-16 px-4 font-black absolute vertical-alignment-abs ${classTitle}`}
+        className={`vertical-alignment-abs absolute w-full py-16 px-4 text-4xl font-black md:w-auto md:text-8xl ${classTitle}`}
       >
         {title} <span className={classHighWord}>{highlightedWord}</span>
-        <div className="rounded-xl p-6 bg-white/95 text-blue-green text-xl font-normal my-6">
+        <div className="my-6 rounded-xl bg-white/95 p-6 text-xl font-normal text-blue-green">
           {paragraph}
         </div>
         <div className="link flex justify-center">

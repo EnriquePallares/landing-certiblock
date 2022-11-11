@@ -40,14 +40,14 @@ const Navbar: React.FC<NavbarInterface> = () => {
   ];
 
   return (
-    <header className="container mx-auto absolute top-0 right-0 left-0 z-50 px-8">
-      <nav className="md:flex md:justify-center md:items-center md:space-x-10 w-full left-0 md:bg-transparent py-8 transition-all ease-in duration-100">
-        <div className="flex flew-row justify-between">
+    <header className="container absolute top-0 right-0 left-0 z-50 mx-auto px-8">
+      <nav className="left-0 w-full py-8 transition-all duration-100 ease-in md:flex md:items-center md:justify-center md:space-x-10 md:bg-transparent">
+        <div className="flew-row flex justify-between">
           <a className="self-center" href="/">
             <img src={logo} alt="logo" className="w-1/2" />
           </a>
           <FontAwesomeIcon
-            className="md:hidden block"
+            className="block md:hidden"
             role={'button'}
             icon={!menu ? faBars : faClose}
             fontSize="24"
@@ -55,9 +55,9 @@ const Navbar: React.FC<NavbarInterface> = () => {
           />
         </div>
         <div
-          className={`bg-white absolute ${
+          className={`absolute bg-white ${
             menu ? 'left-[0px]' : 'left-[-800px]'
-          } md:static transition-all ease-in duration-150 md:opacity-100 flex flex-col md:flex-row md:items-center z-10 md:z-auto text-black md:rounded-full md:bg-primary md:space-x-4 md:self-center md:px-2 top-[80px] h-screen md:h-auto w-3/4 md:w-auto space-y-4 md:space-y-0`}
+          } top-[80px] z-10 flex h-screen w-3/4 flex-col space-y-4 text-black transition-all duration-150 ease-in md:static md:z-auto md:h-auto md:w-auto md:flex-row md:items-center md:space-x-4 md:space-y-0 md:self-center md:rounded-full md:bg-primary md:px-2 md:opacity-100`}
         >
           {menuItems.map(
             (item, index) =>
@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
         </div>
         <CustomLink
           to="/login"
-          className="hidden md:inline bg-primary text-black border-none font-normal"
+          className="hidden border-none bg-primary font-normal text-black md:inline"
           text="Log in"
         >
           <svg
@@ -83,7 +83,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="h-6 w-6"
           >
             <path
               strokeLinecap="round"
@@ -94,7 +94,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
         </CustomLink>
         <Button
           text="Reclama tu activo"
-          className="hidden md:inline font-normal"
+          className="hidden font-normal md:inline"
           type="secondary"
         />
       </nav>

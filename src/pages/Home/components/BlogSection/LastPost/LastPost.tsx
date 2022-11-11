@@ -6,8 +6,8 @@ export interface LastPostInterface {}
 
 const LastPost: React.FC<LastPostInterface> = () => {
   return (
-    <div className="bg-white text-dark-blue-4 rounded-3xl p-8">
-      <CardInstagram image={post1}/>
+    <div className="rounded-3xl bg-white p-8 text-dark-blue-4">
+      <CardInstagram image={post1} />
     </div>
   );
 };

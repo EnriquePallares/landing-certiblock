@@ -74,25 +74,25 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
   return (
     <section
       id="our-team"
-      className="bg-primary rounded-t-3xl md:rounded-t-[4.5rem] extend-bg-color"
+      className="extend-bg-color rounded-t-3xl bg-primary md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto relative py-14 md:py-20 px-4">
-        <h3 className="text-4xl font-medium text-dark-gray mb-8">
+      <div className="container relative mx-auto py-14 px-4 md:py-20">
+        <h3 className="mb-8 text-4xl font-medium text-dark-gray">
           Conoce nuestro equipo
         </h3>
 
         <img
           src={floatIcon}
           alt="Float icon"
-          className="hidden md:block absolute -left-5 bottom-60"
+          className="absolute -left-5 bottom-60 hidden md:block"
         />
 
         <Slider {...sliderSettings} ref={customSlider}>
           {members.map((member: any, index: number) => (
             <div key={index}>
-              <div className="bg-white text-dark-blue-4 rounded-3xl p-8 md:mx-3">
+              <div className="rounded-3xl bg-white p-8 text-dark-blue-4 md:mx-3">
                 <div className="rounded-3xl">
-                  <div className="flex flex-row justify-between items-center">
+                  <div className="flex flex-row items-center justify-between">
                     <span className="flex items-center">
                       <svg height="54" width="54">
                         <circle cx="26" cy="26" r="25" fill="#E4E4E4" />
@@ -104,7 +104,7 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
                     <img
                       src={member.photo}
                       alt={member.name}
-                      className="object-cover w-100 rounded-md"
+                      className="w-100 rounded-md object-cover"
                     />
                   </div>
                   <div>{member.description}</div>
@@ -122,19 +122,19 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
             </div>
           ))}
         </Slider>
-        <div className="flex justify-end m-3 gap-2">
+        <div className="m-3 flex justify-end gap-2">
           <FontAwesomeIcon
             role="button"
             icon={faArrowLeftLong}
             size="lg"
-            className="bg-white text-black rounded-full p-4"
+            className="rounded-full bg-white p-4 text-black"
             onClick={previous}
           />
           <FontAwesomeIcon
             role="button"
             icon={faArrowRightLong}
             size="lg"
-            className="bg-white text-black rounded-full p-4"
+            className="rounded-full bg-white p-4 text-black"
             onClick={next}
           />
         </div>

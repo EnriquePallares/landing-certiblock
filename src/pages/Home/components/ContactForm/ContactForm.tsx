@@ -12,9 +12,9 @@ const ContactForm = (props: ContactFormInterface) => {
   return (
     <section
       id="form-section"
-      className="relative bg-light-gray rounded-t-3xl md:rounded-t-[4.5rem] extend-bg-color"
+      className="extend-bg-color relative rounded-t-3xl bg-light-gray md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto px-4 md:px-14 py-14 md:py-20">
+      <div className="container mx-auto px-4 py-14 md:px-14 md:py-20">
         <div className="grid grid-cols-4 gap-6">
           <div className="text-right text-lg">
             <p>¿Te gusta Certiblock?</p>
@@ -28,13 +28,13 @@ const ContactForm = (props: ContactFormInterface) => {
               type="text"
               ref={fullName}
               placeholder="Nombre y apellidos"
-              className="appearance-none bg-gray-200 text-gray-700 rounded-xl px-4 py-2 leading-tight focus:outline-none focus:bg-white font-light w-full border-none"
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
             <input
               type="email"
               ref={email}
               placeholder="Correo electrónico"
-              className="appearance-none bg-gray-200 text-gray-700 rounded-xl px-4 py-2 leading-tight focus:outline-none focus:bg-white font-light w-full border-none"
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
           </div>
           <div className="space-y-4">
@@ -42,17 +42,17 @@ const ContactForm = (props: ContactFormInterface) => {
               type="phone"
               ref={phone}
               placeholder="Teléfono celular"
-              className="appearance-none bg-gray-200 text-gray-700 rounded-xl px-4 py-2 leading-tight focus:outline-none focus:bg-white font-light w-full border-none"
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
             <input
               type="text"
               ref={company}
               placeholder="Nombre de tu compañía"
-              className="appearance-none bg-gray-200 text-gray-700 rounded-xl px-4 py-2 leading-tight focus:outline-none focus:bg-white font-light w-full border-none"
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
           </div>
           <div className="flex flex-col space-y-2">
-            <div className="flex gap-2 font-medium text-sm">
+            <div className="flex gap-2 text-sm font-medium">
               <input type="radio" className="mt-1" />
               <span>
                 Autorizo el tratamiento de datos personales y la política de

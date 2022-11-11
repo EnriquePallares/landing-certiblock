@@ -19,12 +19,12 @@ styleType.set('ligth-text-black', 'bg-white text-black');
 const Button: React.FC<ButtonInterface> = props => {
   return (
     <button
-      onClick={props.onClick?? undefined}
-      className={`py-2 px-4 rounded-full text-base ${styleType.get(
+      onClick={props.onClick ?? undefined}
+      className={`rounded-full py-2 px-4 text-base ${styleType.get(
         props.type || 'primary'
       )} ${props.className}`}
     >
-      <div className="flex space-x-1 justify-center items-center">
+      <div className="flex items-center justify-center space-x-1">
         <span>{props.text}</span>
         {props.children}
       </div>
