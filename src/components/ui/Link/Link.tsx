@@ -19,11 +19,11 @@ const CustomLink: React.FC<LinkInterface> = props => {
   return (
     <Link
       to={props.to}
-      className={`py-2 px-4 rounded-full text-base ${
+      className={`rounded-full py-2 px-4 text-base ${
         props.className
       } ${styleType.get(props.type || 'primary')}`}
     >
-      <div className="flex space-x-1 items-center justify-center">
+      <div className="flex items-center justify-center space-x-1">
         <span>{props.text}</span>
         {props.children}
       </div>

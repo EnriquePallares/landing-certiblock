@@ -6,9 +6,9 @@ export interface SectorWorksMainInterface {
 
 const SectorWorksMain: React.FC<SectorWorksMainInterface> = ({ className }) => {
   return (
-    <div className="md:relative bg-dark-gray rounded-t-[4.5rem] extend-bg-color hidden">
-      <div className="container mx-auto py-20 px-3">
-        <h2 className="text-5xl mb-6 font-medium">
+    <div className="extend-bg-color rounded-t-3xl bg-dark-gray md:relative md:rounded-t-[4.5rem]">
+      <div className="container mx-auto px-4 py-14 md:px-14 md:py-20">
+        <h2 className="mb-8 text-5xl font-medium">
           Sectores con <br /> los que trabajamos
         </h2>
         <SectorWorks />

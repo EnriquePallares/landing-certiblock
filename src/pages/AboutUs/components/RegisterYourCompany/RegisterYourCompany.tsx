@@ -6,11 +6,11 @@ const RegisterYourCompany: React.FC<RegisterYourCompanyInterface> = () => {
   return (
     <section
       id="register-your-company"
-      className="bg-blue-green rounded-t-3xl md:rounded-t-[4.5rem] extend-bg-color"
+      className="extend-bg-color rounded-t-3xl bg-blue-green md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto py-14 md:py-20 px-4 text-white">
-        <h3 className="text-4xl font-medium mb-4">Registra tu empresa</h3>
-        <p className="text-xl font-light mb-8">
+      <div className="container mx-auto px-4 py-14 text-white md:px-14 md:py-20">
+        <h3 className="mb-4 text-4xl font-medium">Registra tu empresa</h3>
+        <p className="mb-8 text-xl font-light">
           Si te interesa certificar documentos desde el origen y generar
           archivos apoyados en blockchain inscribe tu empresa para empezar a
           crear con nosotros.

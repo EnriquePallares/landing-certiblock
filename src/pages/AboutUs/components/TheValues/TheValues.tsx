@@ -29,68 +29,68 @@ const TheValues: React.FC<TheValuesInterface> = () => {
   return (
     <section
       id="the-values"
-      className="bg-light-gray text-white rounded-t-3xl md:rounded-t-[4.5rem] extend-bg-color"
+      className="extend-bg-color rounded-t-3xl bg-light-gray text-white md:rounded-t-[4.5rem]"
     >
-      <div className="container relative mx-auto py-14 md:py-20 px-4">
+      <div className="container relative mx-auto px-4 py-14 md:px-14 md:py-20">
         <img
           src={floatIcon}
           alt="Float icon"
-          className="hidden md:block absolute left-0 -top-24"
+          className="absolute -top-24 hidden md:block"
         />
 
         <div className="flex flex-wrap">
-          <div className="flex-initial w-full md:w-1/3 self-end">
-            <h3 className="text-4xl font-medium mb-8">
+          <div className="w-full flex-initial self-end md:w-1/3">
+            <h3 className="mb-8 text-4xl font-medium">
               Los valores que nos mueven
             </h3>
-            <div className="hidden md:flex my-3 gap-2">
+            <div className="my-3 hidden gap-2 md:flex">
               <FontAwesomeIcon
                 role="button"
                 icon={faArrowLeftLong}
                 size="lg"
-                className="bg-dark-gray text-white rounded-full p-4"
+                className="rounded-full bg-dark-gray p-4 text-white"
                 onClick={previous}
               />
               <FontAwesomeIcon
                 role="button"
                 icon={faArrowRightLong}
                 size="lg"
-                className="bg-dark-gray text-white rounded-full p-4"
+                className="rounded-full bg-dark-gray p-4 text-white"
                 onClick={next}
               />
             </div>
           </div>
 
-          <div className="flex-initial w-full md:w-2/3">
+          <div className="w-full flex-initial md:w-2/3">
             <Slider
               {...sliderSettings}
               ref={customSlider}
-              className="border-2 border-white rounded-3xl"
+              className="rounded-3xl border-2 border-white"
             >
               {values.map((value: string, index: number, arr: string[]) => (
                 <div key={index}>
-                  <div className="relative p-12 md:p-20 text-center">
-                    <span className="absolute top-5 left-5 md:top-10 md:left-10 text-primary text-xl font-black">
+                  <div className="relative p-12 text-center md:p-20">
+                    <span className="absolute top-5 left-5 text-xl font-black text-primary md:top-10 md:left-10">
                       {index + 1}/{arr.length}
                     </span>
-                    <h4 className="text-5xl md:text-8xl font-black">{value}</h4>
+                    <h4 className="text-5xl font-black md:text-8xl">{value}</h4>
                   </div>
                 </div>
               ))}
             </Slider>
-            <div className="md:hidden flex justify-end my-3 gap-2">
+            <div className="my-3 flex justify-end gap-2 md:hidden">
               <FontAwesomeIcon
                 role="button"
                 icon={faArrowLeftLong}
                 size="lg"
-                className="bg-dark-gray text-white rounded-full p-4"
+                className="rounded-full bg-dark-gray p-4 text-white"
                 onClick={previous}
               />
               <FontAwesomeIcon
                 role="button"
                 icon={faArrowRightLong}
                 size="lg"
-                className="bg-dark-gray text-white rounded-full p-4"
+                className="rounded-full bg-dark-gray p-4 text-white"
                 onClick={next}
               />
             </div>

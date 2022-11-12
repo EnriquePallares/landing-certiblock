@@ -17,23 +17,23 @@ const inconsRow = [faFacebook, faInstagram, faTiktok];
 const FooterImageless: React.FC<FooterInterface> = () => {
   return (
     <>
-      <div className="relative bg-blue-green text-white rounded-t-[4.5rem] extend-bg-color z-10">
-        <div className="container mx-auto py-20 px-3">
-          <div className="flex w-full justify-between items-start flex-wrap space-y-4">
-            <div className="flex flex-col space-y-3 w-full md:w-2/5 ">
+      <div className="rounded-t-3xl bg-blue-green text-white md:rounded-t-[4.5rem]">
+        <div className="container mx-auto px-4 py-14 md:px-14 md:py-20">
+          <div className="flex w-full flex-wrap items-start justify-between space-y-4">
+            <div className="flex w-full flex-col space-y-3 md:w-2/5 ">
               <label
-                className="font-light md:text-5xl text-blue-green md:text-white"
+                className="font-light text-blue-green md:text-5xl md:text-white"
                 htmlFor=""
               >
                 Suscríbete
               </label>
-              <div className="flex flex-row space-x-4 my-6">
+              <div className="my-6 flex flex-row space-x-4">
                 <input
                   type="email"
                   placeholder="Email"
-                  className="appearance-none bg-gray-200 text-gray-700 rounded-xl md:px-4 md:py-4 leading-tight focus:outline-none focus:bg-white font-light w-2/3 border-none"
+                  className="w-2/3 appearance-none rounded-xl border-none bg-gray-200 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none md:px-4 md:py-4"
                 />
-                <button className="bg-primary px-4 text-dark-blue-0 font-light rounded-xl space-x-5  py-3">
+                <button className="space-x-5 rounded-xl bg-primary px-4 py-3 font-light  text-dark-blue-0">
                   <span>Enviar</span>
                   <FontAwesomeIcon icon={faArrowRight} />
                 </button>
@@ -57,7 +57,7 @@ const FooterImageless: React.FC<FooterInterface> = () => {
                 ))}
               </ul>
             </div>
-            <div className="hidden md:flex md:flex-col space-y-4">
+            <div className="hidden space-y-4 md:flex md:flex-col">
               {inconsRow.map((item, index) => (
                 <FontAwesomeIcon key={index} icon={item} fontSize="26" />
               ))}

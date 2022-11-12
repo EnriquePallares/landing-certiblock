@@ -38,18 +38,18 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
   return (
     <section
       id="blog-section"
-      className="relative bg-light-gray rounded-t-[4.5rem] extend-bg-color"
+      className="extend-bg-color relative rounded-t-3xl bg-light-gray md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto relative py-20 px-3">
+      <div className="container relative mx-auto px-4 py-14 md:px-14 md:py-20">
         <img
           src={floatIcon}
           alt="Float icon"
-          className="md:inline-block hidden absolute left-0 -top-12"
+          className="absolute -top-12 hidden md:inline-block"
         />
 
-        <div className="grid md:grid-cols-5 grid-cols-1 gap-4 font-medium">
-          <div className="hidden md:grid list-posts col-span-2">
-            <h4 className="text-2xl mb-8">
+        <div className="grid grid-cols-1 gap-4 font-medium md:grid-cols-5">
+          <div className="list-posts col-span-2 hidden md:grid">
+            <h4 className="mb-8 text-2xl">
               Aprende con nosotros <br />
               sobre Web 3.0
             </h4>
@@ -57,13 +57,13 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
               Inscríbete a nuestro <br />
               news letter
             </h4>
-            <div className="flex flex-row space-x-4 my-6">
+            <div className="my-6 flex flex-row space-x-4">
               <input
                 type="email"
                 placeholder="Email"
-                className="appearance-none bg-gray-200 text-gray-700 rounded-[22px] px-4 py-4 leading-tight focus:outline-none focus:bg-white font-light w-2/3 border-none"
+                className="w-2/3 appearance-none rounded-[22px] border-none bg-gray-200 px-4 py-4 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
               />
-              <button className="bg-primary px-4 text-dark-blue-0 font-light rounded-[22px] space-x-5  py-3">
+              <button className="space-x-5 rounded-[22px] bg-primary px-4 py-3 font-light  text-dark-blue-0">
                 <span>Enviar</span>
                 <FontAwesomeIcon icon={faArrowRight} />
               </button>
@@ -72,7 +72,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
             <Accordion className="text-dark-blue-4">
               {posts.map((post, index) => (
                 <Accordion.Panel key={index}>
-                  <Accordion.Title className="bg-white hover:bg-primary text-current text-2xl">
+                  <Accordion.Title className="bg-white text-2xl text-current hover:bg-primary">
                     {post.title}
                   </Accordion.Title>
                   <Accordion.Content className="bg-white text-current">
@@ -87,10 +87,10 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
           </div>
 
           <div
-            className={`last-post relative col-span-3 md:bg-[url('@/assets/images/post-image.png')] bg-center bg-no-repeat bg-cover rounded-r-xl bg-image-opacity z-10`}
+            className={`last-post bg-image-opacity relative z-10 col-span-3 rounded-r-xl bg-cover bg-center bg-no-repeat md:bg-[url('@/assets/images/post-image.png')]`}
           >
-            <div className="md:w-1/2 ml-auto md:my-5 md:mr-20">
-              <h4 className="text-2xl mb-8">Último post</h4>
+            <div className="ml-auto md:my-5 md:mr-20 md:w-3/5">
+              <h4 className="mb-8 text-2xl">Último post</h4>
               <LastPost />
             </div>
           </div>

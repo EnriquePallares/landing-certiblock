@@ -16,16 +16,20 @@ const Register = (props: RegisterInterface) => {
   return (
     <section
       id="register-page"
-      className="main-banner relative bg-dark-blue-0 extend-bg-color"
+      className="main-banner extend-bg-color relative bg-dark-blue-0"
     >
-      <img src={bannerBackground} alt="Main banner" className="aspect-video" />
-      <div className="absolute vertical-alignment-abs w-2/5 py-14 px-4">
-        <h3 className="text-6xl text-primary text-center font-bold my-8">
+      <img
+        src={bannerBackground}
+        alt="Main banner"
+        className="aspect-auto md:aspect-[4/3.3]"
+      />
+      <div className="vertical-alignment-abs absolute w-1/2 px-4">
+        <h3 className="mb-8 text-center text-6xl font-bold text-primary">
           Registro
         </h3>
 
         <form action="" className="flex flex-col space-y-3">
-          <div className="flex bg-white rounded-[25px] justify-around mb-6">
+          <div className="mb-6 flex justify-around rounded-[25px] bg-white">
             <Button
               type={isNaturalPerson() ? 'dark' : 'ligth-text-black'}
               text="PERSONA"
@@ -47,17 +51,17 @@ const Register = (props: RegisterInterface) => {
             <>
               <input
                 placeholder="Razón social"
-                className="rounded-[25px] w-full px-8 font-light text-black"
+                className="w-full rounded-[25px] px-8 font-light text-black"
                 type="text"
               />
               <input
                 placeholder="NIT"
-                className="rounded-[25px] w-full px-8 font-light text-black"
+                className="w-full rounded-[25px] px-8 font-light text-black"
                 type="text"
               />
               <input
                 placeholder="Teléfono"
-                className="rounded-[25px] w-full px-8 font-light text-black"
+                className="w-full rounded-[25px] px-8 font-light text-black"
                 type="text"
               />
             </>
@@ -65,49 +69,49 @@ const Register = (props: RegisterInterface) => {
             <>
               <input
                 placeholder="Nombre"
-                className="rounded-[25px] w-full px-8 font-light text-black"
+                className="w-full rounded-[25px] px-8 font-light text-black"
                 type="text"
               />
               <input
                 placeholder="Número de cédula"
-                className="rounded-[25px] w-full px-8 font-light text-black"
+                className="w-full rounded-[25px] px-8 font-light text-black"
                 type="text"
               />
             </>
           )}
           <input
             placeholder="Celular"
-            className="rounded-[25px] w-full px-8 font-light text-black"
+            className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
             placeholder="Dirección"
-            className="rounded-[25px] w-full px-8 font-light text-black"
+            className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
             placeholder="País"
-            className="rounded-[25px] w-full px-8 font-light text-black"
+            className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
             placeholder="Ciudad"
-            className="rounded-[25px] w-full px-8 font-light text-black"
+            className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
             placeholder="Email"
-            className="rounded-[25px] w-full px-8 font-light text-black"
+            className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
             placeholder="Crear contraseña"
-            className="rounded-[25px] w-full px-8 font-light text-black"
+            className="w-full rounded-[25px] px-8 font-light text-black"
             type="password"
           />
           <input
             placeholder="Confirmar contraseña"
-            className="rounded-[25px] w-full px-8 font-light text-black"
+            className="w-full rounded-[25px] px-8 font-light text-black"
             type="password"
           />
           <p className="font-medium text-primary">*Campos obligatorios</p>

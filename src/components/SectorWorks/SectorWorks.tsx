@@ -4,10 +4,10 @@ import IglesiasImage from '@/assets/images/churchs.svg';
 import HospitalesImage from '@/assets/images/hospitals.svg';
 import ColegiosImage from '@/assets/images/schools.svg';
 export interface SectorWorksInterface {
-  className?: string
+  className?: string;
 }
 
-const SectorWorks: React.FC<SectorWorksInterface> = ({className}) => {
+const SectorWorks: React.FC<SectorWorksInterface> = ({ className }) => {
   const endRow = [
     { text: 'Universidades', icon: UniversidadesImage },
     { text: 'Hospitales', icon: HospitalesImage },
@@ -16,10 +16,19 @@ const SectorWorks: React.FC<SectorWorksInterface> = ({className}) => {
   ];
 
   return (
-    <div className={`flex w-full justify-around items-start flex-wrap ${className}`}>
+    <div
+      className={`flex w-full flex-wrap items-start justify-around ${className}`}
+    >
       {endRow.map((item, index) => (
-        <div key={index} className="md:w-auto w-1/2 flex flex-col text-center space-y-4">
-          <img src={item.icon} alt={item.text} className="w-1/3 md:w-3/4 mx-auto"/>
+        <div
+          key={index}
+          className="flex w-1/2 flex-col space-y-4 text-center md:w-auto"
+        >
+          <img
+            src={item.icon}
+            alt={item.text}
+            className="mx-auto w-1/3 md:w-3/4"
+          />
           <span>{item.text}</span>
         </div>
       ))}

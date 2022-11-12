@@ -37,21 +37,23 @@ const posts = [
 
 const MainBanner: React.FC<MainBannerInterface> = () => {
   return (
-    <section className="main-banner relative bg-dark-blue-0 extend-bg-color">
+    <section className="main-banner extend-bg-color relative bg-dark-blue-0">
       <picture>
         <source media="(min-width: 768px)" srcSet={bannerBackground} />
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-auto md:aspect-video w-full"
+          className="aspect-auto md:aspect-video"
         />
       </picture>
-      <div className="text-4xl md:text-8xl md:text-secondary font-black absolute vertical-alignment-abs">
-        Por qué tener a <span className="text-white">Certiblock</span>
+      <div className="vertical-alignment-abs absolute flex w-full flex-wrap px-8 text-4xl font-black md:justify-center md:text-8xl md:text-secondary">
+        <h3 className="w-full flex-[0_0_auto] md:w-6/12">
+          Por qué tener a <span className="text-white">Certiblock</span>
+        </h3>
         <Button
           text="SABER MÁS"
           type="primary"
-          className="md:px-16 md:py-5 font-normal self-end hidden md:flex"
+          className="mb-2 hidden w-auto flex-[0_0_auto] self-end font-normal md:inline-block md:px-16 md:py-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +61,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="h-6 w-6"
           >
             <path
               strokeLinecap="round"
@@ -71,7 +73,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
         <Button
           text="SABER MÁS"
           type="ligth-text-black"
-          className="md:px-16 md:py-5 md:ml-10 font-normal self-end md:hidden"
+          className="mt-6 font-normal md:ml-10 md:hidden md:px-16 md:py-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +81,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="h-6 w-6"
           >
             <path
               strokeLinecap="round"

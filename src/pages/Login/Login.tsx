@@ -9,33 +9,41 @@ const Login: React.FC<LoginInterface> = () => {
   const password = useRef();
 
   return (
-    <section id='login-page' className="main-banner relative bg-dark-blue-0 extend-bg-color">
+    <section
+      id="login-page"
+      className="main-banner extend-bg-color relative bg-dark-blue-0"
+    >
       <picture>
         <source media="(min-width: 768px)" srcSet={bannerBackground} />
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-auto md:aspect-video w-full"
+          className="aspect-auto md:aspect-video"
         />
       </picture>
-      <div className="absolute vertical-alignment-abs md:w-2/5 w-full p-4">
-        <h3 className="md:text-6xl text-primary text-center font-bold my-8 text-3xl">
+      <div className="vertical-alignment-abs absolute w-full p-4 md:w-1/2">
+        <h3 className="my-8 text-center text-3xl font-black text-primary md:text-6xl">
           Inicio de sesión
         </h3>
         <form action="" className="flex flex-col space-y-3">
           <input
             placeholder="Username"
-            className="rounded-[25px] w-full px-8 font-light"
+            className="w-full rounded-[25px] px-8 font-light"
             type="text"
           />
           <input
             placeholder="Contraseña"
-            className="rounded-[25px] w-full px-8 font-light"
+            className="w-full rounded-[25px] px-8 font-light"
             type="text"
           />
-          <div className='flex flex-col md:flex-row space-x-5 justify-end space-y-4'>
-            <Link to="/register" type='dark' text="REGÍSTRATE" className='px-8 font-light'/>
-            <Button className='px-8 font-light' text="INICIAR SESIÓN"></Button>
+          <div className="flex flex-col gap-5 pt-5 md:flex-row-reverse">
+            <Button className="px-8 font-light" text="INICIAR SESIÓN"></Button>
+            <Link
+              to="/register"
+              type="dark"
+              text="REGÍSTRATE"
+              className="px-8 font-light"
+            />
           </div>
         </form>
       </div>

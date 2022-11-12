@@ -7,22 +7,22 @@ const InfoBanner: React.FC<InfoBannerInterface> = () => {
   return (
     <section
       id="info-banner"
-      className="relative md:bg-primary rounded-t-[4.5rem] bg-light-gray extend-bg-color"
+      className="extend-bg-color relative rounded-t-3xl bg-light-gray md:rounded-t-[4.5rem] md:bg-primary"
     >
-      <div className="container mx-auto relative md:py-20 px-3">
+      <div className="container relative mx-auto px-4 py-14 md:px-14 md:py-20">
         <img
           src={floatIcon}
           alt="Float icon"
-          className="hidden md:inline-block absolute right-0 -top-14"
+          className="absolute right-14 -top-14 hidden md:inline-block"
         />
 
-        <div className="grid md:grid-cols-2 gap-10 font-medium">
-          <div className="md:bg-white md:text-dark-blue-4 text-white rounded-3xl py-12 px-6 text-section">
-            <h4 className="text-4xl mb-8">
+        <div className="grid gap-10 font-medium md:grid-cols-2">
+          <div className="text-section rounded-3xl py-12 px-6 text-white md:bg-white md:text-dark-blue-4">
+            <h4 className="mb-8 text-4xl">
               Certificamos <br /> desde el origen
             </h4>
 
-            <p className="paragraph text-2xl leading-none font-light">
+            <p className="paragraph text-2xl font-light leading-none">
               <span className="font-semibold">Certiblock</span> Lorem ipsum
               dolor sit amet, consectetur adipiscing quis nostrud exercitation
               ullamco laboris nisi

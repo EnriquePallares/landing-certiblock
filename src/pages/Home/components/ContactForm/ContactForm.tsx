@@ -1,5 +1,5 @@
 import { Button } from '@/components';
-import React, { createRef, useRef } from 'react';
+import { createRef } from 'react';
 import { Link } from 'react-router-dom';
 export interface ContactFormInterface {}
 
@@ -11,56 +11,63 @@ const ContactForm = (props: ContactFormInterface) => {
 
   return (
     <section
-      id="info-banner"
-      className="md:relative bg-light-gray rounded-t-[4.5rem] extend-bg-color hidden"
+      id="form-section"
+      className="extend-bg-color relative rounded-t-3xl bg-light-gray md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto py-20 px-3">
-        <div className="grid grid-cols-4 gap-4">
+      <div className="container mx-auto px-4 py-14 md:px-14 md:py-20">
+        <div className="grid grid-cols-4 gap-6">
           <div className="text-right text-lg">
-            <p className='font-light'>¿Te gusta Certiblock?</p>
+            <p>¿Te gusta Certiblock?</p>
             <p>
               ¿Quieres más <br />
               información sobre nosotros?
             </p>
           </div>
-          <div className="space-y-2">
+          <div className="space-y-4">
             <input
               type="text"
-			  ref={fullName}
+              ref={fullName}
               placeholder="Nombre y apellidos"
-              className="appearance-none bg-gray-200 text-gray-700 rounded-xl px-4 py-2 leading-tight focus:outline-none focus:bg-white font-light w-full border-none"
-			  />
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
+            />
             <input
               type="email"
-			  ref={email}
+              ref={email}
               placeholder="Correo electrónico"
-              className="appearance-none bg-gray-200 text-gray-700 rounded-xl px-4 py-2 leading-tight focus:outline-none focus:bg-white font-light w-full border-none"
-			  />
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
+            />
           </div>
-          <div className="space-y-2">
+          <div className="space-y-4">
             <input
               type="phone"
-			  ref={phone}
+              ref={phone}
               placeholder="Teléfono celular"
-              className="appearance-none bg-gray-200 text-gray-700 rounded-xl px-4 py-2 leading-tight focus:outline-none focus:bg-white font-light w-full border-none"
-			  />
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
+            />
             <input
               type="text"
-			  ref={company}
+              ref={company}
               placeholder="Nombre de tu compañía"
-              className="appearance-none bg-gray-200 text-gray-700 rounded-xl px-4 py-2 leading-tight focus:outline-none focus:bg-white font-light w-full border-none"
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
           </div>
           <div className="flex flex-col space-y-2">
-            <div>
-              <input type="radio" />
+            <div className="flex gap-2 text-sm font-medium">
+              <input type="radio" className="mt-1" />
               <span>
                 Autorizo el tratamiento de datos personales y la política de
-                datos personales. <Link to="#">Ver política</Link>
+                datos personales.{' '}
+                <Link to="#" className="hover:underline">
+                  Ver política
+                </Link>
               </span>
             </div>
             <div>
-              <Button text="ENVIAR" className='w-full text-center text-4xl font-light' type='primary-text-white' />
+              <Button
+                text="ENVIAR"
+                className="w-full text-center text-4xl font-light tracking-widest"
+                type="primary-text-white"
+              />
             </div>
           </div>
         </div>
