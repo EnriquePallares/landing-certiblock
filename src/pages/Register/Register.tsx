@@ -18,9 +18,13 @@ const Register = (props: RegisterInterface) => {
       id="register-page"
       className="main-banner extend-bg-color relative bg-dark-blue-0"
     >
-      <img src={bannerBackground} alt="Main banner" className="aspect-video" />
-      <div className="vertical-alignment-abs absolute w-2/5 py-14 px-4">
-        <h3 className="my-8 text-center text-6xl font-bold text-primary">
+      <img
+        src={bannerBackground}
+        alt="Main banner"
+        className="aspect-auto md:aspect-[4/3.3]"
+      />
+      <div className="vertical-alignment-abs absolute w-1/2 px-4">
+        <h3 className="mb-8 text-center text-6xl font-bold text-primary">
           Registro
         </h3>
 

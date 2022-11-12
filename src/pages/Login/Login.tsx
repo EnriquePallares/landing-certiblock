@@ -18,11 +18,11 @@ const Login: React.FC<LoginInterface> = () => {
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-auto w-full md:aspect-video"
+          className="aspect-auto md:aspect-video"
         />
       </picture>
-      <div className="vertical-alignment-abs absolute w-full p-4 md:w-2/5">
-        <h3 className="my-8 text-center text-3xl font-bold text-primary md:text-6xl">
+      <div className="vertical-alignment-abs absolute w-full p-4 md:w-1/2">
+        <h3 className="my-8 text-center text-3xl font-black text-primary md:text-6xl">
           Inicio de sesión
         </h3>
         <form action="" className="flex flex-col space-y-3">
@@ -36,14 +36,14 @@ const Login: React.FC<LoginInterface> = () => {
             className="w-full rounded-[25px] px-8 font-light"
             type="text"
           />
-          <div className="flex flex-col justify-end space-x-5 space-y-4 md:flex-row">
+          <div className="flex flex-col gap-5 pt-5 md:flex-row-reverse">
+            <Button className="px-8 font-light" text="INICIAR SESIÓN"></Button>
             <Link
               to="/register"
               type="dark"
               text="REGÍSTRATE"
               className="px-8 font-light"
             />
-            <Button className="px-8 font-light" text="INICIAR SESIÓN"></Button>
           </div>
         </form>
       </div>
