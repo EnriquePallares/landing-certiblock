@@ -26,6 +26,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
     },
     {
       text: 'Blog',
+      link: '/blog',
       display: true,
     },
     {
@@ -40,10 +41,12 @@ const Navbar: React.FC<NavbarInterface> = () => {
   ];
 
   return (
-    <header className="container absolute top-0 right-0 left-0 z-50 mx-auto px-8">
-      <nav className="left-0 w-full py-8 transition-all duration-100 ease-in md:flex md:items-center md:justify-center md:space-x-10 md:bg-transparent">
-        <div className="flew-row flex justify-between">
-          <a className="self-center" href="/">
+    <header className="container mx-auto absolute top-0 left-[-25px] right-0 z-50 px-3">
+      <nav
+        className={`md:p-5 md:flex md:justify-center md:items-center md:space-x-10 w-full left-0 md:bg-transparent p-8 transition-all ease-in duration-100`}
+      >
+        <div className="flex flew-row justify-between">
+          <a className="self-center" href="/landing-certiblock/">
             <img src={logo} alt="logo" className="w-1/2" />
           </a>
           <FontAwesomeIcon

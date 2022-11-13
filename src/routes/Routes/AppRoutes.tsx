@@ -1,5 +1,6 @@
 import { Layout } from '@/components';
 import { AboutUs } from '@/pages/AboutUs';
+import { Blog } from '@/pages/Blog';
 import { Home } from '@/pages/Home';
 import { Login } from '@/pages/Login';
 import { Register } from '@/pages/Register';
@@ -16,6 +17,7 @@ const AppRoutes = (props: AppRoutesInterface) => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/blog" element={<Blog />} />
       </Route>
     </Routes>
   );
