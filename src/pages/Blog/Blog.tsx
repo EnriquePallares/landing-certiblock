@@ -5,6 +5,7 @@ import bannerBackgroundMobile from '@/assets/images/bg-aboutUs-mobile.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { LastPosts } from './components/LastPosts';
+import { PodcastsSlider } from './components/PodcastsSlider';
 export interface BlogInterface {}
 
 const Blog: React.FC<BlogInterface> = () => {
@@ -37,6 +38,7 @@ const Blog: React.FC<BlogInterface> = () => {
         }}
       />
 	  <LastPosts />
+    <PodcastsSlider />
     </section>
   );
 };

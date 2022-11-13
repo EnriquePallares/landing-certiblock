@@ -2,7 +2,7 @@ import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import logo from '@/assets/images/logo-certiblock.svg';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Button } from '../ui/Button';
 import CustomLink from '../ui/Link/Link';
 export interface NavbarInterface {}
@@ -65,13 +65,13 @@ const Navbar: React.FC<NavbarInterface> = () => {
           {menuItems.map(
             (item, index) =>
               !!item.display && (
-                <Link
+                <NavLink
                   key={index}
-                  className="md:py-2 md:first:after:content-['|'] md:even:after:content-['|']"
+                  className="md:py-2 md:first:after:content-['|'] md:even:after:content-['|']"                  
                   to={item.link || '#'}
                 >
                   <span className="px-4">{item.text}</span>
-                </Link>
+                </NavLink>
               )
           )}
         </div>

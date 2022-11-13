@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 export interface LinkInterface {
   text: string;
   type?: string;
@@ -17,17 +17,21 @@ styleType.set('ligth', 'bg-white text-primary');
 
 const CustomLink: React.FC<LinkInterface> = props => {
   return (
-    <Link
+    <NavLink
       to={props.to}
-      className={`rounded-full py-2 px-4 text-base ${
-        props.className
-      } ${styleType.get(props.type || 'primary')}`}
+      className={({ isActive }) =>
+        `rounded-full py-2 px-4 text-base ${props.className} ${!isActive ? styleType.get(
+          props.type ?? 'primary'
+        ): styleType.get(
+          props.type ?? 'dark'
+        )}`
+      }
     >
       <div className="flex items-center justify-center space-x-1">
         <span>{props.text}</span>
         {props.children}
       </div>
-    </Link>
+    </NavLink>
   );
 };
 
