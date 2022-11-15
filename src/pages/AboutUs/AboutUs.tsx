@@ -47,7 +47,8 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
         link={{
           text: 'SABER MÁS',
           to: '#',
-          className: 'bg-primary text-black border-none font-normal py-5 px-20',
+          type: 'primary',
+          className: 'border-none font-normal py-5 px-10 md:px-20',
           children: arrowLink,
         }}
       />
