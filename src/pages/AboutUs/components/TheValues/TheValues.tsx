@@ -31,7 +31,7 @@ const TheValues: React.FC<TheValuesInterface> = () => {
       id="the-values"
       className="extend-bg-color rounded-t-3xl bg-light-gray text-white md:rounded-t-[4.5rem]"
     >
-      <div className="container relative mx-auto px-4 py-14 md:px-14 md:py-20">
+      <div className="container relative mx-auto px-8 py-10 md:px-14 md:py-20">
         <img
           src={floatIcon}
           alt="Float icon"
@@ -40,7 +40,7 @@ const TheValues: React.FC<TheValuesInterface> = () => {
 
         <div className="flex flex-wrap">
           <div className="w-full flex-initial self-end md:w-1/3">
-            <h3 className="mb-8 text-4xl font-medium">
+            <h3 className="mb-8 text-3xl font-medium">
               Los valores que nos mueven
             </h3>
             <div className="my-3 hidden gap-2 md:flex">
@@ -69,7 +69,7 @@ const TheValues: React.FC<TheValuesInterface> = () => {
             >
               {values.map((value: string, index: number, arr: string[]) => (
                 <div key={index}>
-                  <div className="relative p-12 text-center md:p-20">
+                  <div className="relative px-8 py-12 text-center md:p-20">
                     <span className="absolute top-5 left-5 text-xl font-black text-primary md:top-10 md:left-10">
                       {index + 1}/{arr.length}
                     </span>

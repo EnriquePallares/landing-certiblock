@@ -20,11 +20,11 @@ const CustomLink: React.FC<LinkInterface> = props => {
     <NavLink
       to={props.to}
       className={({ isActive }) =>
-        `rounded-full py-2 px-4 text-base ${props.className} ${!isActive ? styleType.get(
-          props.type ?? 'primary'
-        ): styleType.get(
-          props.type ?? 'dark'
-        )}`
+        `rounded-full py-2 px-4 text-base ${props.className} ${
+          !isActive
+            ? styleType.get(props.type ?? 'primary')
+            : styleType.get(props.type ?? 'dark')
+        }`
       }
     >
       <div className="flex items-center justify-center space-x-1">

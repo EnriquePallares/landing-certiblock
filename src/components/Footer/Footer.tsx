@@ -19,22 +19,19 @@ const Footer: React.FC<FooterInterface> = () => {
   return (
     <>
       <div className="extend-bg-color relative z-10 rounded-t-3xl bg-primary text-white md:rounded-t-[4.5rem] md:bg-blue-green">
-        <div className="container mx-auto px-4 py-14 md:px-14 md:py-20">
-          <div className="flex w-full flex-wrap items-start justify-between space-y-4">
-            <div className="flex w-full flex-col space-y-3 md:w-2/5 ">
-              <label
-                className="font-light text-blue-green md:text-5xl md:text-white"
-                htmlFor=""
-              >
+        <div className="container mx-auto px-8 py-10 md:px-14 md:py-20">
+          <div className="flex w-full flex-wrap items-start justify-between space-y-12 md:space-y-4">
+            <div className="flex w-full flex-col space-y-3 md:w-2/5">
+              <label className="font-medium text-blue-green md:text-5xl md:text-white">
                 Suscríbete
               </label>
-              <div className="my-6 flex flex-row space-x-4">
+              <div className="my-6 flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0">
                 <input
                   type="email"
                   placeholder="Email"
-                  className="w-2/3 appearance-none rounded-xl border-none bg-gray-200 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none md:px-4 md:py-4"
+                  className="appearance-none rounded-xl border-none bg-gray-200 py-3 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none md:w-2/3 md:p-3"
                 />
-                <button className="space-x-5 rounded-xl bg-primary px-4 py-3 font-light  text-dark-blue-0">
+                <button className="space-x-5 rounded-xl bg-blue-green px-4 py-2 font-light text-white md:bg-primary md:p-3 md:text-dark-blue-0">
                   <span>Enviar</span>
                   <FontAwesomeIcon icon={faArrowRight} />
                 </button>
@@ -44,7 +41,7 @@ const Footer: React.FC<FooterInterface> = () => {
               <ul className="space-y-2">
                 {column2.map((item, index) => (
                   <li key={index} className="">
-                    <span className="px-4">{item}</span>
+                    <span className="md:px-4">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -53,7 +50,7 @@ const Footer: React.FC<FooterInterface> = () => {
               <ul className="space-y-2">
                 {column3.map((item, index) => (
                   <li key={index} className="">
-                    <span className="px-4">{item}</span>
+                    <span className="md:px-4">{item}</span>
                   </li>
                 ))}
               </ul>

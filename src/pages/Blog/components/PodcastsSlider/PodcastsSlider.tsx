@@ -58,7 +58,7 @@ const PodcastsSlider: React.FC<PodcastsSliderInterface> = () => {
       id="the-values"
       className="extend-bg-color rounded-t-3xl bg-dark-gray text-white md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto space-y-4 px-4 py-14 md:px-4 md:py-20">
+      <div className="container mx-auto space-y-4 px-4 py-10 md:px-4 md:py-20">
         <img
           src={floatIcon}
           alt="Float icon"

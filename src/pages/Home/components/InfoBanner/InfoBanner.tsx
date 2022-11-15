@@ -9,7 +9,7 @@ const InfoBanner: React.FC<InfoBannerInterface> = () => {
       id="info-banner"
       className="extend-bg-color relative rounded-t-3xl bg-light-gray md:rounded-t-[4.5rem] md:bg-primary"
     >
-      <div className="container relative mx-auto px-4 py-14 md:px-14 md:py-20">
+      <div className="container relative mx-auto px-8 pb-10 md:px-14 md:py-20">
         <img
           src={floatIcon}
           alt="Float icon"
@@ -17,7 +17,7 @@ const InfoBanner: React.FC<InfoBannerInterface> = () => {
         />
 
         <div className="grid gap-10 font-medium md:grid-cols-2">
-          <div className="text-section rounded-3xl py-12 px-6 text-white md:bg-white md:text-dark-blue-4">
+          <div className="text-section rounded-3xl pt-12 text-white md:bg-white md:py-12 md:px-6 md:text-dark-blue-4">
             <h4 className="mb-8 text-4xl">
               Certificamos <br /> desde el origen
             </h4>

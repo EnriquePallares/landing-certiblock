@@ -21,7 +21,7 @@ const Login: React.FC<LoginInterface> = () => {
           className="aspect-auto md:aspect-video"
         />
       </picture>
-      <div className="vertical-alignment-abs absolute w-full p-4 md:w-1/2">
+      <div className="vertical-alignment-abs absolute w-full p-8 md:w-1/2">
         <h3 className="my-8 text-center text-3xl font-black text-primary md:text-6xl">
           Inicio de sesión
         </h3>
@@ -36,13 +36,13 @@ const Login: React.FC<LoginInterface> = () => {
             className="w-full rounded-[25px] px-8 font-light"
             type="text"
           />
-          <div className="flex flex-col gap-5 pt-5 md:flex-row-reverse">
+          <div className="flex flex-col gap-2 pt-5 md:flex-row-reverse md:gap-5">
             <Button className="px-8 font-light" text="INICIAR SESIÓN"></Button>
             <Link
               to="/register"
               type="dark"
               text="REGÍSTRATE"
-              className="px-8 font-light"
+              className="bg-light-gray px-8 font-light text-dark-gray"
             />
           </div>
         </form>
