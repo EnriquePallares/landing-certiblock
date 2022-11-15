@@ -1,4 +1,5 @@
 import bannerBackground from '@/assets/images/bg-login.png';
+import bannerBackgroundMobile from '@/assets/images/bg-login-mobile.png';
 import { Button } from '@/components';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -18,12 +19,15 @@ const Register = (props: RegisterInterface) => {
       id="register-page"
       className="main-banner extend-bg-color relative bg-dark-blue-0"
     >
-      <img
-        src={bannerBackground}
-        alt="Main banner"
-        className="aspect-auto md:aspect-[4/3.3]"
-      />
-      <div className="vertical-alignment-abs absolute w-1/2 px-4">
+      <picture>
+        <source media="(min-width: 768px)" srcSet={bannerBackground} />
+        <img
+          src={bannerBackgroundMobile}
+          alt="Main banner"
+          className="aspect-[1/2.8] md:aspect-[4/3.3]"
+        />
+      </picture>
+      <div className="vertical-alignment-abs absolute w-full p-8 md:w-1/2">
         <h3 className="mb-8 text-center text-6xl font-bold text-primary">
           Registro
         </h3>
@@ -115,20 +119,21 @@ const Register = (props: RegisterInterface) => {
             type="password"
           />
           <p className="font-medium text-primary">*Campos obligatorios</p>
-          <div className="flex flex-col">
-            <div className="flex">
-              <input type="checkbox" />
-              <label htmlFor="" className="flex">
-                Aceptar términos y condiciones
-              </label>
-            </div>
-            <NavLink to="./" className="text-white underline">
+          <div className="flex gap-2">
+            <input type="checkbox" className="mt-1" />
+            <label>
+              Aceptar términos y condiciones
               <br />
-              Ver términos y condiciones
-            </NavLink>
+              <NavLink to="./" className="text-white underline">
+                Ver términos y condiciones
+              </NavLink>
+            </label>
           </div>
-          <div className="text-right">
-            <Button className="px-10 py-5" text="REGÍSTRATE"></Button>
+          <div className="md:text-right">
+            <Button
+              className="w-full px-10 py-5 md:w-auto"
+              text="REGÍSTRATE"
+            ></Button>
           </div>
         </form>
       </div>
