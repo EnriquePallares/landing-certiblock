@@ -76,7 +76,7 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
       id="our-team"
       className="extend-bg-color rounded-t-3xl bg-primary md:rounded-t-[4.5rem]"
     >
-      <div className="container relative mx-auto px-4 py-14 md:px-14 md:py-20">
+      <div className="container relative mx-auto px-4 py-10 md:px-14 md:py-20">
         <h3 className="mb-8 text-4xl font-medium text-dark-gray">
           Conoce nuestro equipo
         </h3>

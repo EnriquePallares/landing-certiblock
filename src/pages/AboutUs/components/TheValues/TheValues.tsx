@@ -31,7 +31,7 @@ const TheValues: React.FC<TheValuesInterface> = () => {
       id="the-values"
       className="extend-bg-color rounded-t-3xl bg-light-gray text-white md:rounded-t-[4.5rem]"
     >
-      <div className="container relative mx-auto px-4 py-14 md:px-14 md:py-20">
+      <div className="container relative mx-auto px-4 py-10 md:px-14 md:py-20">
         <img
           src={floatIcon}
           alt="Float icon"

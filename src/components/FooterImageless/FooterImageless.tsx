@@ -18,7 +18,7 @@ const FooterImageless: React.FC<FooterInterface> = () => {
   return (
     <>
       <div className="rounded-t-3xl bg-blue-green text-white md:rounded-t-[4.5rem]">
-        <div className="container mx-auto px-4 py-14 md:px-14 md:py-20">
+        <div className="container mx-auto px-4 py-10 md:px-14 md:py-20">
           <div className="flex w-full flex-wrap items-start justify-between space-y-4">
             <div className="flex w-full flex-col space-y-3 md:w-2/5 ">
               <label

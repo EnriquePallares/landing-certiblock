@@ -32,7 +32,7 @@ const CompaniesWithWeWork: React.FC<CompaniesWithWeWorkInterface> = () => {
       id="companies-with-we-work"
       className="extend-bg-color rounded-t-3xl bg-dark-gray md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto px-4 py-14 text-white md:px-14 md:py-20">
+      <div className="container mx-auto px-4 py-10 text-white md:px-14 md:py-20">
         <h3 className="mb-8 text-4xl font-medium">
           Empresas con <br /> las que trabajamos
         </h3>

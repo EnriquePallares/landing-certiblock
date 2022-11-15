@@ -12,9 +12,9 @@ const ContactForm = (props: ContactFormInterface) => {
   return (
     <section
       id="form-section"
-      className="extend-bg-color md:relative rounded-t-3xl bg-light-gray md:rounded-t-[4.5rem]"
+      className="extend-bg-color relative hidden rounded-t-3xl bg-light-gray md:block md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto px-4 py-14 md:px-14 md:py-20">
+      <div className="container mx-auto px-8 py-10 md:px-14 md:py-20">
         <div className="grid grid-cols-4 gap-6">
           <div className="text-right text-lg">
             <p>¿Te gusta Certiblock?</p>
