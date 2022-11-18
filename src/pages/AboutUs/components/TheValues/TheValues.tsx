@@ -29,7 +29,7 @@ const TheValues: React.FC<TheValuesInterface> = () => {
   return (
     <section
       id="the-values"
-      className="extend-bg-color rounded-t-3xl bg-light-gray text-white md:rounded-t-[4.5rem]"
+      className="extend-bg-color relative rounded-t-3xl bg-light-gray text-white md:rounded-t-[4.5rem]"
     >
       <div className="container relative mx-auto px-8 py-10 md:px-14 md:py-20">
         <img

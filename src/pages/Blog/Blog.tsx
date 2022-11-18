@@ -1,7 +1,7 @@
 import { MainBannerReusable } from '@/components';
 import React, { ReactNode } from 'react';
-import bannerBackground from '@/assets/images/bg-aboutUs.png';
-import bannerBackgroundMobile from '@/assets/images/bg-aboutUs-mobile.png';
+import bannerBackground from '@/assets/images/bg-login.png';
+import bannerBackgroundMobile from '@/assets/images/bg-login-mobile.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { LastPosts } from './components/LastPosts';
@@ -22,23 +22,24 @@ const Blog: React.FC<BlogInterface> = () => {
   );
 
   return (
-    <section id="blog" >
+    <section id="blog">
       <MainBannerReusable
         bannerBackground={bannerBackground}
         bannerBackgroundMobile={bannerBackgroundMobile}
         title="Blog"
         classTitle="text-primary text-center"
-        classHighWord="text-primary strokes-font"
         paragraph={paragraph}
         link={{
           text: 'Leer más',
           to: '#',
-          className: 'bg-primary text-black border-none font-normal py-5 px-20',
+          type: 'primary',
+          className:
+            'border-none font-normal text-lg uppercase py-5 px-10 md:px-20',
           children: arrowLink,
         }}
       />
-	  <LastPosts />
-    <PodcastsSlider />
+      <LastPosts />
+      <PodcastsSlider />
     </section>
   );
 };

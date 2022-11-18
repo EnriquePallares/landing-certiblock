@@ -41,11 +41,11 @@ const Navbar: React.FC<NavbarInterface> = () => {
   ];
 
   return (
-    <header className="container mx-auto absolute top-0 left-[-25px] right-0 z-50 px-3">
+    <header className="container absolute top-0 left-0 right-0 z-50 mx-auto px-3">
       <nav
-        className={`md:p-5 md:flex md:justify-center md:items-center md:space-x-10 w-full left-0 md:bg-transparent p-8 transition-all ease-in duration-100`}
+        className={`left-0 w-full p-8 transition-all duration-100 ease-in md:flex md:items-center md:justify-center md:space-x-10 md:bg-transparent md:p-5`}
       >
-        <div className="flex flew-row justify-between">
+        <div className="flew-row flex justify-between">
           <a className="self-center" href="/landing-certiblock/">
             <img src={logo} alt="logo" className="w-1/2" />
           </a>
@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
               !!item.display && (
                 <NavLink
                   key={index}
-                  className="md:py-2 md:first:after:content-['|'] md:even:after:content-['|']"                  
+                  className="md:py-2 md:first:after:content-['|'] md:even:after:content-['|']"
                   to={item.link || '#'}
                 >
                   <span className="px-4">{item.text}</span>

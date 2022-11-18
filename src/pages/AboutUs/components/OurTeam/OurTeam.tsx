@@ -74,7 +74,7 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
   return (
     <section
       id="our-team"
-      className="extend-bg-color rounded-t-3xl bg-primary md:rounded-t-[4.5rem]"
+      className="extend-bg-color relative rounded-t-3xl bg-primary md:rounded-t-[4.5rem]"
     >
       <div className="container relative mx-auto px-8 py-10 md:px-14 md:py-20">
         <h3 className="mb-8 text-3xl font-medium text-dark-gray">
@@ -87,7 +87,7 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
           className="absolute left-4 bottom-60 hidden md:block"
         />
 
-        <Slider {...sliderSettings} ref={customSlider}>
+        <Slider {...sliderSettings} ref={customSlider} className="md:-mx-3">
           {members.map((member: any, index: number) => (
             <div key={index}>
               <div className="rounded-3xl bg-white p-6 text-dark-blue-4 md:mx-3 md:p-8">
@@ -122,7 +122,7 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
             </div>
           ))}
         </Slider>
-        <div className="m-3 flex justify-end gap-2">
+        <div className="my-3 flex justify-end gap-2">
           <FontAwesomeIcon
             role="button"
             icon={faArrowLeftLong}

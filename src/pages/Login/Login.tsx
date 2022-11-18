@@ -40,9 +40,9 @@ const Login: React.FC<LoginInterface> = () => {
             <Button className="px-8 font-light" text="INICIAR SESIÓN"></Button>
             <Link
               to="/register"
-              type="dark"
+              type="light-gray"
               text="REGÍSTRATE"
-              className="bg-light-gray px-8 font-light text-dark-gray"
+              className="px-8 font-light"
             />
           </div>
         </form>

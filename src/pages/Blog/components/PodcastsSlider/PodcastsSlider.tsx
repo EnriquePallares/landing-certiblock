@@ -2,6 +2,7 @@ import CustomLink from '@/components/ui/Link/Link';
 import {
   faArrowLeftLong,
   faArrowRightLong,
+  faPlay,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { createRef } from 'react';
@@ -9,7 +10,7 @@ import Slider, { Settings } from 'react-slick';
 import AngelaOcado from '@/assets/images/AngelaOcado.png';
 import ElonMusk from '@/assets/images/ElonMusk.png';
 import LoganPaul from '@/assets/images/LoganPaul.png';
-import floatIcon from '@/assets/images/float-blog-icon.svg';
+import floatIcon from '@/assets/images/float-podcast-icon.svg';
 export interface PodcastsSliderInterface {}
 
 interface Podcast {
@@ -49,49 +50,74 @@ const sliderSettings: Settings = {
   arrows: false,
   infinite: true,
   slidesToShow: 2,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 const PodcastsSlider: React.FC<PodcastsSliderInterface> = () => {
   return (
     <section
-      id="the-values"
-      className="extend-bg-color rounded-t-3xl bg-dark-gray text-white md:rounded-t-[4.5rem]"
+      id="podcasts"
+      className="extend-bg-color relative rounded-t-3xl bg-dark-gray text-white md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto space-y-4 px-4 py-10 md:px-4 md:py-20">
+      <div className="container relative mx-auto px-8 py-10 md:px-14 md:py-20">
+        <h3 className="mb-8 text-3xl font-medium">Podcast</h3>
+
         <img
           src={floatIcon}
           alt="Float icon"
-          className="absolute hidden md:inline-block"
+          className="absolute -top-14 hidden md:block"
         />
-        <div className="">
-          <Slider {...sliderSettings} ref={customSlider}>
-            {podcasts.map((value: Podcast, index: number) => (
-              <div key={index} className="container p-2">
-                <div className="rounded-[25px] border-2 p-6">
+
+        <Slider {...sliderSettings} ref={customSlider} className="md:-mx-3">
+          {podcasts.map((value: Podcast, index: number) => (
+            <div key={index}>
+              <div className="rounded-3xl border-2 md:mx-3">
+                <div
+                  className={`flex ${
+                    value.side === 'left' && 'flex-row-reverse'
+                  }`}
+                >
+                  <div className="w-[30%] md:w-2/5">
+                    <img
+                      src={value.image}
+                      alt={value.text}
+                      className={`aspect-square h-full ${
+                        value.side === 'left'
+                          ? 'rounded-r-3xl'
+                          : 'rounded-l-3xl'
+                      } object-cover`}
+                    />
+                  </div>
                   <div
-                    className={`flex gap-6 ${
-                      value.side === 'left' && 'flex-row-reverse'
-                    }`}
+                    className={`flex w-[70%] flex-col gap-4 px-4 py-6 md:w-3/5 md:px-6 md:py-12`}
                   >
-                    <div className="w-2/3 self-end">
-                      <img
-                        src={value.image}
-                        alt=""
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="flex w-1/3 flex-col space-y-4">
-                      <h3 className="text-3xl font-thin">{value.text}</h3>
-                      <CustomLink text="Escuchar" to="#" type="primary" />
-                    </div>
+                    <h3 className="text-xl font-light md:text-3xl">
+                      {value.text}
+                    </h3>
+                    <CustomLink
+                      text="Escuchar"
+                      to="#"
+                      type="primary"
+                      className="w-fit rounded-lg text-lg uppercase"
+                    >
+                      <FontAwesomeIcon icon={faPlay} />
+                    </CustomLink>
                   </div>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
-        <div className="flex justify-end gap-2">
+            </div>
+          ))}
+        </Slider>
+        <div className="mt-3 flex justify-end gap-2">
           <FontAwesomeIcon
             role="button"
             icon={faArrowLeftLong}
