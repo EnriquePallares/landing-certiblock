@@ -11,21 +11,24 @@ export interface CardPublicacionesInterface {
 
 const CardPublicaciones: React.FC<CardPublicacionesInterface> = props => {
   return (
-    <div className="rounded-3xl bg-white p-5 text-dark-blue-0 overflow-hidden text-sm">
-      <div className="flex flex-row items-center justify-between">
-        <span className="flex items-center">
-          <span className="p-2">{props.title}</span>
-        </span>
-      </div>
-      <div className="py-4 bg-indigo-300 rounded-xl max-h-[250px] h-[200px]">
+    <div className="rounded-3xl bg-white p-5 text-sm text-dark-blue-0">
+      <h6 className="mb-2 font-medium">{props.title}</h6>
 
+      <div className="post-image mb-4">
+        <img
+          src="https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen"
+          alt="Post image"
+          className="rounded-2xl object-cover"
+        />
       </div>
-      <div>Por: {props.author}</div>
-      <div className="my-4 font-light max-h-28 overflow-hidden">
-        {props.description}
-      </div>
+      <div className="font-medium">Por: {props.author}</div>
+      <div className="my-4 max-h-28 font-light">{props.description}</div>
       <div className="flex justify-end">
-        <Link to={props.link} text="Seguir leyendo" className=""></Link>
+        <Link
+          to={props.link}
+          text="Seguir leyendo"
+          className="text-sm uppercase"
+        ></Link>
       </div>
     </div>
   );

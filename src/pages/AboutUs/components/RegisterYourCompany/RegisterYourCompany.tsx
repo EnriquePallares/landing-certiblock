@@ -6,7 +6,7 @@ const RegisterYourCompany: React.FC<RegisterYourCompanyInterface> = () => {
   return (
     <section
       id="register-your-company"
-      className="extend-bg-color rounded-t-3xl bg-blue-green md:rounded-t-[4.5rem]"
+      className="extend-bg-color relative rounded-t-3xl bg-blue-green md:rounded-t-[4.5rem]"
     >
       <div className="container mx-auto px-8 py-10 text-white md:px-14 md:py-20">
         <h3 className="mb-4 text-3xl font-medium">Registra tu empresa</h3>

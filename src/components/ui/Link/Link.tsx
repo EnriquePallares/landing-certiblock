@@ -14,6 +14,7 @@ styleType.set('primary', 'bg-primary border-secondary text-dark-gray');
 styleType.set('secondary', 'bg-secondary border-secondary text-white');
 styleType.set('dark', 'bg-dark-gray border-secondary text-white text-primary');
 styleType.set('ligth', 'bg-white text-primary');
+styleType.set('light-gray', 'bg-light-gray text-dark-gray');
 
 const CustomLink: React.FC<LinkInterface> = props => {
   return (
@@ -27,7 +28,7 @@ const CustomLink: React.FC<LinkInterface> = props => {
         }`
       }
     >
-      <div className="flex items-center justify-center space-x-1">
+      <div className="flex items-center justify-center gap-4">
         <span>{props.text}</span>
         {props.children}
       </div>

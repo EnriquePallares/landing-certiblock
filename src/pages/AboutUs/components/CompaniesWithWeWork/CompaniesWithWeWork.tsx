@@ -30,14 +30,14 @@ const CompaniesWithWeWork: React.FC<CompaniesWithWeWorkInterface> = () => {
   return (
     <section
       id="companies-with-we-work"
-      className="extend-bg-color rounded-t-3xl bg-dark-gray md:rounded-t-[4.5rem]"
+      className="extend-bg-color relative rounded-t-3xl bg-dark-gray md:rounded-t-[4.5rem]"
     >
       <div className="container mx-auto px-8 py-10 text-white md:px-14 md:py-20">
         <h3 className="mb-8 text-3xl font-medium">
           Empresas con <br /> las que trabajamos
         </h3>
 
-        <Slider {...sliderSettings}>
+        <Slider {...sliderSettings} className="md:-mx-3">
           {companies.map((company: string, index: number) => (
             <div key={index}>
               <div className="border-whiter rounded-3xl border-2 py-16 px-6 text-center md:mx-3">
