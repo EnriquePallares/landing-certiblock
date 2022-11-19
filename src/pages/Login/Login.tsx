@@ -1,12 +1,37 @@
-import React, { useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import bannerBackground from '@/assets/images/bg-login.png';
 import bannerBackgroundMobile from '@/assets/images/bg-login-mobile.png';
 import { Button, Link } from '@/components';
+import {
+  AppContextValue,
+  AuthContext,
+} from '@/context/AuthContextProvider/AuthContextProvider';
+import { useNavigate } from 'react-router-dom';
+
+import USER_INFO from '@/assets/json/user.json';
 export interface LoginInterface {}
 
 const Login: React.FC<LoginInterface> = () => {
-  const userName = useRef();
-  const password = useRef();
+  const userName = useRef<HTMLInputElement>(null);
+  const password = useRef<HTMLInputElement>(null);
+
+  const navigation = useNavigate();
+
+  const [user, setUser] = useContext<any | null>(AuthContext);
+
+  useEffect(() => {
+    user && navigation('/');
+  }, []);
+
+  const login = () => {
+    if (
+      USER_INFO.username == userName.current?.value &&
+      USER_INFO.password == password.current?.value
+    ) {
+      setUser(USER_INFO);
+      navigation('/profile');
+    }
+  };
 
   return (
     <section
@@ -27,17 +52,23 @@ const Login: React.FC<LoginInterface> = () => {
         </h3>
         <form action="" className="flex flex-col space-y-3">
           <input
+            ref={userName}
             placeholder="Username"
-            className="w-full rounded-[25px] px-8 font-light"
+            className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
+            ref={password}
             placeholder="Contraseña"
-            className="w-full rounded-[25px] px-8 font-light"
-            type="text"
+            className="w-full rounded-[25px] px-8 font-light text-black"
+            type="password"
           />
           <div className="flex flex-col gap-2 pt-5 md:flex-row-reverse md:gap-5">
-            <Button className="px-8 font-light" text="INICIAR SESIÓN"></Button>
+            <Button
+              className="px-8 font-light"
+              text="INICIAR SESIÓN"
+              onClick={login}
+            ></Button>
             <Link
               to="/register"
               type="light-gray"
