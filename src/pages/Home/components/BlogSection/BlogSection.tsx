@@ -72,7 +72,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
             <Accordion className="text-dark-blue-4">
               {posts.map((post, index) => (
                 <Accordion.Panel key={index}>
-                  <Accordion.Title className="bg-white text-2xl text-current hover:bg-primary">
+                  <Accordion.Title className="bg-white text-2xl !text-current hover:bg-primary">
                     {post.title}
                   </Accordion.Title>
                   <Accordion.Content className="bg-white text-current">

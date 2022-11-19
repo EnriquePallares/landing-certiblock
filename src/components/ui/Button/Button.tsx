@@ -9,10 +9,10 @@ export interface ButtonInterface {
 
 const styleType = new Map();
 
-styleType.set('primary', 'bg-primary border-secondary text-dark-gray');
-styleType.set('primary-text-white', 'bg-primary border-secondary text-white');
-styleType.set('secondary', 'bg-secondary border-secondary text-white');
-styleType.set('dark', 'bg-dark-gray border-secondary text-white text-primary');
+styleType.set('primary', 'bg-primary text-dark-gray');
+styleType.set('primary-text-white', 'bg-primary text-white');
+styleType.set('secondary', 'bg-secondary text-white');
+styleType.set('dark', 'bg-dark-gray text-white text-primary');
 styleType.set('ligth', 'bg-white text-primary');
 styleType.set('ligth-text-black', 'bg-white text-black');
 

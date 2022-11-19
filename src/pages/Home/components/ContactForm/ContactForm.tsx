@@ -15,7 +15,7 @@ const ContactForm = (props: ContactFormInterface) => {
       className="extend-bg-color relative hidden rounded-t-3xl bg-light-gray md:block md:rounded-t-[4.5rem]"
     >
       <div className="container mx-auto px-8 py-10 md:px-14 md:py-20">
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-4 items-center gap-6">
           <div className="text-right text-lg">
             <p>¿Te gusta Certiblock?</p>
             <p>
@@ -65,8 +65,7 @@ const ContactForm = (props: ContactFormInterface) => {
             <div>
               <Button
                 text="ENVIAR"
-                className="w-full text-center text-4xl font-light tracking-widest"
-                type="primary-text-white"
+                className="w-full text-center font-light tracking-widest"
               />
             </div>
           </div>

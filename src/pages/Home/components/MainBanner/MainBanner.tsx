@@ -43,7 +43,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-auto md:aspect-video"
+          className="aspect-[1/3] md:aspect-video"
         />
       </picture>
       <div className="vertical-alignment-abs absolute flex w-full flex-wrap px-8 text-4xl font-black md:justify-center md:text-8xl md:text-secondary">
@@ -90,6 +90,29 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
             />
           </svg>
         </Button>
+
+        <div className="mt-24 w-full md:hidden">
+          <h4 className="mb-8 text-2xl font-black">
+            Aprende con nosotros <br />
+            sobre Web 3.0
+          </h4>
+
+          <Accordion className="text-dark-blue-4">
+            {posts.map((post, index) => (
+              <Accordion.Panel key={index}>
+                <Accordion.Title className="bg-white text-lg !text-current hover:bg-primary">
+                  {post.title}
+                </Accordion.Title>
+                <Accordion.Content className="bg-white text-base text-current">
+                  <p className="my-4 font-light">{post.content}</p>
+                  <Link className="underline" to={post.link}>
+                    Ver más <FontAwesomeIcon icon={faArrowRight} />
+                  </Link>
+                </Accordion.Content>
+              </Accordion.Panel>
+            ))}
+          </Accordion>
+        </div>
       </div>
     </section>
   );
