@@ -35,7 +35,7 @@ const Header: React.FC<HeaderInterface> = () => {
                 <CustomLink
                   key={index}
                   to={item.link}
-                  className="rounded-none first:rounded-tl-full first:rounded-bl-full last:rounded-tr-full last:rounded-br-full even:before:content-['|'] even:after:content-['|']"
+                  className="!rounded-none first:!rounded-tl-full first:!rounded-bl-full last:!rounded-tr-full last:!rounded-br-full even:before:content-['|'] even:after:content-['|']"
                   text={item.text}
                 />
               ))}
