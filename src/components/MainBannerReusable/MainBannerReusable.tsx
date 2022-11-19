@@ -5,9 +5,9 @@ export interface MainBannerReusableInterface {
   bannerBackground: string;
   bannerBackgroundMobile: string;
   title: string;
-  paragraph: string | ReactNode;
+  paragraph?: string | ReactNode;
   highlightedWord?: string;
-  link: LinkInterface;
+  link?: LinkInterface;
   classTitle?: string;
   classHighWord?: string;
 }
@@ -36,17 +36,19 @@ const MainBannerReusable = ({
         className={`vertical-alignment-abs absolute w-full py-16 px-8 text-4xl font-black md:w-2/3 md:px-4 md:text-8xl ${classTitle}`}
       >
         {title} <span className={classHighWord}>{highlightedWord}</span>
-        <div className="my-6 rounded-xl bg-white/95 px-4 py-6 text-xl font-normal text-blue-green md:p-6">
-          {paragraph}
-        </div>
+        {paragraph && (
+          <div className="my-6 rounded-xl bg-white/95 px-4 py-6 text-xl font-normal text-blue-green md:p-6">
+            {paragraph}
+          </div>
+        )}
         <div className="link flex justify-center">
           <CustomLink
-            to={link.to}
-            className={link.className}
-            type={link.type}
-            text={link.text}
+            to={link?.to ?? ''}
+            className={link?.className ?? ''}
+            type={link?.type ?? ''}
+            text={link?.text ?? ''}
           >
-            {link.children}
+            {link?.children ?? ''}
           </CustomLink>
         </div>
       </div>

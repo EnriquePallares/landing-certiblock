@@ -22,7 +22,9 @@ const AppRoutes = (props: AppRoutesInterface) => {
         <Route path="/blog" element={<Blog />} />
       </Route>
       <Route element={<ProtectedRoute />}>
-        <Route path="/profile" element={<Profile />} />
+        <Route element={<Layout imagelessFooter={true} />}>
+          <Route path="/profile" element={<Profile />} />
+        </Route>
       </Route>
     </Routes>
   );

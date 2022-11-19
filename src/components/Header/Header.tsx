@@ -55,7 +55,7 @@ const Header: React.FC<HeaderInterface> = () => {
               ))}
             </div>
 
-            <CustomLink to={user ? "/profile" : "/login"} className="mb-1 md:mb-0" text={user.name ?? "Log in"}>
+            <CustomLink to={user ? "/profile" : "/login"} className="mb-1 md:mb-0" text={user ? user.name :"Log in"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
