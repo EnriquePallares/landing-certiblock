@@ -109,7 +109,7 @@ const PodcastsSlider: React.FC<PodcastsSliderInterface> = () => {
                       type="primary"
                       className="w-fit rounded-lg text-lg uppercase"
                     >
-                      <FontAwesomeIcon icon={faPlay} />
+                      <FontAwesomeIcon icon={faPlay} className="ml-2" />
                     </CustomLink>
                   </div>
                 </div>
