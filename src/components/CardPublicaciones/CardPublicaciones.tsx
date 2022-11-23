@@ -30,6 +30,7 @@ const CardPublicaciones: React.FC<CardPublicacionesInterface> = props => {
           to={props.link}
           text="Seguir leyendo"
           className="text-sm uppercase"
+          type="primary"
         ></Link>
       </div>
     </div>
