@@ -112,9 +112,10 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
                     <CustomLink
                       to={member.link}
                       text="VER MÁS"
-                      className="bg-transparent px-0 hover:underline"
+                      className="!bg-transparent px-0 hover:underline"
+                      type="primary"
                     >
-                      <FontAwesomeIcon icon={faArrowRight} />
+                      <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
                     </CustomLink>
                   </div>
                 </div>

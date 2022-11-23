@@ -5,6 +5,7 @@ export interface MainBannerReusableInterface {
   bannerBackground: string;
   bannerBackgroundMobile: string;
   title: string;
+  bannerImagesClasses?: string;
   paragraph?: string | ReactNode;
   highlightedWord?: string;
   link?: LinkInterface;
@@ -15,6 +16,7 @@ export interface MainBannerReusableInterface {
 const MainBannerReusable = ({
   bannerBackground,
   bannerBackgroundMobile,
+  bannerImagesClasses,
   title,
   highlightedWord,
   paragraph,
@@ -29,28 +31,33 @@ const MainBannerReusable = ({
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-auto md:aspect-video"
+          className={`aspect-[1/2] md:aspect-video ${bannerImagesClasses}`}
         />
       </picture>
       <div
         className={`vertical-alignment-abs absolute w-full py-16 px-8 text-4xl font-black md:w-2/3 md:px-4 md:text-8xl ${classTitle}`}
       >
-        {title} <span className={classHighWord}>{highlightedWord}</span>
+        {title}{' '}
+        {highlightedWord && (
+          <span className={classHighWord}>{highlightedWord}</span>
+        )}
         {paragraph && (
           <div className="my-6 rounded-xl bg-white/95 px-4 py-6 text-xl font-normal text-blue-green md:p-6">
             {paragraph}
           </div>
         )}
-        <div className="link flex justify-center">
-          <CustomLink
-            to={link?.to ?? ''}
-            className={link?.className ?? ''}
-            type={link?.type ?? ''}
-            text={link?.text ?? ''}
-          >
-            {link?.children ?? ''}
-          </CustomLink>
-        </div>
+        {link && (
+          <div className="link flex justify-center">
+            <CustomLink
+              to={link.to}
+              className={link.className}
+              type={link.type}
+              text={link.text}
+            >
+              {link.children}
+            </CustomLink>
+          </div>
+        )}
       </div>
     </section>
   );

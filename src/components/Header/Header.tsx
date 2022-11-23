@@ -32,13 +32,16 @@ const Header: React.FC<HeaderInterface> = () => {
           </Navbar.Brand>
 
           <Navbar.Toggle className="!text-white hover:!text-gray-500" />
-          <Navbar.Collapse className="rounded  bg-gray-100 px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
-            <div className="hidden md:inline-flex">
+
+          <Navbar.Collapse className="rounded bg-gray-100 px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
+            <div className="hidden rounded-full bg-primary font-bold md:inline-flex">
+
               {menuItems.map((item, index) => (
                 <CustomLink
                   key={index}
                   to={item.link}
                   className=" !rounded-none first:pl-8 first:!rounded-tl-full  first:!rounded-bl-full last:!rounded-tr-full last:!rounded-br-full even:before:content-['|'] even:after:content-['|']"
+
                   text={item.text}
                 />
               ))}
@@ -55,7 +58,11 @@ const Header: React.FC<HeaderInterface> = () => {
               ))}
             </div>
 
-            <CustomLink to={user ? "/profile" : "/login"} className="mb-1 md:mb-0" text={user ? user.name :"Log in"}>
+            <CustomLink
+              to={user ? '/profile' : '/login'}
+              className="mb-1 md:mb-0"
+              text={user ? user.name : 'Log in'}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

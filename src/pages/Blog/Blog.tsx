@@ -9,7 +9,9 @@ import { PodcastsSlider } from './components/PodcastsSlider';
 export interface BlogInterface {}
 
 const Blog: React.FC<BlogInterface> = () => {
-  const arrowLink: ReactNode = <FontAwesomeIcon icon={faArrowDown} />;
+  const arrowLink: ReactNode = (
+    <FontAwesomeIcon icon={faArrowDown} className="ml-4" />
+  );
 
   const paragraph: ReactNode = (
     <p>
@@ -33,8 +35,7 @@ const Blog: React.FC<BlogInterface> = () => {
           text: 'Leer más',
           to: '#',
           type: 'primary',
-          className:
-            'border-none font-normal text-lg uppercase py-5 px-10 md:px-20',
+          className: 'border-none font-normal text-lg uppercase py-1 px-8',
           children: arrowLink,
         }}
       />
