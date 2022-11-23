@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import bannerBackground from '@/assets/images/bg-login.png';
 import bannerBackgroundMobile from '@/assets/images/bg-login-mobile.png';
 import BlogContent from './components/BlogContent/BlogContent';
+import { SimilarPosts } from './components/SimilarPosts';
 export interface InternalBlogInterface {}
 
 const InternalBlog: React.FC<InternalBlogInterface> = () => {
@@ -19,6 +20,7 @@ const InternalBlog: React.FC<InternalBlogInterface> = () => {
         classTitle="text-primary text-center"
       />
       <BlogContent />
+      <SimilarPosts />
     </section>
   );
 };

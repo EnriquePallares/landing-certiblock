@@ -37,10 +37,10 @@ const CompaniesWithWeWork: React.FC<CompaniesWithWeWorkInterface> = () => {
           Empresas con <br /> las que trabajamos
         </h3>
 
-        <Slider {...sliderSettings} className="md:-mx-3">
+        <Slider {...sliderSettings} className="-mx-1 md:-mx-3">
           {companies.map((company: string, index: number) => (
             <div key={index}>
-              <div className="border-whiter rounded-3xl border-2 py-16 px-6 text-center md:mx-3">
+              <div className="border-whiter mx-1 rounded-3xl border-2 py-16 px-6 text-center md:mx-3">
                 {company}
               </div>
             </div>

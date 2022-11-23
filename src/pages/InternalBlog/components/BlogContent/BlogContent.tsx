@@ -93,7 +93,7 @@ const BlogContent: React.FC<BlogContentInterface> = () => {
           </h4>
 
           <div className="md:w-4/5">
-            <Slider {...sliderSettings} className="md:-mx-3">
+            <Slider {...sliderSettings} className="-mx-1 md:-mx-2">
               <div>
                 <CardPublicaciones
                   title="Cómo hacer tu primera certificación"
@@ -101,7 +101,7 @@ const BlogContent: React.FC<BlogContentInterface> = () => {
                   author="Pepito Perez"
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                   link="#"
-                  className="md:mx-3"
+                  className="mx-1 md:mx-2"
                 />
               </div>
               <div>
@@ -111,7 +111,7 @@ const BlogContent: React.FC<BlogContentInterface> = () => {
                   author="Pepito Perez"
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                   link="#"
-                  className="md:mx-3"
+                  className="mx-1 md:mx-2"
                 />
               </div>
             </Slider>
