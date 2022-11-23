@@ -87,10 +87,14 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
           className="absolute left-4 bottom-60 hidden md:block"
         />
 
-        <Slider {...sliderSettings} ref={customSlider} className="md:-mx-3">
+        <Slider
+          {...sliderSettings}
+          ref={customSlider}
+          className="-mx-1 md:-mx-3"
+        >
           {members.map((member: any, index: number) => (
             <div key={index}>
-              <div className="rounded-3xl bg-white p-6 text-dark-blue-4 md:mx-3 md:p-8">
+              <div className="mx-1 rounded-3xl bg-white p-6 text-dark-blue-4 md:mx-3 md:p-8">
                 <div className="rounded-3xl">
                   <div className="flex flex-row items-center justify-between">
                     <span className="flex items-center">
