@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Cámara de comercio",
+        "validity": "2022-12-12",
+        "claimed": false,
+        "favorite": false,
+        "isForEver" : false,
+        "user": "juan"
+    },
+    {
+        "title": "SOAT",
+        "validity": "2022-12-12",
+        "claimed": true,
+        "favorite": true,
+        "isForEver" : true,
+        "user": "juan"
+    },
+    {
+        "title": "Diploma",
+        "validity": "2022-12-12",
+        "claimed": true,
+        "favorite": true,
+        "isForEver" : false,
+        "user": "juan"
+    },
+    {
+        "title": "Catastro",
+        "validity": "2022-12-12",
+        "claimed": false,
+        "favorite": false,
+        "isForEver" : false,
+        "user": "juan"
+    }
+]

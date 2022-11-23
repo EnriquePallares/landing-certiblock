@@ -1,5 +1,6 @@
 import { CardPublicaciones } from '@/components/CardPublicaciones';
 import React, { useState } from 'react';
+import jsonPosts from '@/assets/json/posts.json'
 export interface LastPostsInterface {}
 
 interface NewsCategories {
@@ -182,6 +183,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
       ],
     },
   ];
+  const posts = jsonPosts as Posts[];
 
   const [newsCategory, setNewsCategory] = useState('all');
   const handleFilter = (event: any) => setNewsCategory(event.target.value);
