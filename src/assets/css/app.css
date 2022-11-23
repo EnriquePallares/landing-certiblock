@@ -158,6 +158,8 @@
   font-style: italic;
   font-weight: 500;
   src: local('Gotham XLight'), url(https://fonts.cdnfonts.com/s/14898/Gotham-XLightItalic.woff) format('woff')
+}
+
 .custom-dots li button::before {
   @apply text-white !important;
 }

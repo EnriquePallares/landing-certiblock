@@ -59,8 +59,8 @@ const DocumentCard: React.FC<DocumentCardInterface> = props => {
           <img src={buttonIcon} alt="" />
         </button>
         <img
-          className="rounded-xl border border-gray-400"
-          src="https://via.placeholder.com/350/FFFFFF/C3D22D/?text=Preview"
+          className="w-full rounded-xl border border-gray-400"
+          src="https://via.placeholder.com/360x270/FFFFFF/C3D22D/?text=Preview"
           alt=""
         />
       </div>
@@ -89,10 +89,10 @@ const DocumentCard: React.FC<DocumentCardInterface> = props => {
           )}
         </h3>
       </div>
-      <div className="flex">
+      <div className="flex gap-2">
         <Button
           text="DESCARGAR"
-          className=""
+          className="w-1/2 !px-2 !text-sm"
           disabled={!document.claimed}
           type={!document.claimed ? 'ligth-gray' : 'primary'}
         >
@@ -100,7 +100,7 @@ const DocumentCard: React.FC<DocumentCardInterface> = props => {
         </Button>
         <Button
           text="COMPARTIR"
-          className=""
+          className="w-1/2 !px-2 !text-sm"
           disabled={!document.claimed}
           type={!document.claimed ? 'ligth-gray' : 'primary'}
         >
