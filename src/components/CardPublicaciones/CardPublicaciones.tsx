@@ -7,11 +7,14 @@ export interface CardPublicacionesInterface {
   author: string;
   description: string;
   link: string;
+  className?: string;
 }
 
 const CardPublicaciones: React.FC<CardPublicacionesInterface> = props => {
   return (
-    <div className="rounded-3xl bg-white p-5 text-sm text-dark-blue-0">
+    <div
+      className={`rounded-3xl bg-white p-5 text-sm text-dark-blue-0 ${props.className}`}
+    >
       <h6 className="mb-2 font-medium">{props.title}</h6>
       <div className="post-image mb-4">
         <img

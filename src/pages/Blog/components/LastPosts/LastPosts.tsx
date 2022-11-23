@@ -2,17 +2,22 @@ import { CardPublicaciones } from '@/components/CardPublicaciones';
 import React, { useState } from 'react';
 export interface LastPostsInterface {}
 
+interface NewsCategories {
+  text: string;
+  value: string;
+}
+
 interface Posts {
   title: string;
   image: string;
   author: string;
   description: string;
   link: string;
-  category: string;
+  categories: NewsCategories[];
 }
 
 const LastPosts: React.FC<LastPostsInterface> = () => {
-  const optionsFilter = [
+  const optionsFilter: NewsCategories[] = [
     {
       text: 'Casos de éxito',
       value: 'CE',
@@ -38,8 +43,17 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'NT',
+      link: '/blog/1',
+      categories: [
+        {
+          text: 'Casos de éxito',
+          value: 'CE',
+        },
+        {
+          text: 'Educación',
+          value: 'ED',
+        },
+      ],
     },
     {
       title: 'Cómo hacer tu primera certificación',
@@ -47,8 +61,17 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'NT',
+      link: '/blog/2',
+      categories: [
+        {
+          text: 'Noticias',
+          value: 'NT',
+        },
+        {
+          text: 'FAQ',
+          value: 'FA',
+        },
+      ],
     },
     {
       title: 'Cómo hacer tu primera certificación',
@@ -56,8 +79,17 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'CE',
+      link: '/blog/3',
+      categories: [
+        {
+          text: 'Casos de éxito',
+          value: 'CE',
+        },
+        {
+          text: 'Educación',
+          value: 'ED',
+        },
+      ],
     },
     {
       title: 'Cómo hacer tu primera certificación',
@@ -65,8 +97,17 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'CE',
+      link: '/blog/4',
+      categories: [
+        {
+          text: 'Casos de éxito',
+          value: 'CE',
+        },
+        {
+          text: 'Noticias',
+          value: 'NT',
+        },
+      ],
     },
     {
       title: 'Cómo hacer tu primera certificación',
@@ -74,8 +115,17 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'ED',
+      link: '/blog/5',
+      categories: [
+        {
+          text: 'Educación',
+          value: 'ED',
+        },
+        {
+          text: 'Noticias',
+          value: 'NT',
+        },
+      ],
     },
     {
       title: 'Cómo hacer tu primera certificación',
@@ -83,8 +133,17 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'FA',
+      link: '/blog/6',
+      categories: [
+        {
+          text: 'FAQ',
+          value: 'FA',
+        },
+        {
+          text: 'Casos de éxito',
+          value: 'CE',
+        },
+      ],
     },
     {
       title: 'Cómo hacer tu primera certificación',
@@ -92,8 +151,17 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'FA',
+      link: '/blog/7',
+      categories: [
+        {
+          text: 'FAQ',
+          value: 'FA',
+        },
+        {
+          text: 'Casos de éxito',
+          value: 'CE',
+        },
+      ],
     },
     {
       title: 'Cómo hacer tu primera certificación',
@@ -101,8 +169,17 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'FA',
+      link: '/blog/8',
+      categories: [
+        {
+          text: 'FAQ',
+          value: 'FA',
+        },
+        {
+          text: 'Educación',
+          value: 'ED',
+        },
+      ],
     },
   ];
 
@@ -157,7 +234,12 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
         <div className="grid gap-4 md:grid-cols-4 md:gap-y-12">
           {newsCategory !== 'all'
             ? posts
-                .filter((post: Posts) => post.category === newsCategory)
+                .filter((post: Posts) =>
+                  post.categories.some(
+                    (category: NewsCategories) =>
+                      category.value === newsCategory
+                  )
+                )
                 .map((filteredPost: Posts, index) => (
                   <CardPublicaciones
                     title={filteredPost.title}

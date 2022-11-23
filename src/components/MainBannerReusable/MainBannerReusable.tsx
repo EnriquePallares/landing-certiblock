@@ -5,6 +5,7 @@ export interface MainBannerReusableInterface {
   bannerBackground: string;
   bannerBackgroundMobile: string;
   title: string;
+  bannerImagesClasses?: string;
   paragraph?: string | ReactNode;
   highlightedWord?: string;
   link?: LinkInterface;
@@ -15,6 +16,7 @@ export interface MainBannerReusableInterface {
 const MainBannerReusable = ({
   bannerBackground,
   bannerBackgroundMobile,
+  bannerImagesClasses,
   title,
   highlightedWord,
   paragraph,
@@ -29,7 +31,7 @@ const MainBannerReusable = ({
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-[1/2] md:aspect-video"
+          className={`aspect-[1/2] md:aspect-video ${bannerImagesClasses}`}
         />
       </picture>
       <div
