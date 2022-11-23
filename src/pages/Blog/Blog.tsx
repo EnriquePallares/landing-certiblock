@@ -35,7 +35,7 @@ const Blog: React.FC<BlogInterface> = () => {
           text: 'Leer más',
           to: '#',
           type: 'primary',
-          className: 'border-none font-normal text-lg uppercase py-1 px-8',
+          className: 'border-none font-light text-lg uppercase py-1 px-8',
           children: arrowLink,
         }}
       />

@@ -13,7 +13,7 @@ const CardInstagram: React.FC<CardInstagramInterface> = ({ image }) => {
           </svg>
           <span className="p-2">Certiblock</span>
         </span>
-        <button className="rounded-md bg-gray-200 px-3 py-1 font-normal hover:bg-gray-300">
+        <button className="rounded-md bg-gray-200 px-3 py-1 font-light hover:bg-gray-300">
           <span>Seguir</span>
         </button>
       </div>

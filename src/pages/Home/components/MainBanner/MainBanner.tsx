@@ -43,7 +43,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-[1/3] md:aspect-video"
+          className="aspect-[1/3] w-full md:aspect-video"
         />
       </picture>
       <div className="vertical-alignment-abs absolute flex w-full flex-wrap px-8 text-4xl font-black md:justify-center md:text-8xl md:text-secondary">
@@ -73,7 +73,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
         <Button
           text="SABER MÁS"
           type="ligth-text-black"
-          className="mt-6 font-normal md:ml-10 md:hidden md:px-16 md:py-5"
+          className="mt-6 font-light md:ml-10 md:hidden md:px-16 md:py-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -33,12 +33,12 @@ const Header: React.FC<HeaderInterface> = () => {
 
           <Navbar.Toggle className="!text-white hover:!text-gray-500" />
           <Navbar.Collapse className="rounded bg-gray-100 px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
-            <div className="hidden rounded-full bg-primary font-normal md:inline-flex">
+            <div className="hidden rounded-full bg-primary md:inline-flex">
               {menuItems.map((item, index) => (
                 <CustomLink
                   key={index}
                   to={item.link}
-                  className="relative !rounded-full after:absolute after:right-0 after:content-['|'] last:after:content-['']"
+                  className="relative !rounded-full !font-light after:absolute after:right-0 after:content-['|'] last:after:content-['']"
                   text={item.text}
                 />
               ))}
@@ -49,7 +49,7 @@ const Header: React.FC<HeaderInterface> = () => {
                 <CustomLink
                   key={index}
                   to={item.link}
-                  className="mb-1"
+                  className="mb-1 !font-light"
                   text={item.text}
                 />
               ))}
@@ -57,7 +57,7 @@ const Header: React.FC<HeaderInterface> = () => {
 
             <CustomLink
               to={user ? '/profile' : '/login'}
-              className="mb-1 md:mb-0"
+              className="mb-1 !font-light md:mb-0"
               text={user ? user.name : 'Log in'}
             >
               <svg
@@ -76,7 +76,12 @@ const Header: React.FC<HeaderInterface> = () => {
               </svg>
             </CustomLink>
 
-            <CustomLink to="/test" text="Reclama tu activo" type="secondary" />
+            <CustomLink
+              className="!font-light"
+              to="/test"
+              text="Reclama tu activo"
+              type="secondary"
+            />
           </Navbar.Collapse>
         </Navbar>
       </div>

@@ -31,7 +31,7 @@ const MainBannerReusable = ({
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className={`aspect-[1/2] md:aspect-video ${bannerImagesClasses}`}
+          className={`aspect-[1/2] w-full md:aspect-video ${bannerImagesClasses}`}
         />
       </picture>
       <div
@@ -42,7 +42,7 @@ const MainBannerReusable = ({
           <span className={classHighWord}>{highlightedWord}</span>
         )}
         {paragraph && (
-          <div className="my-6 rounded-xl bg-white/95 px-4 py-6 text-xl font-normal text-blue-green md:p-6">
+          <div className="my-6 rounded-xl bg-white/95 px-4 py-6 text-xl font-light text-blue-green md:p-6">
             {paragraph}
           </div>
         )}
