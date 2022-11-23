@@ -24,7 +24,7 @@ const Register = (props: RegisterInterface) => {
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-[1/2.8] md:aspect-[4/3.3]"
+          className="aspect-[1/2.8] w-full md:aspect-[4/3.3]"
         />
       </picture>
       <div className="vertical-alignment-abs absolute w-full p-8 md:w-1/2">

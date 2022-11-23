@@ -29,7 +29,7 @@ const Login: React.FC<LoginInterface> = () => {
       setUser(USER_INFO);
       navigation('/profile');
     }
-    setError('Usuario o contraseña incorrectos')
+    setError('Usuario o contraseña incorrectos');
   };
 
   return (
@@ -42,7 +42,7 @@ const Login: React.FC<LoginInterface> = () => {
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-auto md:aspect-video"
+          className="aspect-auto w-full md:aspect-video"
         />
       </picture>
       <div className="vertical-alignment-abs absolute w-full p-8 md:w-1/2">
@@ -62,8 +62,11 @@ const Login: React.FC<LoginInterface> = () => {
             className="w-full rounded-[25px] px-8 font-light text-black"
             type="password"
           />
-          <p className='text-red-600'>{error}</p>
-          <NavLink to="#" className="text-right"> <span className='underline'>Olvidé mi contraseña</span> (*_*)</NavLink>
+          <p className="text-red-600">{error}</p>
+          <NavLink to="#" className="text-right">
+            {' '}
+            <span className="underline">Olvidé mi contraseña</span> (*_*)
+          </NavLink>
           <div className="flex flex-col gap-2 pt-5 md:flex-row-reverse md:gap-5">
             <Button
               className="px-8 font-light"
