@@ -16,7 +16,7 @@ const ContactForm = (props: ContactFormInterface) => {
     >
       <div className="container mx-auto px-8 py-10 md:px-14 md:py-20">
         <div className="grid grid-cols-4 items-center gap-6">
-          <div className="text-right text-lg">
+          <div className="text-right text-black text-lg">
             <p>¿Te gusta Certiblock?</p>
             <p>
               ¿Quieres más <br />
@@ -27,13 +27,13 @@ const ContactForm = (props: ContactFormInterface) => {
             <input
               type="text"
               ref={fullName}
-              placeholder="Nombre y apellidos"
+              placeholder="Nombre y apellidos *"
               className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
             <input
               type="email"
               ref={email}
-              placeholder="Correo electrónico"
+              placeholder="Correo electrónico *"
               className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
           </div>
@@ -41,13 +41,13 @@ const ContactForm = (props: ContactFormInterface) => {
             <input
               type="phone"
               ref={phone}
-              placeholder="Teléfono celular"
+              placeholder="Teléfono celular * "
               className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
             <input
               type="text"
               ref={company}
-              placeholder="Nombre de tu compañía"
+              placeholder="Nombre de tu compañía *"
               className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
           </div>
@@ -65,7 +65,7 @@ const ContactForm = (props: ContactFormInterface) => {
             <div>
               <Button
                 text="ENVIAR"
-                className="w-full text-center font-light tracking-widest"
+                className="w-full text-center font-bold tracking-widest"
               />
             </div>
           </div>

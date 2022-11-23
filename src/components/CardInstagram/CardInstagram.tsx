@@ -1,8 +1,15 @@
 import React from 'react';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 export interface CardInstagramInterface {
   image: string;
 }
-
+const posts = [
+  {
+    link: '#',
+  }
+]
 const CardInstagram: React.FC<CardInstagramInterface> = ({ image }) => {
   return (
     <div className="rounded-3xl">
@@ -26,6 +33,13 @@ const CardInstagram: React.FC<CardInstagramInterface> = ({ image }) => {
         vero est asperiores quia, natus dolore et illo dolorem hic commodi
         aperiam excepturi praesentium ut iusto amet? Fuga!
       </div>
+
+      {posts.map((post, index) => (
+            <Link key={index} className="underline italic relative float-right" to={post.link}>
+              Ver más <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
+      ))}
+
     </div>
   );
 };

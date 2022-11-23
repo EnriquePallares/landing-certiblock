@@ -24,21 +24,21 @@ const Header: React.FC<HeaderInterface> = () => {
   const [user] = useContext<any>(AuthContext);
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
-      <div className="container mx-auto p-5">
+    <header className="absolute inset-0 top-0 left-0 right-0 z-50">
+      <div className="container mx-auto 2xl:pt-28 xl:pt-20">
         <Navbar fluid={true} className="bg-transparent">
           <Navbar.Brand href="/landing-certiblock/">
-            <img src={logo} className="w-48" alt="Logo certiblock" />
+            <img src={logo} className="2xl:w-101 xl:w-88 " alt="Logo certiblock" />
           </Navbar.Brand>
 
           <Navbar.Toggle className="!text-white hover:!text-gray-500" />
-          <Navbar.Collapse className="rounded bg-gray-100 px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
-            <div className="hidden font-normal md:inline-flex">
+          <Navbar.Collapse className="rounded  bg-gray-100 px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
+            <div className="hidden md:inline-flex">
               {menuItems.map((item, index) => (
                 <CustomLink
                   key={index}
                   to={item.link}
-                  className="!rounded-none first:!rounded-tl-full first:!rounded-bl-full last:!rounded-tr-full last:!rounded-br-full even:before:content-['|'] even:after:content-['|']"
+                  className=" !rounded-none first:pl-8 first:!rounded-tl-full  first:!rounded-bl-full last:!rounded-tr-full last:!rounded-br-full even:before:content-['|'] even:after:content-['|']"
                   text={item.text}
                 />
               ))}

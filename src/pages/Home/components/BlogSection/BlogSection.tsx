@@ -72,7 +72,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
             <Accordion className="text-dark-blue-4">
               {posts.map((post, index) => (
                 <Accordion.Panel key={index}>
-                  <Accordion.Title className="bg-white text-2xl !text-current hover:bg-primary">
+                  <Accordion.Title className="bg-white italic text-2xl !text-current hover:bg-primary">
                     {post.title}
                   </Accordion.Title>
                   <Accordion.Content className="bg-white text-current">
@@ -90,7 +90,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
             className={`last-post bg-image-opacity relative z-10 col-span-3 rounded-r-xl bg-cover bg-center bg-no-repeat md:bg-[url('@/assets/images/post-image.png')]`}
           >
             <div className="md:my-5 md:ml-auto md:mr-20 md:w-3/5">
-              <h4 className="mb-6 text-2xl md:mb-8">Último post</h4>
+              <h2 className="mb-6 text-center italic text-4xl 2xl:text-5xl md:mb-8">Última publicacion</h2>
               <LastPost />
             </div>
           </div>
