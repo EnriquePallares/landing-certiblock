@@ -37,14 +37,14 @@ const Register = (props: RegisterInterface) => {
             <Button
               type={isNaturalPerson() ? 'dark' : 'ligth-text-black'}
               text="PERSONA"
-              className={`w-full text-2xl font-light ${
+              className={`w-full md:text-2xl font-light ${
                 isNaturalPerson() && 'border border-primary'
               }`}
               onClick={() => handdleTypePerson('person')}
             ></Button>
             <Button
               type={!isNaturalPerson() ? 'dark' : 'ligth-text-black'}
-              className={`w-full text-2xl font-light ${
+              className={`w-full md:text-2xl font-light ${
                 !isNaturalPerson() && 'border border-primary'
               }`}
               text="EMPRESA"
