@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { CountdownTimer } from './CountdownTimer';
 import { Countdown } from './CountdownTimer/CountdownTimer';
-import buttonIcon from '@/assets/images/Grupo%20201.svg';
+import buttonIcon from '@/assets/images/Grupo201.svg';
 export interface DocumentCardInterface {
   document: Document;
 }
