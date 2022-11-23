@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '@/assets/images/logo-certiblock.svg';
 import { Navbar } from 'flowbite-react';
 import CustomLink from '../ui/Link/Link';
+import { AuthContext } from '@/context/AuthContextProvider/AuthContextProvider';
 export interface HeaderInterface {}
 
 const Header: React.FC<HeaderInterface> = () => {
@@ -19,6 +20,8 @@ const Header: React.FC<HeaderInterface> = () => {
       link: '/blog',
     },
   ];
+
+  const [user] = useContext<any>(AuthContext);
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
@@ -52,7 +55,7 @@ const Header: React.FC<HeaderInterface> = () => {
               ))}
             </div>
 
-            <CustomLink to="/login" className="mb-1 md:mb-0" text="Log in">
+            <CustomLink to={user ? "/profile" : "/login"} className="mb-1 md:mb-0" text={user ? user.name :"Log in"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
