@@ -21,7 +21,7 @@ module.exports = {
         'blue-green': '#0A3B4A',
       },
       fontFamily: {
-        sans: ['Gotham, sans-serif'],
+        sans: ['Gotham'],
       },
     },
   },
