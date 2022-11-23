@@ -16,7 +16,7 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="h-6 w-6"
+      className="ml-4 h-6 w-6"
     >
       <path
         strokeLinecap="round"
@@ -48,7 +48,7 @@ const AboutUs: React.FC<AboutUsInterface> = () => {
           text: 'SABER MÁS',
           to: '#',
           type: 'primary',
-          className: 'border-none font-normal py-5 px-10 md:px-20',
+          className: 'border-none font-normal py-1 px-8',
           children: arrowLink,
         }}
       />

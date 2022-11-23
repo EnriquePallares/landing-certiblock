@@ -33,3 +33,7 @@
   content: '';
   z-index: -1;
 }
+
+.custom-dots li button::before {
+  @apply text-white !important;
+}
