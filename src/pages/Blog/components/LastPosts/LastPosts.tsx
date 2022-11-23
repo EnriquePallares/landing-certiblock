@@ -89,18 +89,20 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
                 .map((filteredPost: Posts, index) => (
                   <CardPublicaciones
                     title={filteredPost.title}
+                    image={filteredPost.image}
                     author={filteredPost.author}
                     description={filteredPost.description}
                     link={filteredPost.link}
                     key={index}
                   />
                 ))
-            : posts.map((filteredPost: Posts, index) => (
+            : posts.map((post: Posts, index) => (
                 <CardPublicaciones
-                  title={filteredPost.title}
-                  author={filteredPost.author}
-                  description={filteredPost.description}
-                  link={filteredPost.link}
+                  title={post.title}
+                  image={post.image}
+                  author={post.author}
+                  description={post.description}
+                  link={post.link}
                   key={index}
                 />
               ))}
