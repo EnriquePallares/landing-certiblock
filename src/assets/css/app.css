@@ -33,3 +33,10 @@
   content: '';
   z-index: -1;
 }
+
+@font-face {
+  font-family: "gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/GothamBook.woff') format('woff')
+}
