@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { SectorWorks } from '../SectorWorks';
 import floatIcon from '@/assets/images/float-footer-icon.svg';
+import { NavLink } from 'react-router-dom';
 export interface FooterInterface {}
 
 const column2 = ['Compañía', 'Acerca de nosotros', 'Comunidad', 'Partners'];
@@ -41,7 +42,7 @@ const Footer: React.FC<FooterInterface> = () => {
               <ul className="space-y-2">
                 {column2.map((item, index) => (
                   <li key={index} className="">
-                    <span className="md:px-4">{item}</span>
+                    <NavLink className="hover:underline" to="#" ><span className="md:px-4">{item}</span></NavLink>
                   </li>
                 ))}
               </ul>
@@ -50,7 +51,7 @@ const Footer: React.FC<FooterInterface> = () => {
               <ul className="space-y-2">
                 {column3.map((item, index) => (
                   <li key={index} className="">
-                    <span className="md:px-4">{item}</span>
+                    <NavLink className="hover:underline" to="#" ><span className="md:px-4">{item}</span></NavLink>
                   </li>
                 ))}
               </ul>
@@ -64,6 +65,11 @@ const Footer: React.FC<FooterInterface> = () => {
         </div>
       </div>
       <div className="relative z-10 overflow-hidden rounded-t-3xl bg-blue-green text-white md:rounded-t-[4.5rem]">
+        <div className="space-y-4 md:hidden text-center space-x-6 mt-10">
+          {inconsRow.map((item, index) => (
+            <FontAwesomeIcon key={index} icon={item} fontSize="50" />
+          ))}
+        </div>
         <div className="container mx-auto px-4 pt-14 pb-14 md:px-14 md:pt-0 md:pb-20">
           <h2 className="my-6 hidden font-medium md:inline-block md:text-5xl">
             Sectores con <br /> los que trabajamos
