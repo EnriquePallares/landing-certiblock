@@ -5,6 +5,7 @@ export interface ButtonInterface {
   children?: ReactNode;
   className?: string;
   onClick?: MouseEventHandler;
+  disabled?: boolean;
 }
 
 const styleType = new Map();
@@ -15,6 +16,7 @@ styleType.set('secondary', 'bg-secondary text-white');
 styleType.set('dark', 'bg-dark-gray text-white text-primary');
 styleType.set('ligth', 'bg-white text-primary');
 styleType.set('ligth-text-black', 'bg-white text-black');
+styleType.set('ligth-gray', 'bg-light-gray text-black');
 
 const Button: React.FC<ButtonInterface> = props => {
   return (
@@ -23,6 +25,7 @@ const Button: React.FC<ButtonInterface> = props => {
       className={`rounded-full py-2 px-4 text-base ${styleType.get(
         props.type || 'primary'
       )} ${props.className}`}
+      disabled={props.disabled ?? false}
     >
       <div className="flex items-center justify-center space-x-1">
         <span>{props.text}</span>

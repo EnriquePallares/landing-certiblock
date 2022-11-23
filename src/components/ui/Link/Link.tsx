@@ -15,6 +15,7 @@ styleType.set('secondary', 'bg-secondary text-white');
 styleType.set('dark', 'bg-dark-gray text-primary');
 styleType.set('ligth', 'bg-white text-primary');
 styleType.set('light-gray', 'bg-light-gray text-dark-gray');
+styleType.set('ligth-text-black', 'bg-white text-black');
 
 const CustomLink: React.FC<LinkInterface> = props => {
   return (

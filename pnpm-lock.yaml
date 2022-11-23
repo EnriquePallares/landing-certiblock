@@ -22,6 +22,7 @@ specifiers:
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.1.13
   react: ^18.2.0
+  react-countdown: ^2.3.4
   react-dom: ^18.2.0
   react-router-dom: ^6.4.2
   react-slick: ^0.29.0
@@ -44,6 +45,7 @@ dependencies:
   localforage: 1.10.0
   match-sorter: 6.3.1
   react: 18.2.0
+  react-countdown: 2.3.4_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.4.2_biqbaboplfbrettd7655fr4n2y
   react-slick: 0.29.0_biqbaboplfbrettd7655fr4n2y
@@ -2182,6 +2184,17 @@ packages:
   /quick-lru/5.1.1:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
+
+  /react-countdown/2.3.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-AvtZOnxBYLAVDjvVoXQ9I3asZEnCHIIr1uqKdIayhaTJQTKtZvmLgK/620HjO5TP5Jce9cJCw9t1JQL/TA8gJg==}
+    peerDependencies:
+      react: '>= 15'
+      react-dom: '>= 15'
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /react-dom/18.2.0_react@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}

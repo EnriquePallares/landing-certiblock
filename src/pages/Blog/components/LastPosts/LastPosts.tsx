@@ -1,5 +1,6 @@
 import { CardPublicaciones } from '@/components/CardPublicaciones';
 import React, { useState } from 'react';
+import jsonPosts from '@/assets/json/posts.json'
 export interface LastPostsInterface {}
 
 interface Posts {
@@ -31,80 +32,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
     },
   ];
 
-  const posts: Posts[] = [
-    {
-      title: 'Cómo hacer tu primera certificación',
-      image: '',
-      author: 'Pepito Perez',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'NT',
-    },
-    {
-      title: 'Cómo hacer tu primera certificación',
-      image: '',
-      author: 'Pepito Perez',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'NT',
-    },
-    {
-      title: 'Cómo hacer tu primera certificación',
-      image: '',
-      author: 'Pepito Perez',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'CE',
-    },
-    {
-      title: 'Cómo hacer tu primera certificación',
-      image: '',
-      author: 'Pepito Perez',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'CE',
-    },
-    {
-      title: 'Cómo hacer tu primera certificación',
-      image: '',
-      author: 'Pepito Perez',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'ED',
-    },
-    {
-      title: 'Cómo hacer tu primera certificación',
-      image: '',
-      author: 'Pepito Perez',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'FA',
-    },
-    {
-      title: 'Cómo hacer tu primera certificación',
-      image: '',
-      author: 'Pepito Perez',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'FA',
-    },
-    {
-      title: 'Cómo hacer tu primera certificación',
-      image: '',
-      author: 'Pepito Perez',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/post1',
-      category: 'FA',
-    },
-  ];
+  const posts = jsonPosts as Posts[];
 
   const [newsCategory, setNewsCategory] = useState('all');
   const handleFilter = (event: any) => setNewsCategory(event.target.value);
