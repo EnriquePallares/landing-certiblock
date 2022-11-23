@@ -4,7 +4,7 @@ export interface ButtonInterface {
   type?: string;
   children?: ReactNode;
   className?: string;
-  onClick?: MouseEventHandler;
+  onClick?: MouseEventHandler | any;
   disabled?: boolean;
 }
 

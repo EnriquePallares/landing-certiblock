@@ -1,12 +1,9 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import bannerBackground from '@/assets/images/bg-login.png';
 import bannerBackgroundMobile from '@/assets/images/bg-login-mobile.png';
 import { Button, Link } from '@/components';
-import {
-  AppContextValue,
-  AuthContext,
-} from '@/context/AuthContextProvider/AuthContextProvider';
-import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '@/context/AuthContextProvider/AuthContextProvider';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 import USER_INFO from '@/assets/json/user.json';
 export interface LoginInterface {}
@@ -18,6 +15,7 @@ const Login: React.FC<LoginInterface> = () => {
   const navigation = useNavigate();
 
   const [user, setUser] = useContext<any | null>(AuthContext);
+  const [error, setError] = useState<string>('');
 
   useEffect(() => {
     user && navigation('/');
@@ -31,6 +29,7 @@ const Login: React.FC<LoginInterface> = () => {
       setUser(USER_INFO);
       navigation('/profile');
     }
+    setError('Usuario o contraseña incorrectos')
   };
 
   return (
@@ -63,6 +62,8 @@ const Login: React.FC<LoginInterface> = () => {
             className="w-full rounded-[25px] px-8 font-light text-black"
             type="password"
           />
+          <p className='text-red-600'>{error}</p>
+          <NavLink to="#" className="text-right"> <span className='underline'>Olvidé mi contraseña</span> (*_*)</NavLink>
           <div className="flex flex-col gap-2 pt-5 md:flex-row-reverse md:gap-5">
             <Button
               className="px-8 font-light"
