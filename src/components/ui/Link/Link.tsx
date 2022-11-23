@@ -26,7 +26,7 @@ const CustomLink: React.FC<LinkInterface> = props => {
         } ${
           !isActive
             ? styleType.get(props.type ?? 'primary')
-            : styleType.get(props.type ?? 'dark')
+            : `${styleType.get(props.type ?? 'dark')} after:content-['']`
         }`
       }
     >

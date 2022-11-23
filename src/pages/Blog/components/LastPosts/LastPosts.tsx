@@ -34,7 +34,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
   const posts: Posts[] = [
     {
       title: 'Cómo hacer tu primera certificación',
-      image: '',
+      image: 'https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen',
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -43,7 +43,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
     },
     {
       title: 'Cómo hacer tu primera certificación',
-      image: '',
+      image: 'https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen',
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -52,7 +52,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
     },
     {
       title: 'Cómo hacer tu primera certificación',
-      image: '',
+      image: 'https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen',
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -61,7 +61,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
     },
     {
       title: 'Cómo hacer tu primera certificación',
-      image: '',
+      image: 'https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen',
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -70,7 +70,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
     },
     {
       title: 'Cómo hacer tu primera certificación',
-      image: '',
+      image: 'https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen',
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -79,7 +79,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
     },
     {
       title: 'Cómo hacer tu primera certificación',
-      image: '',
+      image: 'https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen',
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -88,7 +88,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
     },
     {
       title: 'Cómo hacer tu primera certificación',
-      image: '',
+      image: 'https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen',
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -97,7 +97,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
     },
     {
       title: 'Cómo hacer tu primera certificación',
-      image: '',
+      image: 'https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen',
       author: 'Pepito Perez',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -161,18 +161,20 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
                 .map((filteredPost: Posts, index) => (
                   <CardPublicaciones
                     title={filteredPost.title}
+                    image={filteredPost.image}
                     author={filteredPost.author}
                     description={filteredPost.description}
                     link={filteredPost.link}
                     key={index}
                   />
                 ))
-            : posts.map((filteredPost: Posts, index) => (
+            : posts.map((post: Posts, index) => (
                 <CardPublicaciones
-                  title={filteredPost.title}
-                  author={filteredPost.author}
-                  description={filteredPost.description}
-                  link={filteredPost.link}
+                  title={post.title}
+                  image={post.image}
+                  author={post.author}
+                  description={post.description}
+                  link={post.link}
                   key={index}
                 />
               ))}

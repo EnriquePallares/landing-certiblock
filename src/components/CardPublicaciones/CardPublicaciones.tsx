@@ -13,12 +13,11 @@ const CardPublicaciones: React.FC<CardPublicacionesInterface> = props => {
   return (
     <div className="rounded-3xl bg-white p-5 text-sm text-dark-blue-0">
       <h6 className="mb-2 font-medium">{props.title}</h6>
-
       <div className="post-image mb-4">
         <img
-          src="https://via.placeholder.com/350/B8D2E3/FFFFFF/?text=Imagen"
-          alt="Post image"
-          className="rounded-2xl object-cover"
+          src={props.image}
+          alt={props.title}
+          className="w-full rounded-2xl object-cover"
         />
       </div>
       <div className="font-medium">Por: {props.author}</div>
