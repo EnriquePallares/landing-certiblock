@@ -21,7 +21,7 @@
     padding-bottom: calc((100vw * 30) / 1920);
     padding-left: calc((100vw * 100) / 1920);
     padding-right: calc((100vw * 55) / 1920);
-    margin-left: calc((100vw * -23) / 1920);
+    margin-left: calc((100vw * -43) / 1920);
 }
 
 .main-banner button.more span{
@@ -39,7 +39,7 @@
     .main-banner .box{
         padding-left: calc((100vw * 35) / 390);
         padding-right: calc((100vw * 35) / 390);
-        top: 49.5%;
+        /* top: 49.5%; */
     }
     .main-banner h3{
         font-size: calc((100vw * 46) / 390);

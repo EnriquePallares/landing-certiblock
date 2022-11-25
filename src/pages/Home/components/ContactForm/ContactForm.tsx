@@ -14,16 +14,17 @@ const ContactForm = (props: ContactFormInterface) => {
       id="form-section"
       className="extend-bg-color relative hidden rounded-t-3xl bg-light-gray md:block md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto px-8 py-10 md:px-14 md:py-20">
-        <div className="grid grid-cols-4 items-center gap-6">
-          <div className="text-right text-lg text-dark-gray">
+      <div className="container mx-auto">
+        {/* <div className="grid grid-cols-4 items-center gap-6"> */}
+        <div className="flex flex-row justify-between">
+          <div className="text-right text-lg text-dark-gray font-light w-2/12">
             <p>¿Te gusta Certiblock?</p>
             <p>
               ¿Quieres más <br />
               información sobre nosotros?
             </p>
           </div>
-          <div className="space-y-4">
+          <div className="input space-y-4">
             <input
               type="text"
               ref={fullName}
@@ -37,7 +38,7 @@ const ContactForm = (props: ContactFormInterface) => {
               className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
           </div>
-          <div className="space-y-4">
+          <div className="input space-y-4">
             <input
               type="phone"
               ref={phone}
@@ -51,10 +52,10 @@ const ContactForm = (props: ContactFormInterface) => {
               className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
             />
           </div>
-          <div className="flex flex-col space-y-2">
+          <div className="authorize flex flex-col space-y-2">
             <div className="flex gap-2 text-sm font-medium">
               <input type="radio" className="mt-1" />
-              <span>
+              <span className='font-light'>
                 Autorizo el tratamiento de datos personales y la política de
                 datos personales.{' '}
                 <Link to="#" className="hover:underline">
@@ -62,7 +63,7 @@ const ContactForm = (props: ContactFormInterface) => {
                 </Link>
               </span>
             </div>
-            <div>
+            <div className="send">
               <Button
                 text="ENVIAR"
                 className="w-full text-center font-light tracking-widest"

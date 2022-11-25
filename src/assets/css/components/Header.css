@@ -11,6 +11,11 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+#header ul a{
+    transition: 0.5s;
+}
+
 #header ul a span{
     font-size: calc((100vw * 30) / 1920);
     line-height: calc((100vw * 30) / 1920);
@@ -30,6 +35,8 @@
 #header ul a::after{
     font-size: calc((100vw * 28) / 1920);
     line-height: calc((100vw * 28) / 1920);
+    right: calc((100vw * -5) / 1920);
+    z-index: 1;
 }
 #header ul .link{
     margin-left: calc((100vw * 30) / 1920);

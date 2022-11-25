@@ -1,0 +1,69 @@
+
+#form-section .container{
+    max-width: 100%;
+    padding-left: calc((100vw * 200) / 1920);
+    padding-right: calc((100vw * 165) / 1920);
+    padding-top: calc((100vw * 88) / 1920);
+    padding-bottom: calc((100vw * 75) / 1920);
+}
+
+#form-section .text-right{
+    font-size: calc((100vw * 26) / 1920);
+    line-height: calc((100vw * 37) / 1920);
+    letter-spacing: 0.08em;
+    width: 21%;
+}
+
+#form-section .input input{
+    font-size: calc((100vw * 18) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+    letter-spacing: 0.08em;
+
+    padding-top: calc((100vw * 15) / 1920);
+    padding-bottom: calc((100vw * 15) / 1920);
+    padding-left: calc((100vw * 25) / 1920);
+    padding-right: calc((100vw * 25) / 1920);
+
+    border-radius: calc((100vw * 20) / 1920);
+
+    margin-bottom: calc((100vw * 20) / 1920);
+}
+
+#form-section .input{
+    width: 25.59%;
+}
+
+#form-section .authorize{
+    width: 21.9%;
+    padding-left: calc((100vw * 60) / 1920);
+}
+
+#form-section .authorize span{
+    font-size: calc((100vw * 15) / 1920);
+    line-height: calc((100vw * 16) / 1920);
+}
+
+#form-section .authorize .send{
+    margin-top: calc((100vw * 20) / 1920);
+}
+
+#form-section .authorize button{
+    padding-top: calc((100vw * 12) / 1920);
+    padding-bottom: calc((100vw * 12) / 1920);
+}
+
+#form-section .authorize button span{
+    font-size: calc((100vw * 31) / 1920);
+    line-height: calc((100vw * 26) / 1920);
+    letter-spacing: 0.08em;
+}
+
+#form-section .authorize [type='radio']{
+    width: calc((100vw * 27) / 1920);
+    height: calc((100vw * 27) / 1920);
+    color: #1C1F21;
+}
+
+#form-section .authorize [type='radio']:focus{
+    --tw-ring-color: transparent;
+}

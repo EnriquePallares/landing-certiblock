@@ -43,7 +43,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-[1/3] w-full md:aspect-video"
+          className="aspect-[2/5] w-full md:aspect-video"
         />
       </picture>
       <div className="box vertical-alignment-abs absolute flex w-full flex-wrap px-8 text-4xl font-black md:justify-between md:text-8xl md:text-secondary">
