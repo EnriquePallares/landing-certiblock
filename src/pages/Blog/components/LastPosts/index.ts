@@ -1,1 +1,0 @@
-export { default as LastPosts } from './LastPosts';

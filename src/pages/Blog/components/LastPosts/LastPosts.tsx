@@ -1,18 +1,21 @@
 import { CardPublicaciones } from '@/components/CardPublicaciones';
 import React, { useState } from 'react';
-import jsonPosts from '@/assets/json/posts.json'
+import jsonPosts from '@/assets/json/posts.json';
 export interface LastPostsInterface {}
 
-interface NewsCategories {
+export interface NewsCategories {
   text: string;
   value: string;
 }
 
-interface Posts {
+export interface Posts {
+  id: string;
   title: string;
   image: string;
   author: string;
   description: string;
+  descriptionBeforeImage: string;
+  descriptionAfterImage: string;
   link: string;
   categories: NewsCategories[];
 }
@@ -96,24 +99,24 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
                       category.value === newsCategory
                   )
                 )
-                .map((filteredPost: Posts, index) => (
+                .map((filteredPost: Posts) => (
                   <CardPublicaciones
                     title={filteredPost.title}
                     image={filteredPost.image}
                     author={filteredPost.author}
                     description={filteredPost.description}
                     link={filteredPost.link}
-                    key={index}
+                    key={filteredPost.id}
                   />
                 ))
-            : posts.map((post: Posts, index) => (
+            : posts.map((post: Posts) => (
                 <CardPublicaciones
                   title={post.title}
                   image={post.image}
                   author={post.author}
                   description={post.description}
                   link={post.link}
-                  key={index}
+                  key={post.id}
                 />
               ))}
         </div>
