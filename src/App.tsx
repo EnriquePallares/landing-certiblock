@@ -7,6 +7,7 @@ import { AuthContextProvider } from './context/AuthContextProvider';
 import './assets/css/components/Header.css';
 import './assets/css/components/Home/MainBanner.css';
 import './assets/css/components/Home/ContactForm.css';
+import './assets/css/components/Home/SectorWorksMain.css';
 
 library.add();
 

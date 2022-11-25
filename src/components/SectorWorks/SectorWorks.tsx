@@ -17,12 +17,12 @@ const SectorWorks: React.FC<SectorWorksInterface> = ({ className }) => {
 
   return (
     <div
-      className={`flex w-full flex-wrap items-start justify-around ${className}`}
+      className={`ContainerSectorWork flex w-full flex-wrap items-end justify-between ${className}`}
     >
       {endRow.map((item, index) => (
         <div
           key={index}
-          className="flex w-1/2 flex-col space-y-4 text-center md:w-auto"
+          className="SectorWork flex w-1/2 flex-col space-y-4 text-center md:w-auto font-light"
         >
           <img
             src={item.icon}

@@ -1,0 +1,33 @@
+.SectorWorksMain .container{
+    max-width: 100%;
+    padding-left: calc((100vw * 138) / 1920);
+    padding-right: calc((100vw * 138) / 1920);
+    padding-top: calc((100vw * 120) / 1920);
+    padding-bottom: calc((100vw * 95) / 1920);
+}
+.SectorWorksMain h2{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 60) / 1920);
+}
+
+.SectorWorksMain .ContainerSectorWork{
+    padding: 0 calc((100vw * 170) / 1920);
+}
+
+.SectorWorksMain .ContainerSectorWork .SectorWork span{
+    font-size: calc((100vw * 25) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+}
+
+.SectorWorksMain .ContainerSectorWork .SectorWork:nth-child(1) img{
+    min-width: calc((100vw * 130) / 1920);
+}
+.SectorWorksMain .ContainerSectorWork .SectorWork:nth-child(2) img{
+    min-width: calc((100vw * 150) / 1920);
+}
+.SectorWorksMain .ContainerSectorWork .SectorWork:nth-child(3) img{
+    min-width: calc((100vw * 132) / 1920);
+}
+.SectorWorksMain .ContainerSectorWork .SectorWork:nth-child(4) img{
+    min-width: calc((100vw * 90) / 1920);
+}
