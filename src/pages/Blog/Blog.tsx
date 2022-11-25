@@ -4,8 +4,8 @@ import bannerBackground from '@/assets/images/bg-login.png';
 import bannerBackgroundMobile from '@/assets/images/bg-login-mobile.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { LastPosts } from './components/LastPosts';
-import { PodcastsSlider } from './components/PodcastsSlider';
+import LastPosts from './components/LastPosts/LastPosts';
+import PodcastsSlider from './components/PodcastsSlider/PodcastsSlider';
 export interface BlogInterface {}
 
 const Blog: React.FC<BlogInterface> = () => {
