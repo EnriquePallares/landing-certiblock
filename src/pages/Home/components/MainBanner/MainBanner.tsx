@@ -46,16 +46,16 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
           className="aspect-[1/3] w-full md:aspect-video"
         />
       </picture>
-      <div className="vertical-alignment-abs absolute flex w-full flex-wrap px-8 text-4xl font-black md:justify-center md:text-8xl md:text-secondary">
-        <h3 className="w-full flex-[0_0_auto] md:w-6/12">
+      <div className="box vertical-alignment-abs absolute flex w-full flex-wrap px-8 text-4xl font-black md:justify-between md:text-8xl md:text-secondary">
+        <h3 className="w-full flex-[0_0_auto] md:w-9/12">
           Por qué tener a <span className="text-white">Certiblock</span>
         </h3>
         <Button
           text="SABER MÁS"
           type="primary"
-          className="mb-2 hidden w-auto flex-[0_0_auto] self-end font-normal md:inline-block md:px-16 md:py-5"
+          className="more mb-2 hidden w-auto flex-[0_0_auto] self-end font-normal md:inline-block md:px-16 md:py-5"
         >
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -68,14 +68,20 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
               strokeLinejoin="round"
               d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
             />
+          </svg> */}
+          <svg xmlns="http://www.w3.org/2000/svg" width="39.815" height="31.879" viewBox="0 0 39.815 31.879">
+            <g id="Grupo_313" data-name="Grupo 313" transform="translate(-1007.363 -708.564)">
+              <path id="Trazado_3" data-name="Trazado 3" d="M1175.411,723.577,1188.7,738.1l-13.291,14.527" transform="translate(-142.879 -13.6)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+              <line id="Línea_26" data-name="Línea 26" x1="30.974" transform="translate(1008.363 724.121)" fill="none" stroke="#030f37" strokeLinecap="round" strokeWidth="2"/>
+            </g>
           </svg>
         </Button>
         <Button
-          text="SABER MÁS"
+          text="Saber más"
           type="ligth-text-black"
-          className="mt-6 font-light md:ml-10 md:hidden md:px-16 md:py-5"
+          className="more mt-6 font-light md:ml-10 md:hidden md:px-16 md:py-5"
         >
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -88,10 +94,16 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
               strokeLinejoin="round"
               d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
             />
+          </svg> */}
+          <svg xmlns="http://www.w3.org/2000/svg" width="39.815" height="31.879" viewBox="0 0 39.815 31.879">
+            <g id="Grupo_313" data-name="Grupo 313" transform="translate(-1007.363 -708.564)">
+              <path id="Trazado_3" data-name="Trazado 3" d="M1175.411,723.577,1188.7,738.1l-13.291,14.527" transform="translate(-142.879 -13.6)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+              <line id="Línea_26" data-name="Línea 26" x1="30.974" transform="translate(1008.363 724.121)" fill="none" stroke="#030f37" strokeLinecap="round" strokeWidth="2"/>
+            </g>
           </svg>
         </Button>
 
-        <div className="mt-24 w-full md:hidden">
+        <div className="collapse mt-24 w-full md:hidden">
           <h4 className="mb-8 text-2xl font-black">
             Aprende con nosotros <br />
             sobre Web 3.0
@@ -103,7 +115,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
                 <Accordion.Title className="bg-white text-lg !text-current hover:bg-primary">
                   {post.title}
                 </Accordion.Title>
-                <Accordion.Content className="bg-white text-base text-current">
+                <Accordion.Content className="content bg-white text-base text-current">
                   <p className="my-4 font-light">{post.content}</p>
                   <Link className="underline" to={post.link}>
                     Ver más <FontAwesomeIcon icon={faArrowRight} />

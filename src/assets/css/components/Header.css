@@ -1,0 +1,59 @@
+
+#header .container{
+    padding-top: calc((100vw * 110) / 1920);
+    max-width: calc((100vw * 1650) / 1920);
+}
+#header img{
+    width: calc((100vw * 393) / 1920);
+}
+
+#header nav{
+    padding-left: 0;
+    padding-right: 0;
+}
+#header ul a span{
+    font-size: calc((100vw * 30) / 1920);
+    line-height: calc((100vw * 30) / 1920);
+
+    padding-top: calc((100vw * 10) / 1920);
+    padding-bottom: calc((100vw * 10) / 1920);
+    padding-left: calc((100vw * 40) / 1920);
+    padding-right: calc((100vw * 40) / 1920);
+}
+
+#header ul a svg{
+    width: calc((100vw * 30) / 1920);
+    height: auto;
+    margin-left: calc((100vw * 15) / 1920);
+}
+
+#header ul a::after{
+    font-size: calc((100vw * 28) / 1920);
+    line-height: calc((100vw * 28) / 1920);
+}
+#header ul .link{
+    margin-left: calc((100vw * 30) / 1920);
+}
+
+#header ul .linkblue{
+    max-width: calc((100vw * 225) / 1920);
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    #header .container{
+        padding-top: calc((100vw * 40) / 390);
+        max-width: calc((100vw * 325) / 390);
+    }
+
+    #header img{
+        width: calc((100vw * 212) / 390);
+    }
+    #header .toggle{
+        padding: 0;
+    }
+    #header .toggle svg{
+        width: calc((100vw * 30) / 390);
+        height: auto;
+    }
+}

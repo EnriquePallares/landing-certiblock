@@ -4,6 +4,10 @@ import './assets/css/app.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { AuthContextProvider } from './context/AuthContextProvider';
 
+import './assets/css/components/Header.css';
+import './assets/css/components/Home/MainBanner.css';
+import './assets/css/components/Home/ContactForm.css';
+
 library.add();
 
 function App() {

@@ -24,15 +24,15 @@ const Header: React.FC<HeaderInterface> = () => {
   const [user] = useContext<any>(AuthContext);
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
-      <div className="container mx-auto p-5">
+    <header id="header" className="absolute top-0 left-0 right-0 z-50">
+      <div className="container mx-auto">
         <Navbar fluid={true} className="bg-transparent">
           <Navbar.Brand href="/landing-certiblock/">
             <img src={logo} className="w-48" alt="Logo certiblock" />
           </Navbar.Brand>
 
-          <Navbar.Toggle className="!text-white hover:!text-gray-500" />
-          <Navbar.Collapse className="rounded bg-gray-100 px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
+          <Navbar.Toggle className="toggle !text-white hover:!text-gray-500" />
+          <Navbar.Collapse className="collapse rounded bg-gray-100 px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
             <div className="hidden rounded-full bg-primary md:inline-flex">
               {menuItems.map((item, index) => (
                 <CustomLink
@@ -57,7 +57,7 @@ const Header: React.FC<HeaderInterface> = () => {
 
             <CustomLink
               to={user ? '/profile' : '/login'}
-              className="mb-1 !font-light md:mb-0"
+              className="link mb-1 !font-light md:mb-0"
               text={user ? user.name : 'Log in'}
             >
               <svg
@@ -77,7 +77,7 @@ const Header: React.FC<HeaderInterface> = () => {
             </CustomLink>
 
             <CustomLink
-              className="!font-light"
+              className="link linkblue !font-light"
               to="/test"
               text="Reclama tu activo"
               type="secondary"

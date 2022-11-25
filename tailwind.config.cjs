@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: '#C3D82D',
         secondary: '#4796E1',
+        'dark': '#000000',
         'dark-gray': '#999899',
         'dark-blue-0': '#020b2a',
         'dark-blue-1': '#2C3E7B',
@@ -19,6 +20,7 @@ module.exports = {
         'dark-gray': '#1C1F21',
         'light-gray': '#999899',
         'blue-green': '#0A3B4A',
+        'blue-dark': '#04113D',
       },
       fontFamily: {
         sans: ['Gotham'],

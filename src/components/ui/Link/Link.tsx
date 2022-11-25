@@ -10,7 +10,7 @@ export interface LinkInterface {
 
 const styleType = new Map();
 
-styleType.set('primary', 'bg-primary text-dark-gray');
+styleType.set('primary', 'bg-primary text-dark');
 styleType.set('secondary', 'bg-secondary text-white');
 styleType.set('dark', 'bg-dark-gray text-primary');
 styleType.set('ligth', 'bg-white text-primary');
