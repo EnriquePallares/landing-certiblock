@@ -3,6 +3,8 @@ import logo from '@/assets/images/logo-certiblock.svg';
 import { Navbar } from 'flowbite-react';
 import CustomLink from '../ui/Link/Link';
 import { AuthContext } from '@/context/AuthContextProvider/AuthContextProvider';
+import { Button } from '../ui/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export interface HeaderInterface {}
 
 const Header: React.FC<HeaderInterface> = () => {
@@ -88,6 +90,11 @@ const Header: React.FC<HeaderInterface> = () => {
               text="Reclama tu activo"
               type="secondary"
             />
+            {/* {user && (
+              <Button className="link mb-1 !font-light md:mb-0" text={'Salir'}>
+                <FontAwesomeIcon icon={faDoorOpen} />
+              </Button>
+            )} */}
           </Navbar.Collapse>
         </Navbar>
       </div>
