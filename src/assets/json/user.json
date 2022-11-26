@@ -1,8 +1,20 @@
-{
-  "username": "juan",
-  "password": "1234",
-  "name": "Juan",
-  "fullName": "Juan David Arbeláez",
-  "email": "juan@mail.com",
-  "type": "user"
-}
+[
+  {
+    "username": "juan",
+    "password": "1234",
+    "name": "Juan",
+    "fullName": "Juan David Arbeláez",
+    "email": "juan@mail.com",
+    "type": "user",
+    "verified": false
+  },
+  {
+    "username": "eafit",
+    "password": "1234",
+    "name": "EAFIT",
+    "fullName": "EAFIT",
+    "email": "eafit@mail.com",
+    "type": "company",
+    "verified": true
+  }  
+]

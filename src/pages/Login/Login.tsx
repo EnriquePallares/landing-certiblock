@@ -5,7 +5,7 @@ import { Button, Link } from '@/components';
 import { AuthContext } from '@/context/AuthContextProvider/AuthContextProvider';
 import { NavLink, useNavigate } from 'react-router-dom';
 
-import USER_INFO from '@/assets/json/user.json';
+import USERS from '@/assets/json/user.json';
 export interface LoginInterface {}
 
 const Login: React.FC<LoginInterface> = () => {
@@ -21,14 +21,17 @@ const Login: React.FC<LoginInterface> = () => {
     user && navigation('/');
   }, []);
 
-  const login = () => {
-    if (
-      USER_INFO.username == userName.current?.value &&
-      USER_INFO.password == password.current?.value
-    ) {
-      setUser(USER_INFO);
-      navigation('/profile');
-    }
+  const login = (e: Event) => {
+    e.preventDefault();
+    USERS.map(USER_INFO => {
+      if (
+        USER_INFO.username == userName.current?.value &&
+        USER_INFO.password == password.current?.value
+      ) {
+        setUser(USER_INFO);
+        USER_INFO.type === 'user' ? navigation('/profile'): navigation('/companyProfile');
+      }
+    });
     setError('Usuario o contraseña incorrectos');
   };
 

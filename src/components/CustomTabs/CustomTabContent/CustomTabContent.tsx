@@ -5,10 +5,9 @@ export interface CustomTabContentInterface {
 }
 
 const CustomTabContent: React.FC<CustomTabContentInterface> = ({
-  key,
-  children,
+  children
 }) => {
-  return <div key={key}>{children}</div>;
+  return <div>{children}</div>;
 };
 
 export default CustomTabContent;

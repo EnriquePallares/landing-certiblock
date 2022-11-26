@@ -56,7 +56,13 @@ const Header: React.FC<HeaderInterface> = () => {
             </div>
 
             <CustomLink
-              to={user ? '/profile' : '/login'}
+              to={
+                !user
+                  ? '/login'
+                  : user.type === 'user'
+                  ? '/profile'
+                  : '/companyProfile'
+              }
               className="link mb-1 !font-light md:mb-0"
               text={user ? user.name : 'Log in'}
             >

@@ -1,46 +1,51 @@
 import { MainBannerReusable } from '@/components';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import bannerBackground from '@/assets/images/bg-mainBanner.png';
 import bannerBackgroundMobile from '@/assets/images/bg-mainBanner-mobile.png';
 import { AuthContext } from '@/context/AuthContextProvider/AuthContextProvider';
+import escudoVerificado from '@/assets/images/escudo-blanco.svg';
 import { CustomTabs } from '@/components/CustomTabs';
 import { CustomTabsHeader } from '@/components/CustomTabs/CustomTabs';
 import { CustomTabContent } from '@/components/CustomTabs/CustomTabContent';
-import { ProfileDocumentList } from './components/ProfileDocumentList';
-export interface ProfileInterface {}
+export interface CompanyProfileInterface {}
 
-const Profile: React.FC<ProfileInterface> = () => {
+const CompanyProfile: React.FC<CompanyProfileInterface> = () => {
   const [user] = useContext<any>(AuthContext);
-
-
 
   const headers: CustomTabsHeader[] = [
     {
-      description: 'Documentos',
+      description: 'Colecciones',
       key: '0',
     },
     {
-      description: 'Crear documento',
+      description: 'Data',
       key: '1',
     },
     {
-      description: 'Favoritos',
+      description: 'Settings',
       key: '2',
-    },
-    {
-      description: 'Borrador',
-      key: '3',
     },
   ];
 
   return (
-    <section id="profile">
+    <section id="companyProfile">
       <MainBannerReusable
         bannerBackground={bannerBackground}
         bannerBackgroundMobile={bannerBackgroundMobile}
         title={user.fullName}
         classTitle="text-center"
-      />
+      >
+        {user.verified && (
+          <div className="container">
+            <div className="flex justify-center space-x-2">
+              <h3 className="my-auto !w-fit !text-sm font-light">
+                Perfil verificado
+              </h3>
+              <img className="w-6" src={escudoVerificado} />
+            </div>
+          </div>
+        )}
+      </MainBannerReusable>
       <section
         id="last-posts"
         className="extend-bg-color relative rounded-t-3xl bg-dark-gray md:block md:rounded-t-[4.5rem]"
@@ -49,19 +54,22 @@ const Profile: React.FC<ProfileInterface> = () => {
           <CustomTabs headers={headers} className="my-4">
             <CustomTabContent key={0}>
               <div>
-                <ProfileDocumentList />
+                <h4 className="mb-4 text-3xl font-medium text-primary">
+                  Colecciones
+                </h4>
               </div>
             </CustomTabContent>
             <CustomTabContent key={1}>
-              <h4 className="mb-4 text-3xl font-medium text-primary">
-                Documentos
-              </h4>
+              <h4 className="mb-4 text-3xl font-medium text-primary">Data</h4>
             </CustomTabContent>
-          </CustomTabs> 
+            <CustomTabContent key={2}>
+              <h4 className="mb-4 text-3xl font-medium text-primary">Settings</h4>
+            </CustomTabContent>
+          </CustomTabs>
         </div>
       </section>
     </section>
   );
 };
 
-export default Profile;
+export default CompanyProfile;

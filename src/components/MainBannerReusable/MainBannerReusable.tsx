@@ -11,6 +11,7 @@ export interface MainBannerReusableInterface {
   link?: LinkInterface;
   classTitle?: string;
   classHighWord?: string;
+  children?: ReactNode;
 }
 
 const MainBannerReusable = ({
@@ -23,6 +24,7 @@ const MainBannerReusable = ({
   link,
   classTitle,
   classHighWord,
+  children
 }: MainBannerReusableInterface) => {
   return (
     <section className="main-banner extend-bg-color relative bg-dark-blue-0">
@@ -58,6 +60,9 @@ const MainBannerReusable = ({
             </CustomLink>
           </div>
         )}
+        {
+          children
+        }
       </div>
     </section>
   );
