@@ -1,6 +1,10 @@
+.SectorWorksMain{
+    border-top-left-radius: calc((100vw * 114) / 1920);
+    border-top-right-radius: calc((100vw * 114) / 1920);
+}
+
 .SectorWorksMain .container{
-    max-width: 100%;
-    padding-left: calc((100vw * 138) / 1920);
+    padding-left: calc((100vw * 138) / 1920); 
     padding-right: calc((100vw * 138) / 1920);
     padding-top: calc((100vw * 120) / 1920);
     padding-bottom: calc((100vw * 95) / 1920);

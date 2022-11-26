@@ -109,7 +109,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
             sobre Web 3.0
           </h4>
 
-          <Accordion className="text-dark-blue-4">
+          <Accordion className="text-dark-blue-4 border-gray-200">
             {posts.map((post, index) => (
               <Accordion.Panel key={index}>
                 <Accordion.Title className="bg-white text-lg !text-current hover:bg-primary">

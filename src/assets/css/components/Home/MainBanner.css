@@ -5,6 +5,9 @@
 .main-banner{
     position: relative;
 }
+.main-banner picture img{
+    height: 107vh;
+}
 .main-banner .box {
     padding-left: calc((100vw * 135) / 1920);
     padding-right: calc((100vw * 145) / 1920);
@@ -35,7 +38,11 @@
     margin-left: calc((100vw * 70) / 1920)!important;
 }
 
-@media (max-width: 500px){
+@media (max-width: 640px){
+    .main-banner picture img{
+        height: auto;
+    }
+    
     .main-banner .box{
         padding-left: calc((100vw * 35) / 390);
         padding-right: calc((100vw * 35) / 390);

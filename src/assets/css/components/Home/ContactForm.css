@@ -1,6 +1,9 @@
-
+#form-section{
+    border-top-left-radius: calc((100vw * 114) / 1920);
+    border-top-right-radius: calc((100vw * 114) / 1920);
+    margin-top: calc((100vw * -114) / 1920);
+}
 #form-section .container{
-    max-width: 100%;
     padding-left: calc((100vw * 200) / 1920);
     padding-right: calc((100vw * 165) / 1920);
     padding-top: calc((100vw * 88) / 1920);
@@ -61,7 +64,6 @@
 #form-section .authorize [type='radio']{
     width: calc((100vw * 27) / 1920);
     height: calc((100vw * 27) / 1920);
-    color: #1C1F21;
 }
 
 #form-section .authorize [type='radio']:focus{

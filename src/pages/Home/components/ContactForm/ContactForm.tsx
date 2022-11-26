@@ -14,7 +14,7 @@ const ContactForm = (props: ContactFormInterface) => {
       id="form-section"
       className="extend-bg-color relative hidden rounded-t-3xl bg-light-gray md:block md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-full">
         {/* <div className="grid grid-cols-4 items-center gap-6"> */}
         <div className="flex flex-row justify-between">
           <div className="text-right text-lg text-dark-gray font-light w-2/12">
@@ -29,13 +29,13 @@ const ContactForm = (props: ContactFormInterface) => {
               type="text"
               ref={fullName}
               placeholder="Nombre y apellidos*"
-              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray focus:bg-white focus:outline-none"
             />
             <input
               type="email"
               ref={email}
               placeholder="Correo electrónico*"
-              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray focus:bg-white focus:outline-none"
             />
           </div>
           <div className="input space-y-4">
@@ -43,18 +43,18 @@ const ContactForm = (props: ContactFormInterface) => {
               type="phone"
               ref={phone}
               placeholder="Teléfono celular*"
-              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray focus:bg-white focus:outline-none"
             />
             <input
               type="text"
               ref={company}
               placeholder="Nombre de tu compañía*"
-              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
+              className="w-full appearance-none rounded-xl border-none bg-gray-200 px-4 py-2 font-light leading-tight text-gray focus:bg-white focus:outline-none"
             />
           </div>
           <div className="authorize flex flex-col space-y-2">
             <div className="flex gap-2 text-sm font-medium">
-              <input type="radio" className="mt-1" />
+              <input type="radio" className="mt-1 text-dark-gray" />
               <span className='font-light'>
                 Autorizo el tratamiento de datos personales y la política de
                 datos personales.{' '}
@@ -66,7 +66,7 @@ const ContactForm = (props: ContactFormInterface) => {
             <div className="send">
               <Button
                 text="ENVIAR"
-                className="w-full text-center font-light tracking-widest"
+                className="w-full text-center font-light tracking-widest text-dark-gray"
               />
             </div>
           </div>
