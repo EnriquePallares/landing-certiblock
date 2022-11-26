@@ -5,6 +5,9 @@
 .main-banner{
     position: relative;
 }
+.main-banner picture img{
+    height: 107vh;
+}
 .main-banner .box {
     padding-left: calc((100vw * 135) / 1920);
     padding-right: calc((100vw * 145) / 1920);
@@ -21,7 +24,7 @@
     padding-bottom: calc((100vw * 30) / 1920);
     padding-left: calc((100vw * 100) / 1920);
     padding-right: calc((100vw * 55) / 1920);
-    margin-left: calc((100vw * -23) / 1920);
+    margin-left: calc((100vw * -43) / 1920);
 }
 
 .main-banner button.more span{
@@ -35,11 +38,15 @@
     margin-left: calc((100vw * 70) / 1920)!important;
 }
 
-@media (max-width: 500px){
+@media (max-width: 640px){
+    .main-banner picture img{
+        height: auto;
+    }
+    
     .main-banner .box{
         padding-left: calc((100vw * 35) / 390);
         padding-right: calc((100vw * 35) / 390);
-        top: 49.5%;
+        /* top: 49.5%; */
     }
     .main-banner h3{
         font-size: calc((100vw * 46) / 390);

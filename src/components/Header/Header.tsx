@@ -26,19 +26,19 @@ const Header: React.FC<HeaderInterface> = () => {
   return (
     <header id="header" className="absolute top-0 left-0 right-0 z-50">
       <div className="container mx-auto">
-        <Navbar fluid={true} className="bg-transparent">
+        <Navbar fluid={true} className="bg-transparent mx-0">
           <Navbar.Brand href="/landing-certiblock/">
             <img src={logo} className="w-48" alt="Logo certiblock" />
           </Navbar.Brand>
 
-          <Navbar.Toggle className="toggle !text-white hover:!text-gray-500" />
+          <Navbar.Toggle className="toggle !text-white hover:!text-gray-500 p-0" />
           <Navbar.Collapse className="collapse rounded bg-gray-100 px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
             <div className="hidden rounded-full bg-primary md:inline-flex">
               {menuItems.map((item, index) => (
                 <CustomLink
                   key={index}
                   to={item.link}
-                  className="relative !rounded-full !font-light after:absolute after:right-0 after:content-['|'] last:after:content-['']"
+                  className="relative !rounded-full !font-light after:absolute after:right-0 after:content-['|'] last:after:content-[''] hover:bg-blue-dark hover:text-primary"
                   text={item.text}
                 />
               ))}
@@ -66,7 +66,7 @@ const Header: React.FC<HeaderInterface> = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="ml-2 h-5 w-5"
+                className="ml-2 h-5 w-5 h-auto"
               >
                 <path
                   strokeLinecap="round"
@@ -77,7 +77,7 @@ const Header: React.FC<HeaderInterface> = () => {
             </CustomLink>
 
             <CustomLink
-              className="link linkblue !font-light"
+              className="link linkblue !font-light text-center"
               to="/test"
               text="Reclama tu activo"
               type="secondary"
