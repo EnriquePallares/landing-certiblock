@@ -67,9 +67,10 @@ const Footer: React.FC<FooterInterface> = () => {
       <div className="relative z-10 overflow-hidden rounded-t-3xl bg-blue-green text-white md:rounded-t-[4.5rem]">
         <div className="space-y-4 md:hidden text-center space-x-6 mt-10">
           {inconsRow.map((item, index) => (
-            <FontAwesomeIcon key={index} icon={item} fontSize="50" />
+            <FontAwesomeIcon key={index} icon={item} fontSize="40 " />
           ))}
         </div>
+
         <div className="container mx-auto px-4 pt-14 pb-14 md:px-14 md:pt-0 md:pb-20">
           <h2 className="my-6 hidden font-medium md:inline-block md:text-5xl">
             Sectores con <br /> los que trabajamos
