@@ -164,7 +164,7 @@
         padding-left:calc((100vw * 35) / 390) ;
         padding-right: calc((100vw * 35) / 390);
         padding-top: calc((100vw * 45) / 390);
-        padding-bottom: calc((100vw * 45) / 390);
+        padding-bottom: calc((100vw * 25) / 390);
     }
     
     #blog-section{

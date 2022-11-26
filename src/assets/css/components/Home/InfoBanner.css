@@ -1,0 +1,75 @@
+#info-banner{
+    border-top-left-radius: calc((100vw * 114) / 1920);
+    border-top-right-radius: calc((100vw * 114) / 1920);
+}
+
+#info-banner .container{
+    padding-left: calc((100vw * 138) / 1920); 
+    padding-right: calc((100vw * 138) / 1920);
+    padding-top: calc((100vw * 125) / 1920);
+    padding-bottom: calc((100vw * 115) / 1920);
+}
+
+#info-banner .floatIcon{
+    width: calc((100vw * 182) / 1920);
+}
+
+#info-banner .container .text-section {
+    padding-left: calc((100vw * 45) / 1920); 
+    padding-right: calc((100vw * 45) / 1920);
+    padding-top: calc((100vw * 85) / 1920);
+    padding-bottom: calc((100vw * 85) / 1920);
+
+    border-radius: calc((100vw * 40) / 1920);
+}
+
+#info-banner .container h4{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 60) / 1920);
+    margin-bottom: calc((100vw * 57) / 1920);
+}
+
+#info-banner .container p{
+    font-size: calc((100vw * 35) / 1920);
+    line-height: calc((100vw * 30) / 1920);
+}
+
+#info-banner .container img{
+    border-radius: calc((100vw * 40) / 1920);
+}
+
+@media (max-width: 640px) {
+    #info-banner{
+        border-top-left-radius: calc((100vw * 32) / 390);
+        border-top-right-radius: calc((100vw * 32) / 390);
+    }
+
+    #info-banner .container .text-section{
+        padding-left: 0; 
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #info-banner .container{
+        padding-left:calc((100vw * 35) / 390) ;
+        padding-right: calc((100vw * 35) / 390);
+        padding-top: calc((100vw * 25) / 390);
+        padding-bottom: calc((100vw * 25) / 390);
+    }
+
+    #info-banner .container h4{
+        font-size: calc((100vw * 39) / 390);
+        line-height: calc((100vw * 38) / 390);
+        margin-bottom: calc((100vw * 22) / 390);
+    }
+    
+    #info-banner .container p{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 17) / 390);
+    }
+    
+    #info-banner .container img{
+        border-radius: calc((100vw * 16) / 390);
+    }
+}
