@@ -49,7 +49,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
 
         <div className="grid grid-cols-1 gap-4 font-medium md:grid-cols-6">
           <div className="list-posts col-span-2 hidden md:grid">
-            <h4 className="title mb-8 text-2xl text-while-200">
+            <h4 className="title mb-8 text-2xl text-white-200">
               Aprende con nosotros <br />
               sobre Web 3.0
             </h4>
@@ -61,7 +61,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
               <input
                 type="email"
                 placeholder="Email"
-                className="w-2/3 appearance-none rounded-[22px] border-none bg-while px-4 py-4 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
+                className="w-2/3 appearance-none rounded-[22px] border-none bg-white px-4 py-4 font-light leading-tight text-gray-700 focus:bg-white focus:outline-none"
               />
               <button className="send space-x-5 rounded-[22px] bg-primary px-4 py-3 font-light text-dark-blue-4 flex items-center">
                 <span>ENVIAR</span>

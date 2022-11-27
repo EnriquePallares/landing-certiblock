@@ -5,6 +5,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { AuthContextProvider } from './context/AuthContextProvider';
 
 import './assets/css/components/Header.css';
+import './assets/css/components/Footer.css';
+
 import './assets/css/components/Home/BlogSection.css';
 import './assets/css/components/Home/ContactForm.css';
 import './assets/css/components/Home/InfoBanner.css';

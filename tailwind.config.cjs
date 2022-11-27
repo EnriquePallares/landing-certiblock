@@ -24,7 +24,7 @@ module.exports = {
         'gray': '#442932',
         'gray-200': '#E5E7EB',
         'gray-700': '#222D51',
-        'while-200': '#FDFDFD',
+        'white-200': '#FDFDFD',
       },
       fontFamily: {
         sans: ['Gotham'],
