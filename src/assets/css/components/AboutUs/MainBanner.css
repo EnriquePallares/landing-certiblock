@@ -1,0 +1,101 @@
+#about-us-page .main-banner{
+    position: relative;
+}
+
+#about-us-page .main-banner .box {
+    padding-left: calc((100vw * 135) / 1920);
+    padding-right: calc((100vw * 145) / 1920);
+    top: 56%;
+    width: 100%;
+
+    font-size: calc((100vw * 180) / 1920);
+    line-height: calc((100vw * 152) / 1920);
+}
+
+#about-us-page .main-banner .paragraph{
+    width: 83%;
+    margin: auto;
+
+    padding-top: calc((100vw * 30) / 1920);
+    padding-bottom: calc((100vw * 40) / 1920);
+    padding-left: calc((100vw * 160) / 1920);
+    padding-right: calc((100vw * 160) / 1920);
+
+    margin-top: calc((100vw * 35) / 1920);
+    margin-bottom: calc((100vw * 35) / 1920);
+}
+
+#about-us-page .main-banner p{
+    font-size: calc((100vw * 31) / 1920);
+    line-height: calc((100vw * 31) / 1920);
+}
+
+#about-us-page .main-banner .link a{
+    padding-left: calc((100vw * 100) / 1920);
+    padding-right: calc((100vw * 45) / 1920);
+    padding-top: calc((100vw * 25) / 1920);
+    padding-bottom: calc((100vw * 25) / 1920);
+}
+
+#about-us-page .main-banner .link span{
+    font-size: calc((100vw * 22) / 1920);
+    line-height: calc((100vw * 31) / 1920);
+    padding: 0;
+}
+
+#about-us-page .main-banner .link svg{
+    width: calc((100vw * 40) / 1920);
+    height: auto;
+    margin-left: calc((100vw * 68) / 1920);
+}
+
+@media (max-width: 640px){
+
+    #about-us-page .main-banner .box{
+        top: 53%;
+
+        padding-left: calc((100vw * 35) / 390);
+        padding-right: calc((100vw * 35) / 390);
+
+        font-size: calc((100vw * 68) / 390);
+        line-height: calc((100vw * 64) / 390);
+
+        text-align: left;
+    }
+
+    #about-us-page .main-banner .paragraph{
+        text-align: center;
+
+        width: 100%;
+
+        padding-top: calc((100vw * 25) / 390);
+        padding-bottom: calc((100vw * 30) / 390);
+        padding-left: calc((100vw * 20) / 390);
+        padding-right: calc((100vw * 20) / 390);
+        margin-top: calc((100vw * 20) / 390);
+        margin-bottom: calc((100vw * 25) / 390);
+    }
+
+    #about-us-page .main-banner p{
+        font-size: calc((100vw * 20) / 390);
+        line-height: calc((100vw * 31) / 390);
+    }
+
+    #about-us-page .main-banner .link a{
+        
+        padding-left: calc((100vw * 45) / 390);
+        padding-right: calc((100vw * 25) / 390);
+        padding-top: calc((100vw * 10) / 390);
+        padding-bottom: calc((100vw * 10) / 390);
+    }
+
+    #about-us-page .main-banner .link span{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 26) / 390);
+    }
+
+    #about-us-page .main-banner .link svg{
+        width: calc((100vw * 18) / 390);
+        margin-left: calc((100vw * 15) / 390);
+    }
+}

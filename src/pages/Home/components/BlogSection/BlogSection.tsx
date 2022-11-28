@@ -40,7 +40,7 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
       id="blog-section"
       className="extend-bg-color relative rounded-t-3xl bg-light-gray md:rounded-t-[4.5rem]"
     >
-      <div className="container relative mx-auto max-w-full">
+      <div className="container relative mx-auto">
         <img
           src={floatIcon}
           alt="Float icon"
@@ -68,8 +68,8 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
                 {/* <FontAwesomeIcon icon={faArrowRight} /> */}
                 <svg className='h-auto' xmlns="http://www.w3.org/2000/svg" width="26.899" height="20.204" viewBox="0 0 26.899 20.204">
                   <g id="Grupo_313" data-name="Grupo 313" transform="translate(-622.906 -2247.398)">
-                    <path id="Trazado_63" data-name="Trazado 63" d="M1175.411,723.577l8.688,8.688-8.688,8.688" transform="translate(-535.707 1525.236)" fill="none" stroke="#03103a" stroke-linecap="round" stroke-width="2"/>
-                    <line id="Línea_90" data-name="Línea 90" x1="20.246" transform="translate(623.906 2257.271)" fill="none" stroke="#03103a" stroke-linecap="round" stroke-width="2"/>
+                    <path id="Trazado_63" data-name="Trazado 63" d="M1175.411,723.577l8.688,8.688-8.688,8.688" transform="translate(-535.707 1525.236)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+                    <line id="Línea_90" data-name="Línea 90" x1="20.246" transform="translate(623.906 2257.271)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
                   </g>
                 </svg>
 
@@ -89,8 +89,8 @@ const BlogSection: React.FC<BlogSectionInterface> = () => {
                       {/* <FontAwesomeIcon icon={faArrowRight} /> */}
                       <svg className='h-auto' xmlns="http://www.w3.org/2000/svg" width="26.899" height="20.204" viewBox="0 0 26.899 20.204">
                         <g id="Grupo_313" data-name="Grupo 313" transform="translate(-252.906 -1665.586)">
-                          <path id="Trazado_64" data-name="Trazado 64" d="M1175.411,723.577l8.688,8.688-8.688,8.688" transform="translate(-905.707 943.423)" fill="none" stroke="#03103a" stroke-linecap="round" stroke-width="2"/>
-                          <line id="Línea_92" data-name="Línea 92" x1="20.246" transform="translate(253.906 1675.459)" fill="none" stroke="#03103a" stroke-linecap="round" stroke-width="2"/>
+                          <path id="Trazado_64" data-name="Trazado 64" d="M1175.411,723.577l8.688,8.688-8.688,8.688" transform="translate(-905.707 943.423)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+                          <line id="Línea_92" data-name="Línea 92" x1="20.246" transform="translate(253.906 1675.459)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
                         </g>
                       </svg>
 

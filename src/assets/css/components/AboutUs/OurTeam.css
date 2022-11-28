@@ -1,0 +1,174 @@
+#about-us-page #our-team{
+    border-top-left-radius: calc((100vw * 114) / 1920);
+    border-top-right-radius: calc((100vw * 114) / 1920);
+}
+
+#about-us-page #our-team .Floaticon{
+    left: calc((100vw * 88) / 1920);
+    bottom: calc((100vw * 320) / 1920);
+    width: calc((100vw * 104) / 1920);
+}
+
+#about-us-page #our-team .container{
+    padding-left:calc((100vw * 138) / 1920) ;
+    padding-right: calc((100vw * 138) / 1920);
+    padding-top: calc((100vw * 185) / 1920);
+    padding-bottom: calc((100vw * 100) / 1920);
+
+    max-width: 100%;
+}
+
+#about-us-page #our-team h3{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 60) / 1920);
+    margin-bottom: calc((100vw * 75) / 1920);
+}
+
+#about-us-page #our-team  .slick-slider{
+    margin: 0 calc((100vw * -25) / 1920);
+}
+
+#about-us-page #our-team .slick-list{
+    font-size: calc((100vw * 18) / 1920);
+    line-height: calc((100vw * 18) / 1920);
+
+    /* margin: 0 calc((100vw * -25) / 1920); */
+}
+
+#about-us-page #our-team .card{
+    padding-left:calc((100vw * 40) / 1920) ;
+    padding-right: calc((100vw * 40) / 1920);
+    padding-top: calc((100vw * 40) / 1920);
+    padding-bottom: calc((100vw * 20) / 1920);
+
+    margin: 0 calc((100vw * 25) / 1920);
+
+    border-radius:  calc((100vw * 34) / 1920);
+}
+
+#about-us-page #our-team .slick-list .name svg{
+    width: calc((100vw * 57) / 1920) ;
+    height: calc((100vw * 53) / 1920);
+}
+
+#about-us-page #our-team .slick-list .name span{
+    font-size: calc((100vw * 21) / 1920);
+    line-height: calc((100vw * 21) / 1920);
+}
+
+#about-us-page #our-team .slick-list .image{
+    padding: 0;
+    margin-top: calc((100vw * 35) / 1920);
+    margin-bottom: calc((100vw * 25) / 1920);
+}
+
+#about-us-page #our-team .slick-list .image img{
+    border-radius: calc((100vw * 6) / 1920);
+}
+
+#about-us-page #our-team .slick-list a{
+    margin-top: calc((100vw * 30) / 1920);
+}
+
+#about-us-page #our-team .slick-list a span{
+    font-size: calc((100vw * 17) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+}
+
+#about-us-page #our-team .slick-list a svg{
+    width: calc((100vw * 25) / 1920);
+    height: auto;
+    margin-left: calc((100vw * 15) / 1920);
+}
+
+#about-us-page #our-team .arrow{
+    margin-top: calc((100vw * 50) / 1920);
+    margin-bottom: 0;
+}
+
+#about-us-page #our-team .arrow svg{
+    width: calc((100vw * 76) / 1920);
+    height: auto;
+    margin-left: calc((100vw * 15) / 1920);
+}
+
+@media (max-width: 640px){
+    #about-us-page #our-team{
+        border-top-left-radius: calc((100vw * 32) / 390);
+        border-top-right-radius: calc((100vw * 32) / 390);
+    }
+
+    #about-us-page #our-team .container{
+        padding-left:calc((100vw * 40) / 390) ;
+        padding-right: calc((100vw * 40) / 390);
+        padding-top: calc((100vw * 53) / 390);
+        padding-bottom: calc((100vw * 65) / 390);
+    }
+
+    #about-us-page #our-team h3{
+        font-size: calc((100vw * 30) / 390);
+        line-height: calc((100vw * 29) / 390);
+        margin-bottom: calc((100vw * 33) / 390);
+    }
+    #about-us-page #our-team  .slick-slider{
+        margin: 0 calc((100vw * 20) / 390);
+    }
+
+    #about-us-page #our-team .slick-list{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 18) / 390);
+    }
+
+    #about-us-page #our-team .card{
+        padding-left:calc((100vw * 20) / 390) ;
+        padding-right: calc((100vw * 20) / 390);
+        padding-top: calc((100vw * 20) / 390);
+        padding-bottom: calc((100vw * 5) / 390);
+
+        margin: 0 0;
+        border-radius:  calc((100vw * 15) / 390);
+    }
+
+    #about-us-page #our-team .slick-list .name svg{
+        width: calc((100vw * 26) / 390) ;
+        height: calc((100vw * 25) / 390);
+    }
+    
+    #about-us-page #our-team .slick-list .name span{
+        font-size: calc((100vw * 9) / 390);
+        line-height: calc((100vw * 9) / 390);
+    }
+
+    #about-us-page #our-team .slick-list .image{
+        margin-top: calc((100vw * 17) / 390);
+        margin-bottom: calc((100vw * 10) / 390);
+    }
+
+    #about-us-page #our-team .slick-list img{
+        border-radius:  calc((100vw * 6) / 390);
+    }
+
+    #about-us-page #our-team .slick-list a{
+        margin-top: 0;
+    }
+
+    #about-us-page #our-team .slick-list a span{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 17) / 390);
+    }
+
+    #about-us-page #our-team .slick-list a svg{
+        width: calc((100vw * 15) / 390);
+        margin-left: calc((100vw * 10) / 390);
+    }
+
+    #about-us-page #our-team .arrow{
+        margin-top: calc((100vw * 25) / 390);
+        margin-bottom: 0;
+    }
+
+    #about-us-page #our-team .arrow svg{
+        width: calc((100vw * 50) / 390);
+        margin-left: calc((100vw * 15) / 390);
+    }
+}

@@ -1,0 +1,91 @@
+#about-us-page #companies-with-we-work{
+    border-top-left-radius: calc((100vw * 114) / 1920);
+    border-top-right-radius: calc((100vw * 114) / 1920);
+}
+#about-us-page #companies-with-we-work .hand{
+    width:  calc((100vw * 167) / 1920);
+    position: absolute;
+    top: 0;
+    right: 0;
+    top: calc((100vw * -95) / 1920);
+    right: calc((100vw * 20) / 1920);
+}
+#about-us-page #companies-with-we-work .container{
+    padding-left:calc((100vw * 138) / 1920) ;
+    padding-right: calc((100vw * 138) / 1920);
+    padding-top: calc((100vw * 125) / 1920);
+    padding-bottom: calc((100vw * 80) / 1920);
+
+    max-width: 100%;
+}
+
+#about-us-page #companies-with-we-work h3{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 60) / 1920);
+    margin-bottom: calc((100vw * 55) / 1920);
+}
+
+#about-us-page .slick-list .company{
+    font-size: calc((100vw * 31) / 1920);
+    line-height: calc((100vw * 31) / 1920);
+
+    padding-left:calc((100vw * 50) / 1920) ;
+    padding-right: calc((100vw * 50) / 1920);
+    padding-top: calc((100vw * 85) / 1920);
+    padding-bottom: calc((100vw * 85) / 1920);
+
+    margin-left: calc((100vw * 20) / 1920);
+    margin-right: calc((100vw * 20) / 1920);
+
+    border-radius: calc((100vw * 43) / 1920);
+
+    min-height: calc((100vw * 243) / 1920);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 640px){
+    #about-us-page #companies-with-we-work{
+        border-top-left-radius: calc((100vw * 32) / 390);
+        border-top-right-radius: calc((100vw * 32) / 390);
+    }
+
+    #about-us-page #companies-with-we-work .hand{
+        width: calc((100vw * 55) / 390);
+        top: calc((100vw * -33) / 390);
+        right: calc((100vw * 12) / 390);
+    }
+
+    #about-us-page #companies-with-we-work .container{
+        padding-left:calc((100vw * 40) / 390) ;
+        padding-right: calc((100vw * 40) / 390);
+        padding-top: calc((100vw * 90) / 390);
+        padding-bottom: calc((100vw * 65) / 390);
+    }
+
+    #about-us-page #companies-with-we-work h3{
+        font-size: calc((100vw * 30) / 390);
+        line-height: calc((100vw * 29) / 390);
+        margin-bottom: calc((100vw * 60) / 390);
+    }
+    
+    #about-us-page .slick-list .company{
+        font-size: calc((100vw * 20) / 390);
+        line-height: calc((100vw * 20) / 390);
+
+
+        padding-left: calc((100vw * 50) / 390);
+        padding-right: calc((100vw * 50) / 390);
+        padding-top: calc((100vw * 20) / 390);
+        padding-bottom: calc((100vw * 20) / 390);
+
+        margin-left: calc((100vw * 5) / 390);
+        margin-right: calc((100vw * 5) / 390);
+
+        border-radius: calc((100vw * 43) / 390);
+
+        min-height: calc((100vw *160) / 390);
+    }
+}

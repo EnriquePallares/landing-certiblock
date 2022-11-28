@@ -1,0 +1,72 @@
+#about-us-page #register-your-company{
+    border-top-left-radius: calc((100vw * 114) / 1920);
+    border-top-right-radius: calc((100vw * 114) / 1920);
+}
+
+#about-us-page #register-your-company .container{
+    padding-left:calc((100vw * 138) / 1920) ;
+    padding-right: calc((100vw * 138) / 1920);
+    padding-top: calc((100vw * 110) / 1920);
+    padding-bottom: calc((100vw * 75) / 1920);
+
+    max-width: 100%;
+}
+
+
+#about-us-page #register-your-company h3{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 60) / 1920);
+    margin-bottom: calc((100vw * 27) / 1920);
+}
+
+#about-us-page #register-your-company p{
+    font-size: calc((100vw * 31) / 1920);
+    line-height: calc((100vw * 31) / 1920);
+    margin-bottom: calc((100vw * 80) / 1920);
+}
+
+#about-us-page #register-your-company a span{
+    font-size: calc((100vw * 35) / 1920);
+    line-height: calc((100vw * 35) / 1920);
+
+    padding-left: calc((100vw * 60) / 1920);
+    padding-right: calc((100vw * 60) / 1920);
+    padding-top: calc((100vw * 25) / 1920);
+    padding-bottom: calc((100vw * 25) / 1920);
+}
+
+@media (max-width: 640px){
+    #about-us-page #register-your-company{
+        border-top-left-radius: calc((100vw * 32) / 390);
+        border-top-right-radius: calc((100vw * 32) / 390);
+    }
+
+    #about-us-page #register-your-company .container{
+        padding-left:calc((100vw * 40) / 390) ;
+        padding-right: calc((100vw * 40) / 390);
+        padding-top: calc((100vw * 80) / 390);
+        padding-bottom: calc((100vw * 40) / 390);
+    }
+
+    #about-us-page #register-your-company h3{
+        font-size: calc((100vw * 30) / 390);
+        line-height: calc((100vw * 29) / 390);
+        margin-bottom: calc((100vw * 40) / 390);
+    }
+
+    #about-us-page #register-your-company p{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 17) / 390);
+        margin-bottom: calc((100vw * 85) / 390);;
+    }
+
+    #about-us-page #register-your-company a span{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 17) / 390);
+
+        padding-left: calc((100vw * 25) / 390);
+        padding-right: calc((100vw * 25) / 390);
+        padding-top: calc((100vw * 12) / 390);
+        padding-bottom: calc((100vw * 12) / 390);
+    }
+}

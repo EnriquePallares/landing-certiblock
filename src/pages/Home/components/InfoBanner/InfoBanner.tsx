@@ -9,7 +9,7 @@ const InfoBanner: React.FC<InfoBannerInterface> = () => {
       id="info-banner"
       className="extend-bg-color relative bg-light-gray md:bg-primary"
     >
-      <div className="container relative mx-auto max-w-full"> 
+      <div className="container relative mx-auto"> 
         <img
           src={floatIcon}
           alt="Float icon"

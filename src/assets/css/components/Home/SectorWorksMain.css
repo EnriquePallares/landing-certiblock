@@ -8,6 +8,8 @@
     padding-right: calc((100vw * 138) / 1920);
     padding-top: calc((100vw * 120) / 1920);
     padding-bottom: calc((100vw * 95) / 1920);
+
+    max-width: 100%;
 }
 #home-page .SectorWorksMain h2{
     font-size: calc((100vw * 60) / 1920);

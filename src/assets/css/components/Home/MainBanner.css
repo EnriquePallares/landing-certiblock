@@ -16,7 +16,8 @@
 #home-page .main-banner h3{
     font-size: calc((100vw * 180) / 1920);
     line-height: calc((100vw * 180) / 1920);
-    width: 77%;
+    width: 80%;
+    margin-right: calc((100vw * -60) / 1920);
 }
 
 #home-page .main-banner button.more{
@@ -24,7 +25,7 @@
     padding-bottom: calc((100vw * 30) / 1920);
     padding-left: calc((100vw * 100) / 1920);
     padding-right: calc((100vw * 55) / 1920);
-    margin-left: calc((100vw * -43) / 1920);
+    margin-left: calc((100vw * -60) / 1920);
 }
 
 #home-page .main-banner button.more span{

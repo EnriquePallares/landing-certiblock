@@ -1,0 +1,134 @@
+#about-us-page #the-values{
+    border-top-left-radius: calc((100vw * 87) / 1920);
+    border-top-right-radius: calc((100vw * 87) / 1920);
+}
+
+#about-us-page #the-values .container{
+    padding-left:calc((100vw * 138) / 1920) ;
+    padding-right: calc((100vw * 165) / 1920);
+    padding-top: calc((100vw * 165) / 1920);
+    padding-bottom: calc((100vw * 145) / 1920);
+
+    max-width: 100%;
+}
+
+#about-us-page #the-values .floatIcon{
+    width: calc((100vw * 175) / 1920);
+    left: calc((100vw * 120) / 1920);
+    top:  calc((100vw * -100) / 1920);
+}
+
+.box-left{
+    width: 35.733333%;
+}
+
+.box-right{
+    width: 64.2667%;
+}
+
+#about-us-page #the-values h3{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 60) / 1920);
+    margin-bottom: calc((100vw * 40) / 1920);
+}
+
+#about-us-page #the-values h4{
+    font-size: calc((100vw * 144) / 1920);
+    line-height: calc((100vw * 121) / 1920);
+}
+
+#about-us-page #the-values span{
+    font-size: calc((100vw * 20) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+}
+
+#about-us-page #the-values span.absolute{
+    top: calc((100vw * 70) / 1920);
+    left: calc((100vw * 50) / 1920);
+}
+
+#about-us-page #the-values .arrow{
+    margin: 0;
+}
+
+#about-us-page #the-values .arrow svg{
+    width: calc((100vw * 76) / 1920);
+    height: auto;
+    margin-right: calc((100vw * 10) / 1920);
+}
+
+#about-us-page #the-values  .slick-slider{
+    border-radius: calc((100vw * 42) / 1920);
+}
+
+#about-us-page #the-values .card{
+    padding-left:calc((100vw * 100) / 1920) ;
+    padding-right: calc((100vw * 100) / 1920);
+    padding-top: calc((100vw * 80) / 1920);
+    padding-bottom: calc((100vw * 105) / 1920);
+}
+
+@media (max-width: 640px){
+    #about-us-page #the-values{
+        border-top-left-radius: calc((100vw * 32) / 390);
+        border-top-right-radius: calc((100vw * 32) / 390);
+    }
+
+    #about-us-page #the-values .container{
+        padding-left:calc((100vw * 40) / 390) ;
+        padding-right: calc((100vw * 40) / 390);
+        padding-top: calc((100vw * 75) / 390);
+        padding-bottom: calc((100vw * 40) / 390);
+    }
+
+    .box-left{
+        width: 100%;
+    }
+    
+    .box-right{
+        width: 100%;
+    }
+    
+
+    #about-us-page #the-values h3{
+        font-size: calc((100vw * 30) / 390);
+        line-height: calc((100vw * 29) / 390);
+        margin-bottom: calc((100vw * 25) / 390);
+    }
+
+    #about-us-page #the-values h4{
+        font-size: calc((100vw * 49) / 390);
+        line-height: calc((100vw * 41) / 390);
+    }
+
+    #about-us-page #the-values span{
+        font-size: calc((100vw * 10) / 390);
+        line-height: calc((100vw * 17) / 390);
+    }
+
+    #about-us-page #the-values span.absolute{
+        top: calc((100vw * 10) / 390);
+        left: calc((100vw * 30) / 390);
+    }
+
+    #about-us-page #the-values .arrow{
+        margin-top: calc((100vw * 22) / 390);
+    }
+
+    #about-us-page #the-values .arrow svg{
+        width: calc((100vw * 40) / 390);
+        margin-right: 0;
+        margin-left: calc((100vw * 3) / 390);
+    }
+
+    #about-us-page #the-values  .slick-slider{
+        border-radius: calc((100vw * 15) / 390);
+    }
+
+    #about-us-page #the-values .card{
+        padding-left:calc((100vw * 20) / 390) ;
+        padding-right: calc((100vw * 20) / 390);
+        padding-top: calc((100vw * 40) / 390);
+        padding-bottom: calc((100vw * 40) / 390);
+    }
+}

@@ -28,7 +28,7 @@ const Footer: React.FC<FooterInterface> = () => {
         </defs>
         <g id="Grupo_52" data-name="Grupo 52" clip-path="url(#clip-path)">
           <path id="Trazado_48" data-name="Trazado 48" d="M110.428,19.589A19.589,19.589,0,1,1,90.839,0a19.589,19.589,0,0,1,19.589,19.589" transform="translate(-39.165)" fill="#999899" fill-rule="evenodd"/>
-          <path id="Trazado_49" data-name="Trazado 49" d="M.5,12.12V32.135l23.084,8.139H49.738V33.069H28.254V31.2H68.419V25.864H28.254V24H71.087V18.658H28.254V16.79H68.419V11.453H28.254V9.585H57.744V4.247H28.254Z" transform="translate(-0.275 -2.335)" fill="none" stroke="#0a6192" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="Trazado_49" data-name="Trazado 49" d="M.5,12.12V32.135l23.084,8.139H49.738V33.069H28.254V31.2H68.419V25.864H28.254V24H71.087V18.658H28.254V16.79H68.419V11.453H28.254V9.585H57.744V4.247H28.254Z" transform="translate(-0.275 -2.335)" fill="none" stroke="#0a6192" strokeMiterlimit="10" strokeWidth="1"/>
         </g>
       </svg>
 
@@ -49,8 +49,8 @@ const Footer: React.FC<FooterInterface> = () => {
                   {/* <FontAwesomeIcon icon={faArrowRight} /> */}
                   <svg xmlns="http://www.w3.org/2000/svg" width="26.899" height="20.204" viewBox="0 0 26.899 20.204">
                     <g id="Grupo_87" data-name="Grupo 87" transform="translate(-739.906 -3583.398)">
-                      <path id="Trazado_66" data-name="Trazado 66" d="M1175.411,723.577l8.688,8.688-8.688,8.688" transform="translate(-418.708 2861.236)" fill="none" stroke="#03103a" stroke-linecap="round" stroke-width="2"/>
-                      <line id="Línea_97" data-name="Línea 97" x1="20.246" transform="translate(740.906 3593.271)" fill="none" stroke="#03103a" stroke-linecap="round" stroke-width="2"/>
+                      <path id="Trazado_66" data-name="Trazado 66" d="M1175.411,723.577l8.688,8.688-8.688,8.688" transform="translate(-418.708 2861.236)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+                      <line id="Línea_97" data-name="Línea 97" x1="20.246" transform="translate(740.906 3593.271)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
                     </g>
                   </svg>
 
@@ -104,7 +104,7 @@ const Footer: React.FC<FooterInterface> = () => {
         <svg className='sm:hidden hand' xmlns="http://www.w3.org/2000/svg" width="64.798" height="45.993" viewBox="0 0 64.798 45.993">
           <g id="Grupo_55" data-name="Grupo 55" transform="translate(84.797 76.993) rotate(180)">
             <path id="Trazado_51" data-name="Trazado 51" d="M45.992,23A23,23,0,1,1,23,0a23,23,0,0,1,23,23" transform="translate(20 30.999)" fill="#0a6192"/>
-            <path id="Trazado_52" data-name="Trazado 52" d="M154.3,114.794v9.382l10.821,3.816h12.26v-3.378h-10.07v-.876h18.827v-2.5H167.309v-.876h20.078v-2.5H167.309v-.876h18.827v-2.5H167.309v-.876h13.823v-2.5H167.309Z" transform="translate(-103.09 -57.631)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+            <path id="Trazado_52" data-name="Trazado 52" d="M154.3,114.794v9.382l10.821,3.816h12.26v-3.378h-10.07v-.876h18.827v-2.5H167.309v-.876h20.078v-2.5H167.309v-.876h18.827v-2.5H167.309v-.876h13.823v-2.5H167.309Z" transform="translate(-103.09 -57.631)" fill="none" stroke="#fff" strokeMiterlimit="10" strokeWidth="1"/>
           </g>
         </svg>
 
