@@ -59,7 +59,7 @@ const DocumentCard: React.FC<DocumentCardInterface> = props => {
           <img src={buttonIcon} alt="" />
         </button>
         <img
-          className="w-full rounded-xl border border-gray-400"
+          className="w-full rounded-xl border border-light-gray"
           src="https://via.placeholder.com/360x270/FFFFFF/C3D22D/?text=Preview"
           alt=""
         />
