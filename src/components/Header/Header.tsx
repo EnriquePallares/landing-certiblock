@@ -26,13 +26,13 @@ const Header: React.FC<HeaderInterface> = () => {
   return (
     <header id="header" className="absolute top-0 left-0 right-0 z-50">
       <div className="container mx-auto">
-        <Navbar fluid={true} className="bg-transparent mx-0">
+        <Navbar fluid={true} className="mx-0 bg-transparent">
           <Navbar.Brand href="/landing-certiblock/">
             <img src={logo} className="w-48" alt="Logo certiblock" />
           </Navbar.Brand>
 
-          <Navbar.Toggle className="toggle !text-white hover:!text-gray-500 p-0" />
-          <Navbar.Collapse className="collapse rounded bg-gray-100 px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
+          <Navbar.Toggle className="toggle hover:!text-gray-500 p-0 !text-white" />
+          <Navbar.Collapse className="collapse bg-gray-100 rounded px-2 pb-4 md:rounded-none md:bg-transparent md:px-0 md:pb-0">
             <div className="hidden rounded-full bg-primary md:inline-flex">
               {menuItems.map((item, index) => (
                 <CustomLink
@@ -66,7 +66,7 @@ const Header: React.FC<HeaderInterface> = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="ml-2 h-5 w-5 h-auto"
+                className="ml-2 h-auto w-5"
               >
                 <path
                   strokeLinecap="round"
@@ -77,8 +77,8 @@ const Header: React.FC<HeaderInterface> = () => {
             </CustomLink>
 
             <CustomLink
-              className="link linkblue !font-light text-center"
-              to="/test"
+              className="link linkblue text-center !font-light"
+              to="/profile/claim-your-asset"
               text="Reclama tu activo"
               type="secondary"
             />

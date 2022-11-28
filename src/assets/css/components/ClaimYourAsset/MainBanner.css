@@ -1,0 +1,4 @@
+#claim-your-asset .box {
+  padding-left: calc((100vw * 135) / 1920);
+  padding-right: calc((100vw * 145) / 1920);
+}

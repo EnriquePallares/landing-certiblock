@@ -55,24 +55,37 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
           type="primary"
           className="more mb-2 hidden w-auto flex-[0_0_auto] self-end font-normal md:inline-block md:px-16 md:py-5"
         >
-          {/* <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="h-6 w-6"
+            width="39.815"
+            height="31.879"
+            viewBox="0 0 39.815 31.879"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-            />
-          </svg> */}
-          <svg xmlns="http://www.w3.org/2000/svg" width="39.815" height="31.879" viewBox="0 0 39.815 31.879">
-            <g id="Grupo_313" data-name="Grupo 313" transform="translate(-1007.363 -708.564)">
-              <path id="Trazado_3" data-name="Trazado 3" d="M1175.411,723.577,1188.7,738.1l-13.291,14.527" transform="translate(-142.879 -13.6)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
-              <line id="Línea_26" data-name="Línea 26" x1="30.974" transform="translate(1008.363 724.121)" fill="none" stroke="#030f37" strokeLinecap="round" strokeWidth="2"/>
+            <g
+              id="Grupo_313"
+              data-name="Grupo 313"
+              transform="translate(-1007.363 -708.564)"
+            >
+              <path
+                id="Trazado_3"
+                data-name="Trazado 3"
+                d="M1175.411,723.577,1188.7,738.1l-13.291,14.527"
+                transform="translate(-142.879 -13.6)"
+                fill="none"
+                stroke="#03103a"
+                strokeLinecap="round"
+                strokeWidth="2"
+              />
+              <line
+                id="Línea_26"
+                data-name="Línea 26"
+                x1="30.974"
+                transform="translate(1008.363 724.121)"
+                fill="none"
+                stroke="#030f37"
+                strokeLinecap="round"
+                strokeWidth="2"
+              />
             </g>
           </svg>
         </Button>
@@ -81,24 +94,37 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
           type="ligth-text-black"
           className="more mt-6 font-light md:ml-10 md:hidden md:px-16 md:py-5"
         >
-          {/* <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="h-6 w-6"
+            width="39.815"
+            height="31.879"
+            viewBox="0 0 39.815 31.879"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-            />
-          </svg> */}
-          <svg xmlns="http://www.w3.org/2000/svg" width="39.815" height="31.879" viewBox="0 0 39.815 31.879">
-            <g id="Grupo_313" data-name="Grupo 313" transform="translate(-1007.363 -708.564)">
-              <path id="Trazado_3" data-name="Trazado 3" d="M1175.411,723.577,1188.7,738.1l-13.291,14.527" transform="translate(-142.879 -13.6)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
-              <line id="Línea_26" data-name="Línea 26" x1="30.974" transform="translate(1008.363 724.121)" fill="none" stroke="#030f37" strokeLinecap="round" strokeWidth="2"/>
+            <g
+              id="Grupo_313"
+              data-name="Grupo 313"
+              transform="translate(-1007.363 -708.564)"
+            >
+              <path
+                id="Trazado_3"
+                data-name="Trazado 3"
+                d="M1175.411,723.577,1188.7,738.1l-13.291,14.527"
+                transform="translate(-142.879 -13.6)"
+                fill="none"
+                stroke="#03103a"
+                strokeLinecap="round"
+                strokeWidth="2"
+              />
+              <line
+                id="Línea_26"
+                data-name="Línea 26"
+                x1="30.974"
+                transform="translate(1008.363 724.121)"
+                fill="none"
+                stroke="#030f37"
+                strokeLinecap="round"
+                strokeWidth="2"
+              />
             </g>
           </svg>
         </Button>
@@ -109,7 +135,7 @@ const MainBanner: React.FC<MainBannerInterface> = () => {
             sobre Web 3.0
           </h4>
 
-          <Accordion className="text-dark-blue-4 border-gray-200">
+          <Accordion className="border-gray-200 text-dark-blue-4">
             {posts.map((post, index) => (
               <Accordion.Panel key={index}>
                 <Accordion.Title className="bg-white text-lg !text-current hover:bg-primary">

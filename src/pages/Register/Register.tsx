@@ -24,7 +24,7 @@ const Register = (props: RegisterInterface) => {
         <img
           src={bannerBackgroundMobile}
           alt="Main banner"
-          className="aspect-[1/2.8] w-full md:aspect-[4/3.3]"
+          className="aspect-[1/2.8] w-full md:aspect-[4/3.7]"
         />
       </picture>
       <div className="vertical-alignment-abs absolute w-full p-8 md:w-1/2">
@@ -37,14 +37,14 @@ const Register = (props: RegisterInterface) => {
             <Button
               type={isNaturalPerson() ? 'dark' : 'ligth-text-black'}
               text="PERSONA"
-              className={`w-full md:text-2xl font-light ${
+              className={`w-full font-light md:text-2xl ${
                 isNaturalPerson() && 'border border-primary'
               }`}
               onClick={() => handdleTypePerson('person')}
             ></Button>
             <Button
               type={!isNaturalPerson() ? 'dark' : 'ligth-text-black'}
-              className={`w-full md:text-2xl font-light ${
+              className={`w-full font-light md:text-2xl ${
                 !isNaturalPerson() && 'border border-primary'
               }`}
               text="EMPRESA"

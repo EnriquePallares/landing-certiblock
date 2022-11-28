@@ -35,7 +35,7 @@ const CustomTabs: React.FC<CustomTabsInterface> = ({
           </button>
         ))}
       </div>
-      <div className="container transition duration-300 py-4">
+      <div className="container py-4 transition duration-300">
         {children.map(content => {
           return content.key == tabIndex ? content : null;
         })}
