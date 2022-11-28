@@ -2,118 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-#home-page .main-banner{
-    position: relative;
+#home-page .main-banner {
+	position: relative;
 }
-#home-page .main-banner picture img{
+
+/* #home-page .main-banner picture img{
     height: 107vh;
-}
+} */
+
 #home-page .main-banner .box {
-    padding-left: calc((100vw * 135) / 1920);
-    padding-right: calc((100vw * 145) / 1920);
-    top: 53%;
-}
-#home-page .main-banner h3{
-    font-size: calc((100vw * 180) / 1920);
-    line-height: calc((100vw * 180) / 1920);
-    width: 80%;
-    margin-right: calc((100vw * -60) / 1920);
+	padding-left: calc((100vw * 135) / 1920);
+	padding-right: calc((100vw * 145) / 1920);
+	/* top: 53%; */
 }
 
-#home-page .main-banner button.more{
-    padding-top: calc((100vw * 30) / 1920);
-    padding-bottom: calc((100vw * 30) / 1920);
-    padding-left: calc((100vw * 100) / 1920);
-    padding-right: calc((100vw * 55) / 1920);
-    margin-left: calc((100vw * -60) / 1920);
+#home-page .main-banner h3 {
+	font-size: calc((100vw * 180) / 1920);
+	line-height: calc((100vw * 180) / 1920);
+	width: 80%;
+	margin-right: calc((100vw * -60) / 1920);
 }
 
-#home-page .main-banner button.more span{
-    font-size: calc((100vw * 22) / 1920);
-    line-height: calc((100vw * 25) / 1920);
+#home-page .main-banner button.more {
+	padding-top: calc((100vw * 30) / 1920);
+	padding-bottom: calc((100vw * 30) / 1920);
+	padding-left: calc((100vw * 100) / 1920);
+	padding-right: calc((100vw * 55) / 1920);
+	margin-left: calc((100vw * -60) / 1920);
 }
 
-#home-page .main-banner button.more svg{
-    width: calc((100vw * 40) / 1920);
-    height: auto;
-    margin-left: calc((100vw * 70) / 1920)!important;
+#home-page .main-banner button.more span {
+	font-size: calc((100vw * 22) / 1920);
+	line-height: calc((100vw * 25) / 1920);
 }
 
-@media (max-width: 640px){
-    #home-page .main-banner picture img{
-        height: auto;
-    }
-    
-    #home-page .main-banner .box{
-        padding-left: calc((100vw * 35) / 390);
-        padding-right: calc((100vw * 35) / 390);
-        /* top: 49.5%; */
-    }
+#home-page .main-banner button.more svg {
+	width: calc((100vw * 40) / 1920);
+	height: auto;
+	margin-left: calc((100vw * 70) / 1920) !important;
+}
 
-    #home-page .main-banner h3{
-        font-size: calc((100vw * 46) / 390);
-        line-height: calc((100vw * 43) / 390);
-        width: 100%;
-    }
+@media (max-width: 640px) {
+	#home-page .main-banner picture img {
+		height: auto;
+	}
 
-    #home-page .main-banner button.more{
-        padding-top: calc((100vw * 5) / 390);
-        padding-bottom: calc((100vw * 9) / 390);
-        padding-left: calc((100vw *  15) / 390);
-        padding-right: calc((100vw * 12) / 390);
-        margin-top: calc((100vw * 35) / 390);
-        margin-left: 0;
-    }
+	#home-page .main-banner .box {
+		padding-left: calc((100vw * 35) / 390);
+		padding-right: calc((100vw * 35) / 390);
+		/* top: 49.5%; */
+	}
 
-    #home-page .main-banner button.more div{
-        align-items: baseline;
-    }
+	#home-page .main-banner h3 {
+		font-size: calc((100vw * 46) / 390);
+		line-height: calc((100vw * 43) / 390);
+		width: 100%;
+	}
 
-    #home-page .main-banner button.more span{
-        font-size: calc((100vw * 27) / 390);
-        line-height: calc((100vw * 26) / 390);
-    }
+	#home-page .main-banner button.more {
+		padding-top: calc((100vw * 5) / 390);
+		padding-bottom: calc((100vw * 9) / 390);
+		padding-left: calc((100vw * 15) / 390);
+		padding-right: calc((100vw * 12) / 390);
+		margin-top: calc((100vw * 35) / 390);
+		margin-left: 0;
+	}
 
-    #home-page .main-banner button.more svg{
-        width: calc((100vw * 18) / 390);
-        margin-left: calc((100vw * 8) / 390)!important;
-    }
+	#home-page .main-banner button.more div {
+		align-items: baseline;
+	}
 
-    #home-page .main-banner .collapse{
-        margin-top: calc((100vw * 87) / 390);
-    }
+	#home-page .main-banner button.more span {
+		font-size: calc((100vw * 27) / 390);
+		line-height: calc((100vw * 26) / 390);
+	}
 
-    #home-page .main-banner .collapse h4{
-        font-size: calc((100vw * 27) / 390);
-        line-height: calc((100vw * 26) / 390);
-        margin-bottom: calc((100vw * 50) / 390);
-    }
+	#home-page .main-banner button.more svg {
+		width: calc((100vw * 18) / 390);
+		margin-left: calc((100vw * 8) / 390) !important;
+	}
 
-    #home-page .main-banner .collapse h2{
-        font-size: calc((100vw * 20) / 390);
-        line-height: calc((100vw * 20) / 390);
-    }
+	#home-page .main-banner .collapse {
+		margin-top: calc((100vw * 87) / 390);
+	}
 
-    #home-page .main-banner .collapse p{
-        font-size: calc((100vw * 16) / 390);
-        line-height: calc((100vw * 20) / 390);
-    }
+	#home-page .main-banner .collapse h4 {
+		font-size: calc((100vw * 27) / 390);
+		line-height: calc((100vw * 26) / 390);
+		margin-bottom: calc((100vw * 50) / 390);
+	}
 
-    #home-page .main-banner .collapse a{
-        font-size: calc((100vw * 16) / 390);
-        line-height: calc((100vw * 20) / 390);
-    }
+	#home-page .main-banner .collapse h2 {
+		font-size: calc((100vw * 20) / 390);
+		line-height: calc((100vw * 20) / 390);
+	}
 
-    #home-page .main-banner .collapse button{
-        padding-top: calc((100vw * 8) / 390);
-        padding-bottom: calc((100vw * 8) / 390);
-        padding-left: calc((100vw *  8) / 390);
-        padding-right: calc((100vw * 8) / 390);
-    }
+	#home-page .main-banner .collapse p {
+		font-size: calc((100vw * 16) / 390);
+		line-height: calc((100vw * 20) / 390);
+	}
 
-    #home-page .main-banner .collapse .content{
-        padding-left: calc((100vw *  8) / 390);
-        padding-right: calc((100vw * 8) / 390);
-        padding-top: 0;
-    }
+	#home-page .main-banner .collapse a {
+		font-size: calc((100vw * 16) / 390);
+		line-height: calc((100vw * 20) / 390);
+	}
+
+	#home-page .main-banner .collapse button {
+		padding-top: calc((100vw * 8) / 390);
+		padding-bottom: calc((100vw * 8) / 390);
+		padding-left: calc((100vw * 8) / 390);
+		padding-right: calc((100vw * 8) / 390);
+	}
+
+	#home-page .main-banner .collapse .content {
+		padding-left: calc((100vw * 8) / 390);
+		padding-right: calc((100vw * 8) / 390);
+		padding-top: 0;
+	}
 }
