@@ -12,10 +12,16 @@ export interface AppContextValue {
 export const AuthContext = React.createContext<any | null>(null);
 
 const AuthContextProvider: React.FC<AppAuthInterface> = props => {
-  const [user, setUser] = useState<any>(null);
+  const localStorageUser = JSON.parse(localStorage.getItem('userData')!);
+  const [user, setUser] = useState<any>(localStorageUser ?? null);
+
+  const setUserGobal = (user: any) => {
+    localStorage.setItem('userData', JSON.stringify(user));
+    setUser(user);
+  }
 
   return (
-    <AuthContext.Provider value={[user, setUser]}>
+    <AuthContext.Provider value={[user, setUserGobal]}>
       {props.children}
     </AuthContext.Provider>
   );

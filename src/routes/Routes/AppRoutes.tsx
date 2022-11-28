@@ -3,6 +3,7 @@ import { ProtectedRoute } from '@/components/ProtectedRoute';
 import { AboutUs } from '@/pages/AboutUs';
 import { Blog } from '@/pages/Blog';
 import { ClaimYourAsset } from '@/pages/ClaimYourAsset';
+import { CompanyProfile } from '@/pages/CompanyProfile';
 import { Home } from '@/pages/Home';
 import { InternalBlog } from '@/pages/InternalBlog';
 import { Login } from '@/pages/Login';
@@ -33,6 +34,9 @@ const AppRoutes = (props: AppRoutesInterface) => {
             path="/profile/claim-your-asset"
             element={<ClaimYourAsset />}
           />
+        </Route>
+        <Route element={<Layout imagelessFooter={true} />}>
+          <Route path="/companyProfile" element={<CompanyProfile />} />
         </Route>
       </Route>
     </Routes>

@@ -2,13 +2,13 @@ import React, { ReactNode } from 'react';
 export interface CustomTabContentInterface {
   key: number;
   children: ReactNode | ReactNode[];
+  className?: string
 }
 
 const CustomTabContent: React.FC<CustomTabContentInterface> = ({
-  key,
-  children,
+  children, className
 }) => {
-  return <div key={key}>{children}</div>;
+  return <div className={`${className}`}>{children}</div>;
 };
 
 export default CustomTabContent;

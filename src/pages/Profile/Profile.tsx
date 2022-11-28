@@ -34,7 +34,7 @@ const Profile: React.FC<ProfileInterface> = () => {
   ];
 
   return (
-    <section id="blog">
+    <section id="profile">
       <MainBannerReusable
         bannerBackground={bannerBackground}
         bannerBackgroundMobile={bannerBackgroundMobile}
@@ -57,7 +57,7 @@ const Profile: React.FC<ProfileInterface> = () => {
                 Documentos
               </h4>
             </CustomTabContent>
-          </CustomTabs>
+          </CustomTabs> 
         </div>
       </section>
     </section>
