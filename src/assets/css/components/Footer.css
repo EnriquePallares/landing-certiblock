@@ -1,0 +1,274 @@
+#footer{
+    border-top-left-radius: calc((100vw * 87) / 1920);
+    border-top-right-radius: calc((100vw * 87) / 1920);
+}
+
+#footer .container{
+    padding-left:calc((100vw * 138) / 1920) ;
+    padding-right: calc((100vw * 138) / 1920);
+    padding-top: calc((100vw * 175) / 1920);
+    padding-bottom: calc((100vw * 95) / 1920);
+}
+
+#footer label{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 92) / 1920);
+}
+
+#footer .email{
+    margin-top: calc((100vw * 30) / 1920);
+}
+
+#footer .email input{
+    font-size: calc((100vw * 17) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+
+    padding-left:calc((100vw * 20) / 1920) ;
+    padding-right: calc((100vw * 20) / 1920);
+    padding-top: calc((100vw * 25) / 1920);
+    padding-bottom: calc((100vw * 25) / 1920);
+
+    border-radius: calc((100vw * 17) / 1920);
+}
+
+#footer .email button{
+    padding-left:calc((100vw * 35) / 1920) ;
+    padding-right: calc((100vw * 20) / 1920);
+    padding-top: calc((100vw * 20) / 1920);
+    padding-bottom: calc((100vw * 20) / 1920);
+
+    margin-left: calc((100vw * 25) / 1920);
+
+    border-radius: calc((100vw * 19) / 1920);
+}
+
+#footer .email button span{
+    font-size: calc((100vw * 17) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+}
+
+#footer .email svg {
+    width: calc((100vw * 25) / 1920);
+    margin-left: calc((100vw * 20) / 1920);
+}
+
+#footer .list{
+    margin-top: calc((100vw * 20) / 1920);
+}
+
+#footer .list ul li a span{
+    font-size: calc((100vw * 25) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+}
+
+#footer .list ul li {
+    padding: calc((100vw * 13) / 1920) 0;
+}
+
+#footer .list svg {
+    width: calc((100vw * 35) / 1920);
+    height: auto;
+}
+
+#footer .list svg:nth-child(n+2){
+    margin-top: calc((100vw * 45) / 1920);
+}
+
+#footer h2{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 60) / 1920);
+}
+
+#footer-sector .container{
+    padding-left:calc((100vw * 138) / 1920) ;
+    padding-right: calc((100vw * 138) / 1920);
+    padding-top: calc((100vw * 40) / 1920);
+    padding-bottom: calc((100vw * 95) / 1920); 
+}
+
+#footer-sector h2{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 60) / 1920);
+    margin-top: 0;
+    margin-bottom: calc((100vw * 70) / 1920);;
+}
+
+#footer-sector .ContainerSectorWork {
+    padding: 0 calc((100vw * 170) / 1920);
+}
+
+#footer-sector .ContainerSectorWork .SectorWork span{
+    font-size: calc((100vw * 25) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+}
+
+#footer-sector .ContainerSectorWork .SectorWork:nth-child(1) img{
+    min-width: calc((100vw * 130) / 1920);
+}
+#footer-sector .ContainerSectorWork .SectorWork:nth-child(2) img{
+    min-width: calc((100vw * 150) / 1920);
+}
+#footer-sector .ContainerSectorWork .SectorWork:nth-child(3) img{
+    min-width: calc((100vw * 132) / 1920);
+}
+#footer-sector .ContainerSectorWork .SectorWork:nth-child(4) img{
+    min-width: calc((100vw * 90) / 1920);
+}
+
+#footer-sector .Floaticon{
+    width: calc((100vw * 300) / 1920);
+    height: auto;
+    bottom: calc((100vw * -150) / 1920);
+    left: calc((100vw * -130) / 1920);
+}
+
+@media (max-width: 640px){
+    #footer{
+        border-top-left-radius: calc((100vw * 32) / 390);
+        border-top-right-radius: calc((100vw * 32) / 390);
+    }
+
+    #footer .container{
+        padding-left:calc((100vw * 40) / 390) ;
+        padding-right: calc((100vw * 40) / 390);
+        padding-top: calc((100vw * 62) / 390);
+        padding-bottom: calc((100vw * 35) / 390);
+    }
+
+    #footer .hand{
+        width: calc((100vw * 72) / 390);
+        left: 0;
+        top: calc((100vw * -13) / 390);
+        position: absolute;
+    }
+
+    #footer label{
+        font-size: calc((100vw * 20) / 390);
+        line-height: calc((100vw * 20) / 390);
+    }
+
+    #footer .email{
+        margin-top: calc((100vw * 20) / 390);
+    }
+    
+    #footer .email input{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 17) / 390);
+
+        padding-left:calc((100vw * 10) / 390) ;
+        padding-right: calc((100vw * 10) / 390);
+        padding-top: calc((100vw * 6) / 390);
+        padding-bottom: calc((100vw * 6) / 390);
+
+        border-radius: calc((100vw * 5) / 390);
+    }
+    
+    #footer .email button{
+        padding-left:calc((100vw * 10) / 390) ;
+        padding-right: calc((100vw * 10) / 390);
+        padding-top: calc((100vw * 10) / 390);
+        padding-bottom: calc((100vw * 10) / 390);
+        margin-left: 0;
+        border-radius: calc((100vw * 5) / 390);
+    }
+    
+    #footer .email button span{
+        font-size: calc((100vw * 20) / 390);
+        line-height: calc((100vw * 20) / 390);
+    }
+    
+    #footer .email svg {
+        width: calc((100vw * 18) / 390);
+        margin-left: calc((100vw * 20) / 390);
+    }
+
+    #footer .email svg path{
+        stroke: #fff;
+    }
+
+    #footer .email svg line{
+        stroke: #fff;
+    }
+    
+    #footer .list{
+        margin-top: calc((100vw * 60) / 390);
+    }
+    
+    #footer .list ul li a span{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 17) / 390);
+    }
+    
+    #footer .list ul li {
+        padding: 0 0;
+    }
+
+    #footer-sector{
+        border-top-left-radius: calc((100vw * 33) / 390);
+        border-top-right-radius: calc((100vw * 33) / 390);
+    }
+
+    #footer-sector::after{
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-left: calc((100vw * 12) / 390) solid transparent;
+        border-right: calc((100vw * 12) / 390) solid transparent;
+        border-top: calc((100vw * 20) / 390) solid #C3D82D;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #footer-sector svg{
+        width: calc((100vw * 33) / 390);
+        margin: 0 calc((100vw * 13) / 390);
+    }
+
+    #footer-sector .icon{
+        margin-top: calc((100vw * 65) / 390);
+        
+    }
+    
+    #footer-sector .container{
+        padding-top: calc((100vw * 20) / 390);
+        padding-bottom: calc((100vw * 50) / 390);
+    }
+    
+    #footer-sector .ContainerSectorWork {
+        padding: 0 0px;
+    }
+
+    #footer-sector .ContainerSectorWork .SectorWork{
+        padding-top: calc((100vw * 50) / 390);
+    }
+    
+    #footer-sector .ContainerSectorWork .SectorWork span{
+        font-size: calc((100vw * 17) / 390); 
+        line-height: calc((100vw * 17) / 390);
+        margin-top: calc((100vw * 5) / 390);
+    }
+    
+    #footer-sector .ContainerSectorWork .SectorWork:nth-child(1) img{
+        min-width: calc((100vw * 75) / 390);
+    }
+    #footer-sector .ContainerSectorWork .SectorWork:nth-child(2) img{
+        min-width: calc((100vw * 84) / 390);
+    }
+    #footer-sector .ContainerSectorWork .SectorWork:nth-child(3) img{
+        min-width: calc((100vw * 74) / 390);
+    }
+    #footer-sector .ContainerSectorWork .SectorWork:nth-child(4) img{
+        min-width: calc((100vw * 50) / 390);
+    }
+
+    #footer-sector .hand{
+        width: calc((100vw * 64) / 390);
+        height: auto;
+        position: absolute;
+        right: calc((100vw * -15) / 390);
+        bottom: calc((100vw * -5) / 390);
+        margin: 0;
+    }
+}

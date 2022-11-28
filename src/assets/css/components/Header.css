@@ -54,4 +54,24 @@
         width: calc((100vw * 30) / 390);
         height: auto;
     }
+
+    #header ul a span{
+        font-size: calc((100vw * 20) / 390);
+        line-height: calc((100vw * 20) / 390);
+    
+        padding-top: calc((100vw * 10) / 390);
+        padding-bottom: calc((100vw * 10) / 390);
+        padding-left: calc((100vw * 40) / 390);
+        padding-right: calc((100vw * 40) / 390);
+
+        text-align: center;
+    }
+
+    #header ul .link{
+        margin-left: 0;
+    }
+    
+    #header ul .linkblue{
+        max-width: 100%;
+    }
 }

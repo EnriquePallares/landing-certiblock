@@ -9,6 +9,8 @@
     padding-right: calc((100vw * 165) / 1920);
     padding-top: calc((100vw * 88) / 1920);
     padding-bottom: calc((100vw * 75) / 1920);
+
+    max-width: 100%;
 }
 
 #home-page #form-section .text-right{

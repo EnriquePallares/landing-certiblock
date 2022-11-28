@@ -14,7 +14,7 @@ const ContactForm = (props: ContactFormInterface) => {
       id="form-section"
       className="extend-bg-color relative hidden rounded-t-3xl bg-light-gray md:block md:rounded-t-[4.5rem]"
     >
-      <div className="container mx-auto max-w-full">
+      <div className="container mx-auto">
         {/* <div className="grid grid-cols-4 items-center gap-6"> */}
         <div className="flex flex-row justify-between">
           <div className="text-right text-lg text-dark-gray font-light w-2/12">

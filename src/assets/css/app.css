@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  -webkit-font-smoothing: antialiased !important;
+}
+
 .strokes-font {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;

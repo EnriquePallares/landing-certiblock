@@ -84,7 +84,7 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
         <img
           src={floatIcon}
           alt="Float icon"
-          className="absolute left-4 bottom-60 hidden md:block"
+          className="Floaticon absolute left-4 bottom-60 hidden md:block"
         />
 
         <Slider
@@ -94,17 +94,20 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
         >
           {members.map((member: any, index: number) => (
             <div key={index}>
-              <div className="mx-1 rounded-3xl bg-white p-6 text-dark-blue-4 md:mx-3 md:p-8">
+              <div className="card mx-1 rounded-3xl bg-white p-6 text-dark-blue-4 md:mx-3 md:p-8">
                 <div className="rounded-3xl">
                   <div className="flex flex-row items-center justify-between">
-                    <span className="flex items-center">
-                      <svg height="54" width="54">
+                    <span className="name flex items-center">
+                      {/* <svg height="54" width="54">
                         <circle cx="26" cy="26" r="25" fill="#E4E4E4" />
+                      </svg> */}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="57" height="53" viewBox="0 0 57 53">
+                        <ellipse id="Elipse_2" data-name="Elipse 2" cx="28.5" cy="26.5" rx="28.5" ry="26.5" fill="#e4e4e4"/>
                       </svg>
-                      <span className="p-2">{member.name}</span>
+                      <span className="p-2 font-light">{member.name}</span>
                     </span>
                   </div>
-                  <div className="py-4">
+                  <div className="image py-4">
                     <img
                       src={member.photo}
                       alt={member.name}
@@ -119,7 +122,14 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
                       className="!bg-transparent px-0 hover:underline"
                       type="primary"
                     >
-                      <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+                      {/* <FontAwesomeIcon icon={faArrowRight} className="ml-2" /> */}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="27.505" height="20.634" viewBox="0 0 27.505 20.634">
+                        <g id="Grupo_313" data-name="Grupo 313" transform="translate(-95.23 0.39)">
+                          <path id="Trazado_64" data-name="Trazado 64" d="M1175.411,723.577l8.9,8.9-8.9,8.9" transform="translate(-1062.992 -722.552)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+                          <line id="Línea_92" data-name="Línea 92" x1="20.747" transform="translate(96.23 9.693)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+                        </g>
+                      </svg>
+
                     </CustomLink>
                   </div>
                 </div>
@@ -127,8 +137,30 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
             </div>
           ))}
         </Slider>
-        <div className="my-3 flex justify-end gap-2">
-          <FontAwesomeIcon
+        <div className="arrow my-3 flex justify-end gap-2">
+          <svg onClick={previous}
+            xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+            <g id="Grupo_102" data-name="Grupo 102" transform="translate(-140 -2631)">
+              <circle id="Elipse_9" data-name="Elipse 9" cx="38" cy="38" r="38" transform="translate(140 2631)" fill="#fff"/>
+              <g id="Grupo_96" data-name="Grupo 96" transform="translate(459.196 5341.688) rotate(180)">
+                <path id="Trazado_64" data-name="Trazado 64" d="M1175.411,723.577l12.59,12.59-12.59,12.591" transform="translate(-889.062 1936.52)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+                <line id="Línea_92" data-name="Línea 92" x1="29.341" transform="translate(263.304 2672.688)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+              </g>
+            </g>
+          </svg>
+          <svg onClick={next}
+          xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+            <g id="Grupo_103" data-name="Grupo 103" transform="translate(-238 -2631)">
+              <circle id="Elipse_10" data-name="Elipse 10" cx="38" cy="38" r="38" transform="translate(238 2631)" fill="#fff"/>
+              <g id="Grupo_95" data-name="Grupo 95" transform="translate(-5.196 -3.688)">
+                <path id="Trazado_64" data-name="Trazado 64" d="M1175.411,723.577l12.59,12.59-12.59,12.591" transform="translate(-889.062 1936.52)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+                <line id="Línea_92" data-name="Línea 92" x1="29.341" transform="translate(263.454 2672.355)" fill="none" stroke="#03103a" strokeLinecap="round" strokeWidth="2"/>
+              </g>
+            </g>
+          </svg>
+
+
+          {/* <FontAwesomeIcon
             role="button"
             icon={faArrowLeftLong}
             size="lg"
@@ -141,7 +173,7 @@ const OurTeam: React.FC<OurTeamInterface> = () => {
             size="lg"
             className="rounded-full bg-white p-4 text-black"
             onClick={next}
-          />
+          /> */}
         </div>
       </div>
     </section>

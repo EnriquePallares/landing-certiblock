@@ -30,7 +30,7 @@ const CustomLink: React.FC<LinkInterface> = props => {
         }`
       }
     >
-      <span className="flex items-center justify-center py-2 px-4">
+      <span className="flex items-center justify-center py-2 px-4 font-light">
         {props.text}
         {props.children}
       </span>

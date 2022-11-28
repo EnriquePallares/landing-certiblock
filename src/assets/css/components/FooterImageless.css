@@ -1,0 +1,166 @@
+#FooterImageless{
+    border-top-left-radius: calc((100vw * 87) / 1920);
+    border-top-right-radius: calc((100vw * 87) / 1920);
+}
+
+#FooterImageless .container{
+    padding-left:calc((100vw * 138) / 1920) ;
+    padding-right: calc((100vw * 138) / 1920);
+    padding-top: calc((100vw * 100) / 1920);
+    padding-bottom: calc((100vw * 140) / 1920);
+    max-width: 100%;
+}
+
+#FooterImageless label{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 92) / 1920);
+    margin: 0;
+}
+
+#FooterImageless .email{
+    margin-top: calc((100vw * 30) / 1920);
+}
+
+#FooterImageless .email input{
+    font-size: calc((100vw * 17) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+
+    padding-left:calc((100vw * 20) / 1920) ;
+    padding-right: calc((100vw * 20) / 1920);
+    padding-top: calc((100vw * 25) / 1920);
+    padding-bottom: calc((100vw * 25) / 1920);
+
+    border-radius: calc((100vw * 17) / 1920);
+}
+
+#FooterImageless .email button{
+    padding-left:calc((100vw * 35) / 1920) ;
+    padding-right: calc((100vw * 20) / 1920);
+    padding-top: calc((100vw * 20) / 1920);
+    padding-bottom: calc((100vw * 20) / 1920);
+
+    margin-left: calc((100vw * 25) / 1920);
+
+    border-radius: calc((100vw * 19) / 1920);
+}
+
+#FooterImageless .email button span{
+    font-size: calc((100vw * 17) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+}
+
+#FooterImageless .email svg {
+    width: calc((100vw * 25) / 1920);
+    margin-left: calc((100vw * 20) / 1920);
+}
+
+#FooterImageless .list{
+    margin-top: calc((100vw * 20) / 1920);
+}
+
+#FooterImageless .list ul li span{
+    font-size: calc((100vw * 25) / 1920);
+    line-height: calc((100vw * 17) / 1920);
+}
+
+#FooterImageless .list ul li {
+    padding: calc((100vw * 13) / 1920) 0;
+}
+
+#FooterImageless .list svg {
+    width: calc((100vw * 35) / 1920);
+    height: auto;
+}
+
+#FooterImageless .list svg:nth-child(n+2){
+    margin-top: calc((100vw * 45) / 1920);
+}
+
+#FooterImageless h2{
+    font-size: calc((100vw * 60) / 1920);
+    line-height: calc((100vw * 60) / 1920);
+}
+
+@media (max-width: 640px){
+    #FooterImageless{
+        border-top-left-radius: calc((100vw * 32) / 390);
+        border-top-right-radius: calc((100vw * 32) / 390);
+    }
+
+    #FooterImageless .container{
+        padding-left:calc((100vw * 40) / 390) ;
+        padding-right: calc((100vw * 40) / 390);
+        padding-top: calc((100vw * 45) / 390);
+        padding-bottom: calc((100vw * 35) / 390);
+    }
+
+    #FooterImageless .hand{
+        width: calc((100vw * 72) / 390);
+        left: 0;
+        top: calc((100vw * -13) / 390);
+        position: absolute;
+    }
+
+    #FooterImageless label{
+        font-size: calc((100vw * 20) / 390);
+        line-height: calc((100vw * 20) / 390);
+        margin-top: calc((100vw * 30) / 390);
+    }
+
+    #FooterImageless .email{
+        margin-top: calc((100vw * 20) / 390);
+    }
+    
+    #FooterImageless .email input{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 17) / 390);
+
+        padding-left:calc((100vw * 10) / 390) ;
+        padding-right: calc((100vw * 10) / 390);
+        padding-top: calc((100vw * 6) / 390);
+        padding-bottom: calc((100vw * 6) / 390);
+
+        border-radius: calc((100vw * 5) / 390);
+    }
+    
+    #FooterImageless .email button{
+        padding-left:calc((100vw * 10) / 390) ;
+        padding-right: calc((100vw * 10) / 390);
+        padding-top: calc((100vw * 10) / 390);
+        padding-bottom: calc((100vw * 10) / 390);
+        margin-left: 0;
+        border-radius: calc((100vw * 5) / 390);
+    }
+    
+    #FooterImageless .email button span{
+        font-size: calc((100vw * 20) / 390);
+        line-height: calc((100vw * 20) / 390);
+    }
+    
+    #FooterImageless .email svg {
+        width: calc((100vw * 18) / 390);
+        margin-left: calc((100vw * 20) / 390);
+    }
+    
+    #FooterImageless .list{
+        margin-top: calc((100vw * 60) / 390);
+    }
+    
+    #FooterImageless .list ul li span{
+        font-size: calc((100vw * 17) / 390);
+        line-height: calc((100vw * 17) / 390);
+    }
+    
+    #FooterImageless .list ul li {
+        padding: 0 0;
+    }
+
+    #FooterImageless .icon{
+        margin: 0;
+    }
+
+    #FooterImageless .icon svg{
+        width: calc((100vw * 33) / 390);
+        margin: 0 calc((100vw * 13) / 390);
+    }
+}

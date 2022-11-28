@@ -35,14 +35,14 @@ const MainBannerReusable = ({
         />
       </picture>
       <div
-        className={`vertical-alignment-abs absolute w-full py-16 px-8 text-4xl font-black md:w-2/3 md:px-4 md:text-8xl ${classTitle}`}
+        className={`box vertical-alignment-abs absolute w-full py-16 px-8 text-4xl font-black md:w-2/3 md:px-4 md:text-8xl ${classTitle}`}
       >
         {title}{' '}
         {highlightedWord && (
           <span className={classHighWord}>{highlightedWord}</span>
         )}
         {paragraph && (
-          <div className="my-6 rounded-xl bg-white/95 px-4 py-6 text-xl font-light text-blue-green md:p-6">
+          <div className="paragraph my-6 rounded-xl bg-white/95 px-4 py-6 text-xl font-light text-blue-green md:p-6">
             {paragraph}
           </div>
         )}
