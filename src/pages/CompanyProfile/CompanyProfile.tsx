@@ -8,6 +8,7 @@ import { CustomTabsHeader } from '@/components/CustomTabs/CustomTabs';
 import { CustomTabContent } from '@/components/CustomTabs/CustomTabContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import playIcon from '@/assets/images/iconPlay.png';
 export interface CompanyProfileInterface {}
 
 const CompanyProfile: React.FC<CompanyProfileInterface> = () => {
@@ -99,22 +100,29 @@ const CompanyProfile: React.FC<CompanyProfileInterface> = () => {
                               value={item.value}
                               onChange={handleFilter}
                             />
-                            <div className="rounded-3xl bg-white py-1.5 px-2 text-center text-light-gray ring-2 ring-transparent transition-all hover:shadow peer-checked:bg-dark-blue-0 peer-checked:text-white peer-checked:ring-dark-blue-0 md:px-12">
-                              {item.text}
+                            <div className="rounded-3xl bg-white py-1.5 px-2 text-center text-light-gray ring-2 ring-transparent transition-all hover:shadow peer-checked:bg-dark-blue-0 peer-checked:text-white peer-checked:ring-dark-blue-0 md:px-8">
+                              <span className="flex content-center items-center justify-between space-x-4 align-middle">
+                                <p>{item.text}</p>
+                                <img
+                                  src={playIcon}
+                                  alt="play icon"
+                                  className="h-4"
+                                />
+                              </span>
                             </div>
                           </label>
                         </li>
                       )
                     )}
                   </ul>
-                  <div className="relative flex flex-wrap items-stretch md:w-fit">
+                  <div className="relative flex h-fit flex-wrap items-stretch md:w-fit">
                     <span className="absolute z-10 h-full w-8 items-center justify-center rounded-full bg-transparent py-2 pl-3 text-center text-base font-normal leading-snug text-black">
                       <FontAwesomeIcon icon={faSearch} />
                     </span>
                     <input
                       type="text"
                       placeholder="Buscar..."
-                      className="relative w-full rounded-full border-0 bg-primary px-3 py-2 pl-10 text-sm text-black placeholder-black shadow outline-none focus:outline-none focus:ring"
+                      className="relative w-full rounded-full border-0 bg-primary px-2 py-2 pl-10 text-sm text-black placeholder-black shadow outline-none focus:outline-none focus:ring"
                     />
                   </div>
                 </div>

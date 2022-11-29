@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import jsonDocuments from '@/assets/json/documents.json';
 import { DocumentCard } from '../DocumentCard';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import playIcon from '@/assets/images/iconPlay.png';
 export interface ProfileDocumentListInterface {}
 
 const ProfileDocumentList: React.FC<ProfileDocumentListInterface> = () => {
@@ -49,8 +50,11 @@ const ProfileDocumentList: React.FC<ProfileDocumentListInterface> = () => {
                     value={item.value}
                     onChange={handleFilter}
                   />
-                  <div className="rounded-3xl bg-white py-1.5 px-2 text-center text-light-gray ring-2 ring-transparent transition-all hover:shadow peer-checked:bg-dark-blue-0 peer-checked:text-white peer-checked:ring-dark-blue-0 md:px-12">
-                    {item.text}
+                  <div className="rounded-3xl bg-white py-1.5 px-2 text-center text-light-gray ring-2 ring-transparent transition-all hover:shadow peer-checked:bg-dark-blue-0 peer-checked:text-white peer-checked:ring-dark-blue-0 md:px-8">
+                    <span className="flex content-center items-center justify-between space-x-4 align-middle">
+                      <p>{item.text}</p>
+                      <img src={playIcon} alt="play icon" className="h-4" />
+                    </span>
                   </div>
                 </label>
               </li>
