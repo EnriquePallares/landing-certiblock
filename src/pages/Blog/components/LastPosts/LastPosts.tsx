@@ -66,7 +66,7 @@ const LastPosts: React.FC<LastPostsInterface> = () => {
                         value={item.value}
                         onChange={handleFilter}
                       />
-                      <div className="rounded-3xl bg-white py-2 px-2 text-center text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:bg-dark-blue-0 peer-checked:text-white peer-checked:ring-dark-blue-0 md:px-12">
+                      <div className="rounded-3xl bg-white py-2 px-2 text-center text-light-gray ring-2 ring-transparent transition-all hover:shadow peer-checked:bg-dark-blue-0 peer-checked:text-white peer-checked:ring-dark-blue-0 md:px-12">
                         {item.text}
                       </div>
                     </label>
