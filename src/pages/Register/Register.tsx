@@ -27,12 +27,12 @@ const Register = (props: RegisterInterface) => {
           className="aspect-[1/2.8] w-full md:aspect-[4/3.7]"
         />
       </picture>
-      <div className="vertical-alignment-abs absolute w-full p-8 md:w-1/2">
+      <div className="vertical-alignment-abs absolute w-full p-8 md:w-2/3">
         <h3 className="mb-8 text-center text-6xl font-bold text-primary">
           Registro
         </h3>
 
-        <form action="" className="flex flex-col space-y-3">
+        <form action="" className="flex flex-col space-y-3 widthform">
           <div className="mb-6 flex justify-around rounded-[25px] bg-white">
             <Button
               type={isNaturalPerson() ? 'dark' : 'ligth-text-black'}
@@ -72,39 +72,39 @@ const Register = (props: RegisterInterface) => {
           ) : (
             <>
               <input
-                placeholder="Nombre"
+                placeholder="Nombre*"
                 className="w-full rounded-[25px] px-8 font-light text-black"
                 type="text"
               />
               <input
-                placeholder="Número de cédula"
+                placeholder="Número de cédula*"
                 className="w-full rounded-[25px] px-8 font-light text-black"
                 type="text"
               />
             </>
           )}
           <input
-            placeholder="Celular"
+            placeholder="Celular*"
             className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
-            placeholder="Dirección"
+            placeholder="Dirección*"
             className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
-            placeholder="País"
+            placeholder="País*"
             className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
-            placeholder="Ciudad"
+            placeholder="Ciudad*"
             className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
           <input
-            placeholder="Email"
+            placeholder="Email*"
             className="w-full rounded-[25px] px-8 font-light text-black"
             type="text"
           />
@@ -129,14 +129,45 @@ const Register = (props: RegisterInterface) => {
               </NavLink>
             </label>
           </div>
-          <div className="md:text-right">
+          <div className="text-xl md:text-right">
             <Button
-              className="w-full px-10 py-5 md:w-auto"
-              text="REGÍSTRATE"
+              className="btn w-full px-10 py-5 "
+              text="Regístrate"
             ></Button>
           </div>
         </form>
       </div>
+      <svg
+        className="hand h-auto"
+        xmlns="http://www.w3.org/2000/svg"
+        width="167.639"
+        height="235.598"
+        viewBox="0 0 167.639 235.598"
+      >
+        <g
+          id="Grupo_94"
+          data-name="Grupo 94"
+          transform="translate(167.64 0.001) rotate(90)"
+        >
+          <path
+            id="Trazado_51"
+            data-name="Trazado 51"
+            d="M167.639,83.82A83.82,83.82,0,1,1,83.82,0,83.819,83.819,0,0,1,167.639,83.82"
+            transform="translate(0)"
+            fill="#4796e1"
+          />
+          <path
+            id="Trazado_52"
+            data-name="Trazado 52"
+            d="M154.3,124.555v34.2L193.74,172.66h44.685V160.348H201.72v-3.191h68.623v-9.12H201.72v-3.191H274.9v-9.12H201.72v-3.191h68.623v-9.12H201.72v-3.192H252.1V111.1H201.72Z"
+            transform="translate(-39.806 -84.066)"
+            fill="none"
+            stroke="#fff"
+            strokeMiterlimit="10"
+            strokeWidth="1"
+          />
+        </g>
+      </svg>
     </section>
   );
 };

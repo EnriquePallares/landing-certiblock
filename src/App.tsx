@@ -24,6 +24,8 @@ import './assets/css/components/Blog/LastPosts.css';
 
 import './assets/css/components/ClaimYourAsset/MainBanner.css';
 
+import './assets/css/components/Register/Register.css'
+
 library.add();
 
 function App() {
