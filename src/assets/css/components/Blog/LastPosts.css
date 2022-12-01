@@ -1,0 +1,42 @@
+#blog #last-posts .hand {
+  width: calc((100vw * 167) / 1920);
+  position: absolute;
+  top: 0;
+  right: 0;
+  top: calc((100vw * -95) / 1920);
+  right: calc((100vw * 20) / 1920);
+}
+#blog #last-posts .hand-mobile {
+  display: none;
+}
+
+#blog #last-posts .button {
+  width: 373px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+  #blog #last-posts .button {
+    width: 320px;
+  }
+  #blog #last-posts svg {
+    padding-left: 3px;
+    padding-top: 5px
+  }
+  #blog #last-posts .hand {
+    display: none;
+  }
+  #blog #last-posts .hand-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    top: calc((100vw * -300) / 1920);
+    right: calc((100vw * 70) / 1920);
+  }
+  #blog #last-posts h1 {
+    font-size: 16px;
+  }
+}

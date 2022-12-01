@@ -17,6 +17,8 @@
     margin-left: calc((100vw * -20) / 1920);
 }
 
+
+
 #home-page #blog-section .list-posts .title{
     font-size: calc((100vw * 42) / 1920);
     line-height: calc((100vw * 41) / 1920);
@@ -93,6 +95,7 @@
 #home-page #blog-section .list-posts .accordion .text{
     padding-bottom: calc((100vw * 40) / 1920);
 }
+
 
 #home-page #blog-section .last-post{
     border-top-right-radius: calc((100vw * 26) / 1920);
