@@ -1,0 +1,40 @@
+#register-page .widthform {
+    width: 790px;
+}
+
+#register-page .btn {
+    width: 262px;
+    height: 73px;
+}
+
+#register-page .btn span {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+
+#register-page .hand {
+    width:  calc((100vw * 167) / 1920);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    bottom: calc((100vw * -95) / 1920);
+    right: calc((100vw * 20) / 1920);
+}
+
+@media (max-width: 640px){
+    #register-page .widthform {
+        width: 317px;
+    }
+
+    #register-page .btn {
+        width: 317px;
+        height: 36px;
+        padding-top: 5px;
+    }
+    #register-page .btn span {
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+}
