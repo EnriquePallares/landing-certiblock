@@ -20,6 +20,8 @@ import './assets/css/components/AboutUs/OurTeam.css';
 import './assets/css/components/AboutUs/RegisterYourCompany.css';
 import './assets/css/components/AboutUs/TheValues.css';
 
+import './assets/css/components/Blog/LastPosts.css';
+
 import './assets/css/components/ClaimYourAsset/MainBanner.css';
 
 library.add();
