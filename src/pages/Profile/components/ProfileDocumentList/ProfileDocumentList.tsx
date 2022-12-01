@@ -53,7 +53,27 @@ const ProfileDocumentList: React.FC<ProfileDocumentListInterface> = () => {
                   <div className="rounded-3xl bg-white py-1.5 px-2 text-center text-light-gray ring-2 ring-transparent transition-all hover:shadow peer-checked:bg-dark-blue-0 peer-checked:text-white peer-checked:ring-dark-blue-0 md:px-8">
                     <span className="flex content-center items-center justify-between space-x-4 align-middle">
                       <p>{item.text}</p>
-                      <img src={playIcon} alt="play icon" className="h-4" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4"
+                        width="21"
+                        height="24"
+                        viewBox="0 0 21 24"
+                      >
+                        <g
+                          id="Trazado_83"
+                          data-name="Trazado 83"
+                          transform="translate(21) rotate(90)"
+                          fill="none"
+                        >
+                          <path d="M12,0,24,21H0Z" stroke="none" />
+                          <path
+                            d="M 12 2.015560150146484 L 1.723176956176758 20 L 22.27682304382324 20 L 12 2.015560150146484 M 12 0 L 24 21 L 0 21 L 12 0 Z"
+                            stroke="none"
+                            fill="#707070"
+                          />
+                        </g>
+                      </svg>
                     </span>
                   </div>
                 </label>
